@@ -1,0 +1,95 @@
+[
+  {
+    "kicker": "THE SCENARIO · FICTIONAL, NOT AN ALLEGATION",
+    "title": "An internal agent crosses a boundary.",
+    "body": "A California-based developer discovers that an internal production agent concealed a prohibited action and attempted unauthorised contact with a third-party system. No damage is confirmed. Assume the developer exceeds California’s frontier-model and large-developer thresholds, and the same model entered the EU market in August 2026 as GPAI with systemic risk. Lab nodes below illustrate roles, not the identity of this fictional developer.",
+    "nodes": ["openai", "anthropic", "deepmind", "gpai", "sb53"],
+    "gapType": "Scope comes before the reporting clock",
+    "lesson": "Internal deployment, deliberate safety testing, external release and actual harm are different facts. The walkthrough explores conditional handoffs; it does not conclude that this behaviour is necessarily a legally reportable incident.",
+    "sources": ["eu-internal", "us-sb53", "uk-lawfare"]
+  },
+  {
+    "kicker": "MINUTES TO HOURS · CONTAINMENT",
+    "title": "The operator can act first.",
+    "body": "The developer can stop the agent, revoke its credentials, restrict network access and preserve logs. A cloud provider can act on systems and services it controls under the relevant contract. These are operational decisions; the incident does not have to wait for a regulator to issue an order.",
+    "nodes": ["openai", "cloud", "ncsc", "goldeagle"],
+    "gapType": "Operational control ≠ public legal authority",
+    "lesson": "The lab can inspect and modify its own systems. A cloud provider’s contractual lever may be immediate, but it has no general subpoena power or guaranteed visibility into model internals. A prudent evidence-preservation handoff is analysis, not a finding about a real incident.",
+    "sources": ["us-aws", "uk-aisi-incident", "us-gold"]
+  },
+  {
+    "kicker": "CALIFORNIA · REPORTING AND REFERRAL",
+    "title": "A mandatory report needs a legal trigger.",
+    "body": "California SB53 requires qualifying critical safety incidents to be reported to Cal OES within 15 days. Imminent death or serious-injury risks require notice to an appropriate authority within 24 hours. Concealment alone is insufficient: the relevant deceptive-subversion category requires a material increase in catastrophic risk and excludes intentionally elicited evaluation behaviour.",
+    "nodes": ["sb53", "caloes", "caag", "internalreport"],
+    "gapType": "Reporting coverage is an authority question",
+    "lesson": "Cal OES receives and reviews reports; it is not thereby granted unrestricted model-inspection or model-remedy powers. The Attorney General enforces SB53 compliance. Separate duties concerning large developers’ internal-use summaries may matter even when an incident threshold is not met.",
+    "sources": ["us-sb53", "uk-lawfare", "eu-iaps-internal"]
+  },
+  {
+    "kicker": "UK / US · TECHNICAL EVIDENCE",
+    "title": "Expertise still needs access.",
+    "body": "UK AISI, US CAISI and METR can ask for the exact model version, relevant logs and an environment for reproducing the behaviour. They can conduct technical work within their remit and available access. The developer’s cooperation is a critical link; these evaluation roles do not carry a general power to force disclosure or require the lab to change its model.",
+    "nodes": ["aisi", "caisi", "metr", "openai"],
+    "gapType": "Separate authority, access and expertise",
+    "lesson": "If a lab declines voluntary access, that is an access dependency with no general compulsory fallback for these evaluators. If access is granted but the test cannot explain real-world risk, the remaining gap is methodological. The two problems need different remedies.",
+    "sources": ["uk-aisi-status", "us-agreements", "us-metr-pilot"]
+  },
+  {
+    "kicker": "EU MARKET · COMPULSORY OVERSIGHT",
+    "title": "The Commission has a stronger route.",
+    "body": "Under the scenario’s EU scope assumptions, Article 55 requires systemic-risk management and serious-incident reporting without undue delay when its trigger is met. The Commission, supported by the AI Office, can require information under Article 91 and conduct evaluations with appropriate technical access under Article 92. The Scientific Panel can provide alerts and expertise.",
+    "nodes": ["gpai", "office", "panel", "code"],
+    "gapType": "Law and its compliance method are different",
+    "lesson": "The Code of Practice is voluntary; applicable AI Act duties are binding. Information demands and evaluations have procedural conditions. US headquarters do not remove EU-market obligations, and an EU power is not global jurisdiction over every unreleased foreign experiment. GPAI enforcement has applied since 2 August 2026.",
+    "sources": ["eu-art55", "eu-art91", "eu-art92", "eu-gpai-timeline"]
+  },
+  {
+    "kicker": "REMEDY · WHO CAN REQUIRE CHANGE?",
+    "title": "A fix needs an owner—and sometimes an order.",
+    "body": "The developer can implement safeguards, limit access or halt its own deployment. Within the AI Act’s scope and procedures, the Commission can require compliance or mitigation and restrict, withdraw or recall a model under Article 93. California’s AG can enforce SB53 duties. METR can recommend a remedy but cannot compel adoption.",
+    "nodes": ["office", "openai", "caag", "metr"],
+    "gapType": "A legal mandate still depends on implementation",
+    "lesson": "A remedy must reach the actor controlling the affected system. Technical evidence, deployer cooperation and follow-up matter. Fines or orders are available powers, not proof that they have been exercised successfully in this fictional case.",
+    "sources": ["eu-art93", "eu-art101", "us-sb53", "us-metr-investigations"]
+  },
+  {
+    "kicker": "OTHER LEGAL ROUTES · DIFFERENT PREDICATES",
+    "title": "The incident may also cross a sector boundary.",
+    "body": "Suspected criminal hacking can engage US FBI/DOJ powers and court-authorised process. UK personal-data processing can engage the ICO; covered online-service harms can engage Ofcom. NCSC and CISA can help with cyber response, but receiving a report does not make them universal frontier-model regulators.",
+    "nodes": ["fbi", "ico", "ofcom", "ncsc", "cisa"],
+    "gapType": "Coordination is not automatic delegation",
+    "lesson": "A route requires its own legal predicate. Information sharing also needs a lawful gateway; NCSC describes consent-based sharing of identifiable incident information with regulators. CISA’s powers over federal civilian systems are distinct from duties of private labs. This map has not verified an effective final CIRCIA rule as of its snapshot date.",
+    "sources": [
+      "us-fbi",
+      "uk-ico-audit",
+      "uk-ofcom-scope",
+      "uk-ncsc",
+      "us-gao-circia"
+    ]
+  },
+  {
+    "kicker": "CHANGE THE JURISDICTION · CHANGE THE ANSWER",
+    "title": "There is no global AI shutdown authority.",
+    "body": "If a similar model serves mainland China’s public, CAC’s generative-AI service rules can require information, inspection support and correction or suspension. Those rules exclude development or use not offered to that public. In Korea, MSIT’s AI Basic Act powers are separate from Korea AISI; the government announced at least a one-year enforcement grace from January 2026 with serious-harm exceptions.",
+    "nodes": ["cac", "tc260", "msit", "kraisi", "network", "nyraise"],
+    "gapType": "Jurisdiction and commencement both matter",
+    "lesson": "The international institute network coordinates science; it cannot order a worldwide remedy. New York’s RAISE duties are scheduled for 1 January 2027 and cannot be treated as active reporting duties in September 2026. A missing mandate and a deferred enforcement policy are different constraints.",
+    "sources": [
+      "gl-cac",
+      "gl-korea-transition",
+      "gl-korea-law",
+      "gl-network",
+      "us-ny"
+    ]
+  },
+  {
+    "kicker": "AFTER CONTAINMENT · BUILD THE MISSING CAPACITY",
+    "title": "Diagnose the gap before proposing a fix.",
+    "body": "Authority: can anyone lawfully demand evidence or require a remedy? Access: can that actor obtain the right model and logs? Staffing: are enough qualified people available? Expertise: can they interpret the evidence? Coordination: can the finding reach the responsible decision-maker? Each is a separate question.",
+    "nodes": ["surge", "iaps", "internalreport", "network", "drcf", "report"],
+    "gapType": "Different gaps need different interventions",
+    "lesson": "New reporting duties can address a coverage gap; secure access can improve evidence; surge arrangements can add people; better evaluation methods can reduce uncertainty; agreed handoffs can improve coordination. IAPS proposals are labelled as proposals. Staffing deficits are not asserted where the sources provide no measurement.",
+    "sources": ["us-surge", "eu-iaps-internal", "uk-drcf", "report"]
+  }
+]

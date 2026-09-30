@@ -1,0 +1,490 @@
+{
+  "openai": {
+    "website": "https://openai.com/",
+    "city": "San Francisco",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/openai.png",
+    "logoSource": "https://openai.com/apple-icon.png?apple-icon.3o0tf8iy4mx7y.png",
+    "websiteVerified": true
+  },
+  "anthropic": {
+    "website": "https://www.anthropic.com/",
+    "city": "San Francisco",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/anthropic.png",
+    "logoSource": "https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67d31dd7aa394792257596c5_webclip.png",
+    "websiteVerified": true
+  },
+  "caisi": {
+    "website": "https://www.nist.gov/caisi",
+    "city": "Gaithersburg",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "locationSource": "https://www.nist.gov/contact",
+    "logo": "/logos/caisi.png",
+    "logoSource": "https://www.nist.gov/themes/custom/nist_www/favicon.ico",
+    "websiteVerified": true
+  },
+  "metr": {
+    "website": "https://metr.org/",
+    "city": "Berkeley",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/metr.png",
+    "logoSource": "https://metr.org/assets/images/favicon/favicon.png",
+    "websiteVerified": true
+  },
+  "cloud": {
+    "website": null,
+    "city": null,
+    "locationNote": "Multiple cloud and compute providers; no single headquarters.",
+    "geographic": false
+  },
+  "caloes": {
+    "website": "https://www.caloes.ca.gov/",
+    "city": "Sacramento",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/caloes.png",
+    "logoSource": "https://www.caloes.ca.gov/wp-content/themes/CAWeb-1.13.0/src/images/system/apple-touch-icon-precomposed.png",
+    "websiteVerified": true
+  },
+  "caag": {
+    "website": "https://oag.ca.gov/",
+    "city": "Sacramento",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/caag.png",
+    "logoSource": "https://oag.ca.gov/sites/default/themes/custom2017/oag2017/img/apple-touch-icon.png",
+    "websiteVerified": true
+  },
+  "deepmind": {
+    "website": "https://deepmind.google/",
+    "city": "London",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "locationSource": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/platform-37-the-ai-exchange/",
+    "logo": "/logos/deepmind.png",
+    "logoSource": "https://storage.googleapis.com/gdm-deepmind-com-prod-public/icons/google_deepmind_2x_96dp.png",
+    "websiteVerified": true
+  },
+  "aisi": {
+    "website": "https://www.aisi.gov.uk/",
+    "city": "London",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/aisi.png",
+    "logoSource": "https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6851b4acf52818a86a4f9f86_AISI%20icon%20256.png",
+    "websiteVerified": true
+  },
+  "ncsc": {
+    "website": "https://www.ncsc.gov.uk/",
+    "city": "London",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/ncsc.png",
+    "logoSource": "https://www.ncsc.gov.uk/themes/custom/ennerdale/favicons/apple-touch-icon.png",
+    "websiteVerified": true
+  },
+  "office": {
+    "website": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+    "city": "Brussels",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "coordinates": [4.3517, 50.8503],
+    "logo": "/logos/office.png",
+    "logoSource": "https://digital-strategy.ec.europa.eu/themes/custom/cnt_theme/images/favicons/ec/favicon.png",
+    "websiteVerified": true
+  },
+  "gpai": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "panel": {
+    "website": "https://digital-strategy.ec.europa.eu/en/policies/ai-act-scientific-panel",
+    "city": "Brussels",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "coordinates": [4.3517, 50.8503],
+    "logo": "/logos/panel.png",
+    "logoSource": "https://digital-strategy.ec.europa.eu/themes/custom/cnt_theme/images/favicons/ec/favicon.png",
+    "websiteVerified": true
+  },
+  "code": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "cac": {
+    "website": "https://www.cac.gov.cn/",
+    "city": "Beijing",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/cac.png",
+    "logoSource": "https://www.cac.gov.cn/favicon.ico",
+    "websiteVerified": true
+  },
+  "deepseek": {
+    "website": "https://www.deepseek.com/",
+    "city": "Hangzhou",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/deepseek.png",
+    "logoSource": "https://www.deepseek.com/favicon.ico",
+    "websiteVerified": true
+  },
+  "msit": {
+    "website": "https://www.msit.go.kr/eng/",
+    "city": "Sejong",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/msit.png",
+    "logoSource": "https://www.msit.go.kr/images/eng/msiticon.ico;jsessionid=hXdwBEiG6t6t-Ygchx4YkwOM1KpkpyprGWmF8vOA.AP_msit_1",
+    "websiteVerified": true
+  },
+  "sgaisi": {
+    "website": "https://www.ntu.edu.sg/dtc",
+    "city": "Singapore",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/sgaisi.png",
+    "logoSource": "https://www.ntu.edu.sg/ResourcePackages/NTU/assets/images/favicon.png",
+    "websiteVerified": true
+  },
+  "network": {
+    "website": null,
+    "city": null,
+    "locationNote": "International institute network; members operate in multiple countries.",
+    "geographic": false
+  },
+  "oecd": {
+    "website": "https://oecd.ai/",
+    "city": "Paris",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/oecd.png",
+    "logoSource": "https://oecd.ai/en/assets/images/favicon.png",
+    "websiteVerified": true
+  },
+  "unpanel": {
+    "website": null,
+    "city": null,
+    "locationNote": "International panel; no single organisational base is asserted here.",
+    "geographic": false
+  },
+  "iso": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "au": {
+    "website": "https://au.int/",
+    "city": "Addis Ababa",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/au.png",
+    "logoSource": "https://au.int/themes/custom/au/favicon.ico",
+    "websiteVerified": true
+  },
+  "board": {
+    "website": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+    "city": "Brussels",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "coordinates": [4.3517, 50.8503],
+    "logo": "/logos/board.png",
+    "logoSource": "https://digital-strategy.ec.europa.eu/themes/custom/cnt_theme/images/favicons/ec/favicon.png",
+    "websiteVerified": true
+  },
+  "national": {
+    "website": null,
+    "city": null,
+    "locationNote": "A group of national authorities across EU member states.",
+    "geographic": false
+  },
+  "inesia": {
+    "website": "https://www.economie.gouv.fr/actualites/la-france-se-dote-dun-institut-national-pour-levaluation-et-la-securite-de-lintelligence",
+    "city": "Paris",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "websiteVerified": false
+  },
+  "ico": {
+    "website": "https://ico.org.uk/",
+    "city": "Wilmslow",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/ico.png",
+    "logoSource": "https://ico.org.uk/media2/lhphq55z/favicon.ico",
+    "websiteVerified": true
+  },
+  "ofcom": {
+    "website": "https://www.ofcom.org.uk/",
+    "city": "London",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/ofcom.png",
+    "logoSource": "https://www.ofcom.org.uk/assets/img/favicon.ico",
+    "websiteVerified": true
+  },
+  "cma": {
+    "website": "https://www.gov.uk/government/organisations/competition-and-markets-authority",
+    "city": "London",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/cma.png",
+    "logoSource": "https://www.gov.uk/assets/collections/govuk-icon-180-d45a306f0549414cfa5085f16e4a3816a77558b139e5bc226f23162d1d0decb0.png",
+    "websiteVerified": true
+  },
+  "drcf": {
+    "website": "https://www.gov.uk/government/publications/drcf-terms-of-reference/terms-of-reference",
+    "city": null,
+    "locationNote": "Coordination forum of regulators in different UK locations.",
+    "geographic": false,
+    "websiteVerified": false
+  },
+  "tc260": {
+    "website": "https://www.tc260.org.cn/",
+    "city": "Beijing",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/tc260.png",
+    "logoSource": "https://www.tc260.org.cn/favicon.ico",
+    "websiteVerified": true
+  },
+  "jaisi": {
+    "website": "https://aisi.go.jp/",
+    "city": "Tokyo",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/jaisi.png",
+    "logoSource": "https://aisi.go.jp/apple-touch-icon.png",
+    "websiteVerified": true
+  },
+  "kraisi": {
+    "website": "https://www.aisi.re.kr/kor",
+    "city": "Seongnam",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "websiteVerified": false
+  },
+  "caaisi": {
+    "website": "https://ised-isde.canada.ca/site/ised/en/canadian-artificial-intelligence-safety-institute",
+    "city": "Ottawa",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/caaisi.png",
+    "logoSource": "https://ised-isde.canada.ca/site/ised/themes/custom/epic_theme/favicon.ico",
+    "websiteVerified": true
+  },
+  "auaisi": {
+    "website": "https://www.industry.gov.au/science-technology-and-innovation/technology/artificial-intelligence/ai-safety-institute",
+    "city": "Canberra",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "websiteVerified": false
+  },
+  "india": {
+    "website": "https://indiaai.gov.in/",
+    "city": "New Delhi",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/india.png",
+    "logoSource": "https://indiaai.gov.in/indiaAi-2021/build/images/favicon.ico",
+    "websiteVerified": true
+  },
+  "undialogue": {
+    "website": null,
+    "city": null,
+    "locationNote": "International dialogue, rather than a permanent local organisation.",
+    "geographic": false
+  },
+  "unesco": {
+    "website": "https://www.unesco.org/en",
+    "city": "Paris",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/unesco.png",
+    "logoSource": "https://www.unesco.org/themes/custom/bunesco8/apple-touch-icon.png",
+    "websiteVerified": true
+  },
+  "qwen": {
+    "website": "https://qwen.ai/",
+    "city": "Hangzhou",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/qwen.png",
+    "logoSource": "https://img.alicdn.com/imgextra/i4/O1CN01OXv3EM1FN8t9W4P79_!!6000000000474-2-tps-80-80.png",
+    "websiteVerified": true
+  },
+  "meta": {
+    "website": "https://ai.meta.com/",
+    "city": "Menlo Park",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/meta.png",
+    "logoSource": "https://static.xx.fbcdn.net/rsrc.php/yQ/r/0eWKxz9kEoF.webp",
+    "websiteVerified": true
+  },
+  "xai": {
+    "website": "https://x.ai/",
+    "city": "Palo Alto",
+    "locationNote": "Palo Alto is the principal business address in a 2024 SEC filing; this is a historical anchor, not a verified current headquarters.",
+    "geographic": true,
+    "locationSource": "https://www.sec.gov/Archives/edgar/data/2002695/000200269524000003/xslFormDX08/primary_doc.xml",
+    "logo": "/logos/xai.png",
+    "logoSource": "https://x.ai/apple-icon.png?apple-icon.21lxxn22zx2o2.png?dpl=5556a15bc3f7e791ff7a69cc66d0b9092ad1f78d",
+    "websiteVerified": true
+  },
+  "sb53": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "nyraise": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "ftc": {
+    "website": "https://www.ftc.gov/",
+    "city": "Washington, DC",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/ftc.png",
+    "logoSource": "https://www.ftc.gov/themes/custom/ftc_uswds/favicon.ico",
+    "websiteVerified": true
+  },
+  "fbi": {
+    "website": "https://www.fbi.gov/investigate/cyber",
+    "city": null,
+    "locationNote": "Combined entry for the FBI, Department of Justice and courts.",
+    "geographic": false,
+    "logo": "/logos/fbi.png",
+    "logoSource": "https://www.fbi.gov/@@site-icon.png",
+    "websiteVerified": true
+  },
+  "cisa": {
+    "website": "https://www.cisa.gov/",
+    "city": "Washington, DC",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/cisa.png",
+    "logoSource": "https://www.cisa.gov/profiles/cisad8_gov/themes/custom/gesso/favicon.png",
+    "websiteVerified": true
+  },
+  "bis": {
+    "website": "https://www.bis.gov/",
+    "city": "Washington, DC",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/bis.png",
+    "logoSource": "https://www.bis.gov/favicon.ico",
+    "websiteVerified": true
+  },
+  "federal": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "goldeagle": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "report": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "rmf": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "iaps": {
+    "website": "https://www.iaps.ai/",
+    "city": "Washington, DC",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/iaps.png",
+    "logoSource": "https://images.squarespace-cdn.com/content/v1/64edf8e7f2b10d716b5ba0e1/80c187ec-cec3-42f2-aea1-ee41ad06b606/favicon.ico?format=100w",
+    "websiteVerified": true
+  },
+  "cltr": {
+    "website": "https://www.longtermresilience.org/reports/advancing-the-uks-global-leadership-in-frontier-ai-governance/",
+    "city": "London",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "websiteVerified": false
+  },
+  "internalreport": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "surge": {
+    "website": null,
+    "city": null,
+    "locationNote": "A policy, publication or framework, not a physical organisation.",
+    "geographic": false
+  },
+  "mistral": {
+    "website": "https://mistral.ai/",
+    "city": "Paris",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/mistral.png",
+    "logoSource": "https://mistral.ai/favicon.ico",
+    "websiteVerified": true
+  },
+  "hf": {
+    "website": "https://huggingface.co/",
+    "city": "New York",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/hf.png",
+    "logoSource": "https://huggingface.co/favicon.ico",
+    "websiteVerified": true
+  },
+  "anpd": {
+    "website": "https://www.gov.br/anpd/pt-br",
+    "city": "Bras\u00edlia",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/anpd.png",
+    "logoSource": "https://www.gov.br/anpd/apple-touch-icon.png",
+    "websiteVerified": true
+  },
+  "tii": {
+    "website": "https://www.tii.ae/",
+    "city": "Abu Dhabi",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/tii.png",
+    "logoSource": "https://www.tii.ae/themes/custom/tech/favicon.ico",
+    "websiteVerified": true
+  },
+  "sdaia": {
+    "website": "https://sdaia.gov.sa/en/",
+    "city": "Riyadh",
+    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "geographic": true,
+    "logo": "/logos/sdaia.png",
+    "logoSource": "https://sdaia.gov.sa/Assets/images/LogosdaiaIcon.png",
+    "websiteVerified": true
+  }
+}

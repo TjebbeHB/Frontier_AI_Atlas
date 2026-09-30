@@ -1,0 +1,4475 @@
+{
+  "nodes": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "short": "OpenAI",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-122.4, 37.8],
+      "layer": "Corporate",
+      "type": "Frontier lab",
+      "jurisdiction": "US company; applicable California and destination-market laws",
+      "status": "Operational",
+      "date": "2026-05-28",
+      "description": "Developer of frontier models with internal safety and release governance.",
+      "mechanism": "Preparedness practices plus the May 2026 Frontier Governance Framework, with August operational updates.",
+      "horizons": ["Before release", "Ongoing oversight"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "internal",
+          "detail": "Can obtain information from its own teams and systems."
+        },
+        {
+          "value": "none",
+          "detail": "No sovereign power to compel outside organizations."
+        },
+        {
+          "value": "internal",
+          "detail": "Can investigate its own models, logs and deployment systems."
+        },
+        {
+          "value": "internal",
+          "detail": "Can pause or change its own development and deployment."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Corporate control does not confer public enforcement powers."
+        },
+        {
+          "type": "Access",
+          "detail": "External scrutiny depends on evidence and model access granted to reviewers."
+        }
+      ],
+      "sources": ["us-openai", "us-openai-update"],
+      "featured": true
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "short": "Anthropic",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-122.4, 37.8],
+      "layer": "Corporate",
+      "type": "Frontier lab",
+      "jurisdiction": "US company; applicable California and destination-market laws",
+      "status": "Operational",
+      "date": "2026-02-24",
+      "description": "RSP v3 organizes risk thresholds, safety roadmaps and reports.",
+      "mechanism": "Risk Reports every 3–6 months and external review; current commitments differ from earlier RSP versions.",
+      "horizons": ["Before release", "Ongoing oversight"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "internal",
+          "detail": "Can obtain information from its own teams and systems."
+        },
+        {
+          "value": "none",
+          "detail": "No sovereign power to compel outside organizations."
+        },
+        {
+          "value": "internal",
+          "detail": "Can investigate its own models, logs and deployment systems."
+        },
+        {
+          "value": "internal",
+          "detail": "Can pause or change its own development and deployment."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Corporate control does not confer public enforcement powers."
+        },
+        {
+          "type": "Access",
+          "detail": "External scrutiny depends on evidence and model access granted to reviewers."
+        }
+      ],
+      "sources": ["us-anthropic"],
+      "featured": true
+    },
+    {
+      "id": "caisi",
+      "name": "Center for AI Standards and Innovation",
+      "short": "CAISI",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-77.2, 39.1],
+      "layer": "Institutional",
+      "type": "Government evaluator",
+      "jurisdiction": "United States federal",
+      "status": "Operational",
+      "date": "2025-06",
+      "description": "NIST’s current successor to the US AI Safety Institute.",
+      "mechanism": "Voluntary standards and unclassified national-security evaluations; developer agreements expanded in May 2026.",
+      "horizons": ["Before release", "Ongoing oversight"],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Requests model access and information through collaboration."
+        },
+        {
+          "value": "none",
+          "detail": "These evaluation agreements confer no subpoena power."
+        },
+        {
+          "value": "research",
+          "detail": "Runs technical assessments of accessible models."
+        },
+        {
+          "value": "none",
+          "detail": "Can recommend mitigations, not universally prohibit model release."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Evaluation mandate is not model licensing authority."
+        },
+        {
+          "type": "Access",
+          "detail": "Nonpublic testing relies on negotiated developer access."
+        }
+      ],
+      "sources": ["us-caisi", "us-agreements", "us-joint"],
+      "featured": true
+    },
+    {
+      "id": "metr",
+      "name": "Model Evaluation & Threat Research",
+      "short": "METR",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-122.3, 37.9],
+      "layer": "Voluntary",
+      "type": "Independent evaluator",
+      "jurisdiction": "US nonprofit; international voluntary partnerships",
+      "status": "Operational",
+      "date": "2026-09-14",
+      "description": "Independent nonprofit producing technical evidence on frontier capabilities and risks.",
+      "mechanism": "Model evaluations, risk-report reviews and incident research; evidence can inform labs and regulators.",
+      "horizons": [
+        "Immediate response",
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Requests model access, logs and information."
+        },
+        {
+          "value": "none",
+          "detail": "No legal disclosure-compulsion power."
+        },
+        {
+          "value": "research",
+          "detail": "Can technically investigate where access and evidence permit."
+        },
+        {
+          "value": "none",
+          "detail": "Recommends changes; cannot order a lab to implement them."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "Pilot participants could redact nonpublic information or exit silently."
+        },
+        {
+          "type": "Expertise",
+          "detail": "Root-cause and remediation conclusions remain scientifically uncertain even with access."
+        },
+        {
+          "type": "Staffing",
+          "detail": "Full incident investigations may take weeks or months."
+        }
+      ],
+      "sources": [
+        "us-metr",
+        "us-metr-pilot",
+        "us-metr-investigations",
+        "us-metr-common"
+      ],
+      "featured": true
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud and compute providers",
+      "short": "Cloud providers",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-122.3, 47.6],
+      "layer": "Corporate",
+      "type": "Infrastructure provider",
+      "jurisdiction": "Global contracts and applicable local law; rights vary by provider",
+      "status": "Operational",
+      "date": "2026-09-14",
+      "description": "AWS, Azure and Google Cloud provide infrastructure on which labs and downstream services depend.",
+      "mechanism": "Hosting, access controls and contractual suspension; AWS terms are the verified suspension example.",
+      "horizons": ["Immediate response", "Before release", "Ongoing oversight"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can request customer cooperation and contractual information."
+        },
+        {
+          "value": "none",
+          "detail": "No public power to compel unrelated organizations."
+        },
+        {
+          "value": "internal",
+          "detail": "Can investigate infrastructure within their access and contractual scope."
+        },
+        {
+          "value": "internal",
+          "detail": "Can suspend their own services under applicable contract terms."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "Infrastructure visibility does not imply unrestricted model or customer-data access."
+        },
+        {
+          "type": "Authority",
+          "detail": "Suspension is contractual control, not sovereign model-remedy authority."
+        }
+      ],
+      "sources": ["us-aws", "us-azure-partner", "us-aws-partner"],
+      "featured": true
+    },
+    {
+      "id": "caloes",
+      "name": "California Office of Emergency Services",
+      "short": "Cal OES",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-121.5, 38.6],
+      "layer": "Institutional",
+      "type": "Incident intake",
+      "jurisdiction": "California, United States",
+      "status": "Operational",
+      "date": "2026-01-01",
+      "description": "Receives and reviews qualifying frontier-model incident reports under SB53.",
+      "mechanism": "Mandatory incident intake and confidential internal-use risk-assessment summaries; referral to other authorities.",
+      "horizons": ["Immediate response", "Ongoing oversight"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "May seek clarification and cooperation."
+        },
+        {
+          "value": "none",
+          "detail": "Receives reports mandated by SB53; the Act does not establish a general Cal OES power to compel additional evidence. The Attorney General enforces reporting failures."
+        },
+        {
+          "value": "none",
+          "detail": "Reviews reports and can coordinate referrals; no general model-access or technical-investigation power is established by SB53."
+        },
+        {
+          "value": "none",
+          "detail": "SB53 gives no blanket Cal OES power to order model changes."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Report review does not confer full model-access or general remediation powers."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Reports may need referral to AG or relevant public-safety authorities."
+        }
+      ],
+      "sources": ["us-sb53"],
+      "featured": true
+    },
+    {
+      "id": "caag",
+      "name": "California Attorney General",
+      "short": "California AG",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-121.5, 38.6],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "California, United States",
+      "status": "Operational",
+      "date": "2026-01-01",
+      "description": "Enforces SB53 compliance through civil actions.",
+      "mechanism": "Civil penalties up to $1 million per violation for covered large developers; statutory whistleblower protections also apply.",
+      "horizons": ["Immediate response", "Ongoing oversight"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can request information concerning suspected noncompliance."
+        },
+        {
+          "value": "conditional",
+          "detail": "Evidence may be obtained through applicable legal process; SB53 is not unrestricted technical access."
+        },
+        {
+          "value": "conditional",
+          "detail": "Can investigate legal compliance; model analysis depends on technical evidence."
+        },
+        {
+          "value": "conditional",
+          "detail": "May bring civil-penalty actions. SB53 does not create a blanket model-release veto."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Civil compliance enforcement differs from universal model-safety approval."
+        },
+        {
+          "type": "Expertise",
+          "detail": "Legal investigation and technical root-cause evaluation are distinct functions."
+        }
+      ],
+      "sources": ["us-sb53"],
+      "featured": true
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "short": "DeepMind",
+      "kind": "Actor",
+      "region": "United Kingdom",
+      "location": [-0.1, 51.5],
+      "layer": "Corporate",
+      "type": "Frontier lab",
+      "jurisdiction": "UK-based laboratory within US Google; applicable market laws",
+      "status": "Operational",
+      "date": "2026-04-17",
+      "description": "UK-based lab within Google, using a corporate frontier safety framework.",
+      "mechanism": "FSF v3.1 adds tracked capability levels alongside critical thresholds and mitigations.",
+      "horizons": ["Before release", "Ongoing oversight"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "internal",
+          "detail": "Can obtain information from its own teams and systems."
+        },
+        {
+          "value": "none",
+          "detail": "No sovereign power to compel outside organizations."
+        },
+        {
+          "value": "internal",
+          "detail": "Can investigate its own models, logs and deployment systems."
+        },
+        {
+          "value": "internal",
+          "detail": "Can pause or change its own development and deployment."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Corporate control does not confer public enforcement powers."
+        },
+        {
+          "type": "Access",
+          "detail": "External scrutiny depends on evidence and model access granted to reviewers."
+        }
+      ],
+      "sources": ["us-deepmind", "us-agreements"],
+      "featured": true
+    },
+    {
+      "id": "aisi",
+      "name": "UK AI Security Institute",
+      "short": "UK AISI",
+      "kind": "Actor",
+      "region": "United Kingdom",
+      "location": [-0.1, 51.5],
+      "layer": "Institutional",
+      "type": "Government evaluator",
+      "jurisdiction": "UK government research; developer access agreements and international partnerships",
+      "status": "Research institute, not a regulator",
+      "date": "2026-09-07",
+      "description": "Tests frontier models before and after deployment and shares vulnerabilities with developers and public decision makers.",
+      "mechanism": "Access agreements, technical evaluations and policy advice. Can stop its own testing, but cannot generally order a developer to withdraw a model.",
+      "horizons": [
+        "Before release",
+        "Immediate response",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Seeks developer information through cooperation and access arrangements."
+        },
+        {
+          "value": "none",
+          "detail": "No general regulatory power to compel developer disclosure."
+        },
+        {
+          "value": "research",
+          "detail": "Conducts technical testing and investigation using agreed access and its own research systems."
+        },
+        {
+          "value": "internal",
+          "detail": "Can stop its own runs and secure its own environment; cannot generally compel an external model remedy."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Independent technical findings do not create power to force a developer's disclosure or remedy."
+        },
+        {
+          "type": "Access",
+          "detail": "Available model versions, safeguards and evaluation time depend on access arrangements."
+        },
+        {
+          "type": "Expertise",
+          "detail": "The July incident illustrates uncertainty about how test behaviours generalise beyond evaluation settings."
+        }
+      ],
+      "sources": ["uk-aisi-status", "uk-aisi-remit", "uk-aisi-incident"],
+      "featured": true
+    },
+    {
+      "id": "ncsc",
+      "name": "UK National Cyber Security Centre",
+      "short": "NCSC",
+      "kind": "Actor",
+      "region": "United Kingdom",
+      "location": [-0.2, 51.5],
+      "layer": "Institutional",
+      "type": "Cybersecurity authority",
+      "jurisdiction": "UK cyber incident support and technical guidance",
+      "status": "Operational; not a regulator",
+      "date": "2026-09-07",
+      "description": "Helps organisations investigate and respond to cyber incidents and coordinates relevant government and international expertise.",
+      "mechanism": "Incident support, technical indicators, security guidance and cooperation with affected organisations.",
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Requests information from affected organisations to support response."
+        },
+        {
+          "value": "none",
+          "detail": "Its incident-support role does not confer general regulatory disclosure powers."
+        },
+        {
+          "value": "voluntary",
+          "detail": "Supports technical investigation with victim cooperation and access."
+        },
+        {
+          "value": "none",
+          "detail": "Can advise and assist mitigation; does not act as a general regulator ordering model remedies."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "Identifiable incident information is not shared with regulators without victim permission; reporting obligations remain with the victim."
+        },
+        {
+          "type": "Access",
+          "detail": "Response effectiveness depends on receiving timely relevant evidence."
+        }
+      ],
+      "sources": ["uk-ncsc", "uk-september"],
+      "featured": true
+    },
+    {
+      "id": "office",
+      "name": "European Commission / AI Office",
+      "short": "EU AI Office",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [4.3, 50.9],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "EU market; GPAI providers, including foreign providers within AI Act scope",
+      "status": "Enforcement powers applicable",
+      "date": "2026-08-02",
+      "description": "The European Commission, supported by the AI Office, oversees GPAI models and certain AI systems. This entry focuses on its GPAI enforcement powers, distinct from member-state responsibilities.",
+      "mechanism": "AI Act Articles 91–93 and 101: information, technical access, evaluation, corrective measures and fines.",
+      "horizons": ["Before release", "Immediate response", "Ongoing oversight"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "Request necessary compliance documentation and information under Article 91."
+        },
+        {
+          "value": "conditional",
+          "detail": "Providers must answer lawful requests; incorrect, incomplete or misleading information can attract fines."
+        },
+        {
+          "value": "conditional",
+          "detail": "Article 92 permits evaluations and required API or other technical access, including source code, subject to its conditions."
+        },
+        {
+          "value": "conditional",
+          "detail": "Article 93 permits mitigation, restricted availability, withdrawal or recall. Article 101 backs enforcement with fines."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "EU scope and premarket-research exclusions require analysis; no universal authority over every unreleased foreign model."
+        },
+        {
+          "type": "Staffing",
+          "detail": "Additional evaluation capacity is planned for 2027; its announcement does not establish the adequacy of today's capacity."
+        }
+      ],
+      "sources": [
+        "eu-art91",
+        "eu-art92",
+        "eu-art93",
+        "eu-art101",
+        "eu-gpai-timeline",
+        "eu-internal",
+        "eu-capacity"
+      ],
+      "featured": true
+    },
+    {
+      "id": "gpai",
+      "name": "EU GPAI systemic-risk obligations",
+      "short": "GPAI duties",
+      "kind": "Mechanism",
+      "region": "European Union",
+      "location": [5.7, 50.4],
+      "layer": "Legal",
+      "type": "Law & obligation",
+      "jurisdiction": "Providers of in-scope GPAI models with systemic risk in the EU",
+      "status": "Applicable; legacy-model transition remains",
+      "date": "2025-08-02",
+      "description": "Binding duties require evaluation, systemic-risk mitigation, incident reporting and cybersecurity for qualifying GPAI models.",
+      "mechanism": "Article 55; systemic-risk classification under Article 51. Models on the market before August 2025 have until August 2027.",
+      "horizons": ["Before release", "Immediate response", "Ongoing oversight"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "conditional",
+          "detail": "The duties are not an actor. Commission Article 91 powers supply the associated information-request route."
+        },
+        {
+          "value": "conditional",
+          "detail": "The Commission can require relevant information under Article 91; the provider obligations alone are not a separate authority."
+        },
+        {
+          "value": "conditional",
+          "detail": "Article 55 requires provider evaluation. Independent Commission evaluation and access arise under Article 92."
+        },
+        {
+          "value": "conditional",
+          "detail": "Article 55 requires provider risk mitigation. Commission-ordered measures use the distinct Article 93 procedure."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Systemic-risk classification, territorial scope, model vintage and research versus internal deployment affect coverage."
+        },
+        {
+          "type": "Expertise",
+          "detail": "A legal evaluation duty does not settle whether an evaluation reliably measures every emerging risk."
+        }
+      ],
+      "sources": [
+        "eu-art55",
+        "eu-art51",
+        "eu-gpai-timeline",
+        "eu-internal",
+        "eu-iaps-internal",
+        "eu-art91",
+        "eu-art92",
+        "eu-art93"
+      ],
+      "featured": true
+    },
+    {
+      "id": "panel",
+      "name": "EU Scientific Panel",
+      "short": "Scientific Panel",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [4.2, 51.2],
+      "layer": "Institutional",
+      "type": "Scientific adviser",
+      "jurisdiction": "EU AI Act advisory and technical support",
+      "status": "60 experts appointed",
+      "date": "2026-06-01",
+      "description": "Independent specialists provide systemic-risk alerts, classification advice, evaluation expertise and market-surveillance support.",
+      "mechanism": "Qualified alerts can lead to AI Office scrutiny; the Commission may obtain information or appoint experts for evaluation.",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "May request that the Commission obtain information needed for its statutory tasks."
+        },
+        {
+          "value": "none",
+          "detail": "No independent compulsory-disclosure power; Commission requests provide the legal route."
+        },
+        {
+          "value": "research",
+          "detail": "Experts can support or perform evaluations when appointed through the relevant procedure."
+        },
+        {
+          "value": "none",
+          "detail": "Alerts and advice inform Commission decisions; the panel cannot itself order a remedy."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "An expert alert must reach the authority able to obtain evidence and act."
+        },
+        {
+          "type": "Access",
+          "detail": "Technical analysis depends on evidence provided through Commission and research access."
+        }
+      ],
+      "sources": ["eu-panel", "eu-art91", "eu-art92"],
+      "featured": true
+    },
+    {
+      "id": "code",
+      "name": "EU GPAI Code of Practice",
+      "short": "GPAI Code",
+      "kind": "Mechanism",
+      "region": "European Union",
+      "location": [6.3, 49.8],
+      "layer": "Voluntary",
+      "type": "Standard & commitment",
+      "jurisdiction": "Voluntary compliance route for EU GPAI obligations",
+      "status": "Published and endorsed; signing voluntary",
+      "date": "2025-07-10",
+      "description": "A practical route to demonstrate compliance with binding GPAI law. Non-signers must demonstrate other adequate means of compliance.",
+      "mechanism": "Transparency, copyright, and safety/security chapters; an AI Office-chaired signatory taskforce supports implementation.",
+      "horizons": ["Before release", "Ongoing oversight"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Signatories organise and submit compliance information through the Code's processes."
+        },
+        {
+          "value": "none",
+          "detail": "The Code has no independent compulsory-disclosure power; underlying AI Act duties remain binding."
+        },
+        {
+          "value": "voluntary",
+          "detail": "Guides evaluations and risk-management practices; it does not itself authorise an external investigation."
+        },
+        {
+          "value": "none",
+          "detail": "Remedies depend on provider action and underlying Commission powers, not a separate Code regulator."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "Consistent implementation across signatories requires interpretation and oversight."
+        },
+        {
+          "type": "Authority",
+          "detail": "Do not confuse voluntary signature with voluntary compliance with the AI Act."
+        }
+      ],
+      "sources": ["eu-code", "eu-art55"],
+      "featured": true
+    },
+    {
+      "id": "cac",
+      "name": "Cyberspace Administration of China",
+      "short": "CAC",
+      "kind": "Actor",
+      "region": "China",
+      "location": [116.4, 39.9],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "Mainland China; public-facing generative services, including APIs",
+      "status": "In force",
+      "date": "2023-08-15",
+      "description": "CAC and competent departments enforce public-service duties. Providers must address and report illegal content/activity; qualifying services undergo security assessment and algorithm filing. These are scoped service rules, not blanket oversight of all frontier research.",
+      "mechanism": "Interim Measures, arts. 2, 14, 17, 19 and 21",
+      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "May demand cooperation within statutory service scope."
+        },
+        {
+          "value": "conditional",
+          "detail": "Article 19 requires explanations of training data and algorithms plus necessary technical/data assistance."
+        },
+        {
+          "value": "conditional",
+          "detail": "Competent departments conduct supervision and inspections under article 19."
+        },
+        {
+          "value": "conditional",
+          "detail": "Article 21 allows correction orders and service suspension for refusal or serious cases."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "This instrument expressly excludes development/use not offered to mainland China's public."
+        },
+        {
+          "type": "Access",
+          "detail": "A technical-assistance duty exists; practical effectiveness is not established here."
+        }
+      ],
+      "sources": ["gl-cac"],
+      "featured": true
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "short": "DeepSeek",
+      "kind": "Actor",
+      "region": "China",
+      "location": [120.2, 30.3],
+      "layer": "Corporate",
+      "type": "Frontier lab",
+      "jurisdiction": "China-based developer; hosted services and separately distributed model weights",
+      "status": "Operating",
+      "date": "2026-09-14",
+      "description": "Develops models, provides hosted services and publishes technical reports/model cards. Corporate control covers its own development and hosted operations; distributed copies create a separate downstream governance problem.",
+      "mechanism": "Internal model development, release decisions and hosted-service operation",
+      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "internal",
+          "detail": "Can request internal records through company management."
+        },
+        {
+          "value": "none",
+          "detail": "No public authority to compel external developers or users."
+        },
+        {
+          "value": "internal",
+          "detail": "Can technically examine its own models and infrastructure."
+        },
+        {
+          "value": "internal",
+          "detail": "Can change its own models/services; cannot reliably recall every independently hosted copy."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "External investigators need agreement or a valid statutory route."
+        },
+        {
+          "type": "Authority",
+          "detail": "Corporate control is bounded by its own systems and applicable contracts/law."
+        }
+      ],
+      "sources": ["gl-deepseek", "gl-deepseek-model"],
+      "featured": true
+    },
+    {
+      "id": "msit",
+      "name": "Korea Ministry of Science and ICT",
+      "short": "MSIT",
+      "kind": "Actor",
+      "region": "Asia-Pacific",
+      "location": [127.3, 36.5],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "Republic of Korea; specified AI Basic Act violations",
+      "status": "In force; enforcement grace",
+      "date": "2026-01-22",
+      "description": "The AI Basic Act gives MSIT inspection and correction powers. Government announced at least one year of deferred routine fact-finding/penalties, with exceptional investigations for serious harm. Safety duties require all decree criteria, including training above 10^26 FLOPs.",
+      "mechanism": "AI Basic Act article 40 and January 2026 implementation policy",
+      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "Can request relevant information within the Act's scope."
+        },
+        {
+          "value": "conditional",
+          "detail": "Article 40 permits relevant document demands for specified suspected/reported violations."
+        },
+        {
+          "value": "conditional",
+          "detail": "Officials may inspect business sites and records; 2026 grace policy limits routine investigations."
+        },
+        {
+          "value": "conditional",
+          "detail": "May order cessation/correction of a violation; distinguish statutory power from current enforcement practice."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "The safety duty also requires state-of-the-art technology and broad/significant fundamental-rights risk."
+        },
+        {
+          "type": "Coordination",
+          "detail": "An announced enforcement transition is not evidence of a staffing shortfall."
+        }
+      ],
+      "sources": ["gl-korea-law", "gl-korea-transition"],
+      "featured": true
+    },
+    {
+      "id": "sgaisi",
+      "name": "Singapore AI Safety Institute / Digital Trust Centre",
+      "short": "Singapore AISI",
+      "kind": "Actor",
+      "region": "Asia-Pacific",
+      "location": [103.7, 1.4],
+      "layer": "Institutional",
+      "type": "Government evaluator",
+      "jurisdiction": "Singapore; DTC hosted at NTU with IMDA and NRF support",
+      "status": "Operating",
+      "date": "2024-05-22",
+      "description": "DTC serves as Singapore's AISI, developing evaluation/testing science and contributing to governance. It coordinates the research ecosystem and international scientific work.",
+      "mechanism": "AI testing, research and international collaboration",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can invite company/research cooperation."
+        },
+        {
+          "value": "none",
+          "detail": "No standalone AISI disclosure mandate established."
+        },
+        {
+          "value": "research",
+          "detail": "Conducts evaluation and testing with available access."
+        },
+        {
+          "value": "none",
+          "detail": "Provides scientific input and tools rather than remedial orders."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Distinguish the research institute from IMDA's separate sectoral regulatory functions."
+        },
+        {
+          "type": "Access",
+          "detail": "Research access and technical methods condition investigation depth."
+        }
+      ],
+      "sources": ["gl-singapore", "gl-singapore-date"],
+      "featured": true
+    },
+    {
+      "id": "network",
+      "name": "International Network for Advanced AI Measurement, Evaluation and Science",
+      "short": "NAAIMES",
+      "kind": "Actor",
+      "region": "International",
+      "location": [-0.1, 51.5],
+      "layer": "Institutional",
+      "type": "Coordination network",
+      "jurisdiction": "Distributed network; location marks the current UK coordinating institute",
+      "status": "Operating; renamed",
+      "date": "2025-12-05",
+      "description": "Formerly the International Network of AI Safety Institutes. Connects national institutes and government offices through evaluation science and joint testing. UK AISI took the coordinating role after December 2025.",
+      "mechanism": "Shared methods, research and joint evaluations",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Members exchange information by agreement."
+        },
+        {
+          "value": "none",
+          "detail": "No supranational disclosure authority."
+        },
+        {
+          "value": "research",
+          "detail": "Member institutes conduct joint tests."
+        },
+        {
+          "value": "none",
+          "detail": "Findings do not become binding cross-border orders."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "Institutes retain separate mandates; membership does not transfer legal power."
+        },
+        {
+          "type": "Access",
+          "detail": "Joint work depends on agreed model access and sharing terms."
+        }
+      ],
+      "sources": ["gl-network", "gl-network-founding"],
+      "featured": true
+    },
+    {
+      "id": "oecd",
+      "name": "OECD / G7 Hiroshima AI Process",
+      "short": "OECD / G7",
+      "kind": "Actor",
+      "region": "International",
+      "location": [2.3, 48.9],
+      "layer": "Voluntary",
+      "type": "International institution",
+      "jurisdiction": "International; voluntary organizational participation",
+      "status": "Version 2.0 operating",
+      "date": "2026-05-28",
+      "description": "Provides a standard format for developer self-reporting against the G7 advanced-AI code. Version 2.0 simplifies reporting, including for smaller organizations.",
+      "mechanism": "Hiroshima AI Process Reporting Framework",
+      "horizons": ["Before release", "Ongoing oversight"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Requests self-reported alignment with the code."
+        },
+        {
+          "value": "none",
+          "detail": "Participation and disclosure remain voluntary."
+        },
+        {
+          "value": "none",
+          "detail": "Reporting supports scrutiny, not compulsory technical inspection."
+        },
+        {
+          "value": "none",
+          "detail": "Transparency and reputational pressure; no binding remedial order."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "Voluntary participation and self-reporting limit independent visibility."
+        },
+        {
+          "type": "Authority",
+          "detail": "The framework does not itself mandate developer remedies."
+        }
+      ],
+      "sources": ["gl-oecd", "gl-oecd-v2"],
+      "featured": true
+    },
+    {
+      "id": "unpanel",
+      "name": "UN Independent International Scientific Panel on AI",
+      "short": "UN scientific panel",
+      "kind": "Actor",
+      "region": "International",
+      "location": [6.1, 46.2],
+      "layer": "Institutional",
+      "type": "Scientific adviser",
+      "jurisdiction": "Global; distributed scientific panel, Geneva dialogue venue shown",
+      "status": "Operating",
+      "date": "2026-07-01",
+      "description": "Synthesizes evidence on AI for global governance. Its preliminary assessment informed the July 2026 UN Dialogue. This is distinct from the International AI Safety Report process.",
+      "mechanism": "Independent scientific assessment",
+      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can draw on scientific contributions and public evidence."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory developer information power."
+        },
+        {
+          "value": "none",
+          "detail": "Scientific assessment rather than mandatory incident inspection."
+        },
+        {
+          "value": "none",
+          "detail": "Advises international deliberation; cannot order lab changes."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "Scientific synthesis cannot guarantee privileged model or incident-data access."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Evidence still needs translation into action by competent authorities."
+        }
+      ],
+      "sources": ["gl-unpanel", "gl-unpanel-start"],
+      "featured": true
+    },
+    {
+      "id": "iso",
+      "name": "ISO/IEC 42001",
+      "short": "ISO / IEC 42001",
+      "kind": "Mechanism",
+      "region": "International",
+      "location": [6.1, 46.2],
+      "layer": "Voluntary",
+      "type": "Standard & commitment",
+      "jurisdiction": "International voluntary standard; no sovereign jurisdiction",
+      "status": "Published",
+      "date": "December 2023",
+      "description": "Requirements for an AI management system in organisations developing or using AI.",
+      "mechanism": "Management-system standard and assurance",
+      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Evidence collection can be part of implementing or assessing the management system."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        },
+        {
+          "value": "none",
+          "detail": "Assesses organisational processes; not a sovereign technical investigation of a frontier model."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "A standard is not itself law. Additional contractual or legal incorporation needs separate analysis."
+        },
+        {
+          "type": "Expertise",
+          "detail": "Management-system conformity does not prove absence of dangerous model capabilities."
+        }
+      ],
+      "sources": ["iso42001"],
+      "featured": true
+    },
+    {
+      "id": "au",
+      "name": "African Union / Continental AI Strategy",
+      "short": "African Union",
+      "kind": "Actor",
+      "region": "Africa",
+      "location": [38.8, 9.0],
+      "layer": "Institutional",
+      "type": "International institution",
+      "jurisdiction": "Africa; implementation through member states",
+      "status": "Strategy adopted",
+      "date": "2024-07-19",
+      "description": "Promotes Africa-centric, inclusive AI development and coordinated national governance. The strategy separates implementation of existing laws, identification of legal gaps and building institutional capability.",
+      "mechanism": "Continental AI Strategy",
+      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Seeks member-state cooperation."
+        },
+        {
+          "value": "none",
+          "detail": "Strategy grants no direct power to demand lab information."
+        },
+        {
+          "value": "none",
+          "detail": "Strategic assessment, not a continental model inspection mandate."
+        },
+        {
+          "value": "none",
+          "detail": "Member-state institutions implement relevant legal remedies."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Strategies require domestic legal implementation where existing laws are insufficient."
+        },
+        {
+          "type": "Expertise",
+          "detail": "Skills, infrastructure and institutional capability are distinct development needs; country deficits differ."
+        }
+      ],
+      "sources": ["gl-au", "gl-au-full"],
+      "featured": true
+    },
+    {
+      "id": "board",
+      "name": "European AI Board",
+      "short": "AI Board",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [3.8, 50.3],
+      "layer": "Institutional",
+      "type": "Coordination network",
+      "jurisdiction": "EU member-state cooperation under the AI Act",
+      "status": "Operational",
+      "date": "2025-08-02",
+      "description": "Member-state representatives promote coherent implementation and regulatory cooperation.",
+      "mechanism": "Coordinates national perspectives; the AI Office consults the Board on GPAI evaluations.",
+      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Exchanges information and coordinates authorities within the AI Act framework."
+        },
+        {
+          "value": "none",
+          "detail": "No standalone power to compel a model developer's disclosure."
+        },
+        {
+          "value": "none",
+          "detail": "Consultation and coordination role; technical evaluations belong to competent actors."
+        },
+        {
+          "value": "none",
+          "detail": "Does not independently fine a provider or require model withdrawal."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "Common positions and referrals must translate into actions by the competent authorities."
+        }
+      ],
+      "sources": ["eu-governance", "eu-art92"],
+      "featured": false
+    },
+    {
+      "id": "national",
+      "name": "EU national competent authorities",
+      "short": "National regulators",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [10, 51],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "Each EU member state; allocated AI-system and sectoral remits",
+      "status": "Enforcement phased by obligation and national designation",
+      "date": "2026-08-02",
+      "description": "A collective node for national market-surveillance and other competent authorities. It represents multiple authorities, not a single EU body.",
+      "mechanism": "Investigations and corrective measures for applicable system-level rules; high-risk deadlines now December 2027 and August 2028.",
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "conditional",
+          "detail": "Request system documentation within the authority's assigned national remit."
+        },
+        {
+          "value": "conditional",
+          "detail": "Compulsory information powers depend on the applicable provision and competent authority."
+        },
+        {
+          "value": "conditional",
+          "detail": "Investigate system compliance and risks under applicable market-surveillance powers."
+        },
+        {
+          "value": "conditional",
+          "detail": "Require corrective action or restrictions within remit; delayed duties cannot be enforced early."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Current enforceability depends on the rule, country, designation and phased dates."
+        },
+        {
+          "type": "Staffing",
+          "detail": "Country-level staffing and expertise must be checked individually; this map does not infer a uniform shortfall."
+        },
+        {
+          "type": "Coordination",
+          "detail": "System-level evidence may require referral to the AI Office for model-level action."
+        }
+      ],
+      "sources": [
+        "eu-national",
+        "eu-art79",
+        "eu-omnibus",
+        "eu-omnibus-law",
+        "eu-governance"
+      ],
+      "featured": false
+    },
+    {
+      "id": "inesia",
+      "name": "France: INESIA",
+      "short": "INESIA",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [2.4, 48.9],
+      "layer": "Institutional",
+      "type": "Government evaluator",
+      "jurisdiction": "France; national evaluation and security research",
+      "status": "Active network with 2026–2027 roadmap",
+      "date": "2026-02-12",
+      "description": "Connects ANSSI, Inria, LNE and PEReN under SGDSN/DGE coordination, without creating a new legal entity.",
+      "mechanism": "Evaluates reliability and national-security risks and supports regulatory implementation.",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "May seek evidence and research partnerships through participating institutions."
+        },
+        {
+          "value": "none",
+          "detail": "No independent INESIA compulsory-disclosure mandate established by its creation."
+        },
+        {
+          "value": "research",
+          "detail": "Coordinates technical evaluation; access and powers depend on participating institutions and arrangements."
+        },
+        {
+          "value": "none",
+          "detail": "No independent INESIA power to order a frontier-model remedy established by these sources."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "A network's shared expertise should not be mistaken for a single enforcement mandate."
+        },
+        {
+          "type": "Access",
+          "detail": "Evaluation requires relevant model and system access."
+        }
+      ],
+      "sources": ["eu-inesia", "eu-inesia-roadmap"],
+      "featured": false
+    },
+    {
+      "id": "ico",
+      "name": "UK Information Commissioner's Office",
+      "short": "ICO",
+      "kind": "Actor",
+      "region": "United Kingdom",
+      "location": [-2.2, 53.3],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "UK data protection; relevant processing of personal data",
+      "status": "Existing powers applied to AI",
+      "date": "2026-02-03",
+      "description": "Investigates AI-related personal-data processing, with information, assessment and enforcement notices and financial penalties.",
+      "mechanism": "UK GDPR and Data Protection Act oversight. A frontier incident must engage the data-protection remit.",
+      "horizons": ["Immediate response", "Ongoing oversight"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "May issue information notices in data-protection investigations."
+        },
+        {
+          "value": "binding",
+          "detail": "Statutory notices require the relevant information or cooperation."
+        },
+        {
+          "value": "conditional",
+          "detail": "AI audits and assessment notices examine data-protection compliance; not unrestricted frontier-risk investigation."
+        },
+        {
+          "value": "binding",
+          "detail": "Enforcement notices and penalties require compliance within data-protection scope."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "A model-capability incident without relevant personal-data processing may fall outside this mandate."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Cyber responders, model evaluators and privacy investigators hold different evidence and powers."
+        }
+      ],
+      "sources": ["uk-ico", "uk-ico-audit"],
+      "featured": false
+    },
+    {
+      "id": "ofcom",
+      "name": "UK Ofcom",
+      "short": "Ofcom",
+      "kind": "Actor",
+      "region": "United Kingdom",
+      "location": [-0.1, 51.5],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "UK-linked services and harms within the Online Safety Act",
+      "status": "Enforcement active; chatbot scope must be checked",
+      "date": "2026-03-20",
+      "description": "Enforces online-safety duties for covered services. Existing chatbot coverage and powers to expand it are distinct.",
+      "mechanism": "Online Safety Act information gathering and enforcement; additional generative-AI duties require operative regulations.",
+      "horizons": ["Immediate response", "Ongoing oversight"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "Can seek information under online-safety powers for covered services."
+        },
+        {
+          "value": "binding",
+          "detail": "Can use statutory information-gathering powers within its remit."
+        },
+        {
+          "value": "conditional",
+          "detail": "Investigates service systems and compliance; no general mandate to inspect every frontier model."
+        },
+        {
+          "value": "binding",
+          "detail": "Can require compliance and use enforcement measures for applicable online-safety duties."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Do not infer that enabling legislation has already brought every chatbot or model into scope."
+        }
+      ],
+      "sources": ["uk-ofcom-powers", "uk-ofcom-scope", "uk-chatbot-expansion"],
+      "featured": false
+    },
+    {
+      "id": "cma",
+      "name": "UK Competition and Markets Authority",
+      "short": "CMA",
+      "kind": "Actor",
+      "region": "United Kingdom",
+      "location": [-0.1, 51.5],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "UK competition and consumer-protection law",
+      "status": "Direct consumer enforcement operational",
+      "date": "2025-04-06",
+      "description": "Can investigate consumer and competition harms involving AI. Businesses remain responsible for their AI agents' conduct.",
+      "mechanism": "Direct enforcement, undertakings, remedies and penalties under applicable consumer and competition law.",
+      "horizons": ["Ongoing oversight", "Immediate response"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "May gather information for in-remit investigations."
+        },
+        {
+          "value": "binding",
+          "detail": "Statutory investigation requirements can compel cooperation."
+        },
+        {
+          "value": "conditional",
+          "detail": "Can examine AI-related conduct and systems insofar as relevant to its legal remit."
+        },
+        {
+          "value": "binding",
+          "detail": "Can impose in-remit remedies and penalties or accept undertakings; not universal model-safety orders."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Consumer or competition jurisdiction is required; dangerous capability alone does not establish that trigger."
+        }
+      ],
+      "sources": ["uk-cma", "uk-cma-agents"],
+      "featured": false
+    },
+    {
+      "id": "drcf",
+      "name": "UK Digital Regulation Cooperation Forum",
+      "short": "DRCF",
+      "kind": "Actor",
+      "region": "United Kingdom",
+      "location": [-0.1, 51.5],
+      "layer": "Institutional",
+      "type": "Coordination network",
+      "jurisdiction": "UK cooperation among CMA, ICO, Ofcom and FCA",
+      "status": "Voluntary forum; not a statutory entity",
+      "date": "2022-09-05",
+      "description": "Coordinates expertise, foresight and approaches across digital regulators, which retain their own powers and accountability.",
+      "mechanism": "Voluntary inter-regulator cooperation, shared research and coordinated policy work.",
+      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Supports information exchange and joint understanding among members."
+        },
+        {
+          "value": "none",
+          "detail": "No independent compulsory-disclosure power."
+        },
+        {
+          "value": "none",
+          "detail": "Coordinates research and expertise; member regulators conduct statutory investigations."
+        },
+        {
+          "value": "none",
+          "detail": "Cannot direct members or independently require company remedies."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "Shared analysis still requires each competent regulator to act under its own mandate."
+        },
+        {
+          "type": "Authority",
+          "detail": "A coordination forum cannot fill missing statutory jurisdiction by itself."
+        }
+      ],
+      "sources": ["uk-drcf", "uk-cltr"],
+      "featured": false
+    },
+    {
+      "id": "tc260",
+      "name": "TC260 and CNCERT-CC",
+      "short": "TC260 / CNCERT",
+      "kind": "Actor",
+      "region": "China",
+      "location": [116.4, 40.0],
+      "layer": "Institutional",
+      "type": "Standard & commitment",
+      "jurisdiction": "China; influence through standards and sector regulators",
+      "status": "Guidance published",
+      "date": "2025-09-15",
+      "description": "Their AI Safety Governance Framework 2.0 addresses open-model risks, CBRN misuse and loss of control. It informs China's technical standards and policy agenda; the framework itself is nonbinding.",
+      "mechanism": "AI Safety Governance Framework 2.0",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can seek technical contributions and evidence."
+        },
+        {
+          "value": "none",
+          "detail": "The framework creates no compulsory disclosure power."
+        },
+        {
+          "value": "research",
+          "detail": "Technical assessment and evaluation agenda."
+        },
+        {
+          "value": "none",
+          "detail": "Recommends mitigations; regulators need their own authority to order them."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Guidance must be translated into an applicable legal or contractual duty."
+        },
+        {
+          "type": "Expertise",
+          "detail": "Carnegie's 2025 analysis describes immature measurement science; no current staffing deficit is quantified."
+        }
+      ],
+      "sources": ["gl-framework", "gl-carnegie"],
+      "featured": false
+    },
+    {
+      "id": "jaisi",
+      "name": "Japan AI Safety Institute",
+      "short": "J-AISI",
+      "kind": "Actor",
+      "region": "Asia-Pacific",
+      "location": [139.8, 35.7],
+      "layer": "Institutional",
+      "type": "Government evaluator",
+      "jurisdiction": "Japan; institute at IPA, separate from ministries' legal powers",
+      "status": "Operating",
+      "date": "2026-07-07",
+      "description": "Supports government with safety surveys, evaluation methods and guidelines; connects industry, academia and international institutes. July 2026 guidance expands evaluation perspectives for agents.",
+      "mechanism": "Evaluation methods, guidance and scientific cooperation",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can request cooperation and research evidence."
+        },
+        {
+          "value": "none",
+          "detail": "No standalone compulsory disclosure power established in its remit."
+        },
+        {
+          "value": "research",
+          "detail": "Technical research and evaluation within available access."
+        },
+        {
+          "value": "none",
+          "detail": "Offers guidance, not independent remedial orders."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "Deep technical assessment depends on available models, environments and evidence."
+        },
+        {
+          "type": "Authority",
+          "detail": "AISI's technical remit does not transfer ministries' enforcement powers."
+        }
+      ],
+      "sources": ["gl-jaisi", "gl-jguide"],
+      "featured": false
+    },
+    {
+      "id": "kraisi",
+      "name": "Korea AI Safety Institute",
+      "short": "Korea AISI",
+      "kind": "Actor",
+      "region": "Asia-Pacific",
+      "location": [127.1, 37.4],
+      "layer": "Institutional",
+      "type": "Government evaluator",
+      "jurisdiction": "Republic of Korea; technical institute, distinct from MSIT enforcement",
+      "status": "Operating",
+      "date": "2026-07-08",
+      "description": "Researches safety policy and technologies, evaluates systems and coordinates internationally. A July 2026 Canada–Korea MOU supports frontier evaluation and measurement.",
+      "mechanism": "Technical evaluation, research and international MOUs",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can seek collaboration and technical information."
+        },
+        {
+          "value": "none",
+          "detail": "No standalone compulsory disclosure mandate established."
+        },
+        {
+          "value": "research",
+          "detail": "Evaluates AI and develops safety methods."
+        },
+        {
+          "value": "none",
+          "detail": "Technical recommendations; ministry powers are separate."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Do not assign MSIT's AI Basic Act inspection/remedy powers to the institute."
+        },
+        {
+          "type": "Access",
+          "detail": "Technical investigation requires relevant model/data access."
+        }
+      ],
+      "sources": ["gl-kraisi", "gl-canada-korea"],
+      "featured": false
+    },
+    {
+      "id": "caaisi",
+      "name": "Canadian Artificial Intelligence Safety Institute",
+      "short": "Canadian AISI",
+      "kind": "Actor",
+      "region": "Canada",
+      "location": [-75.7, 45.4],
+      "layer": "Institutional",
+      "type": "Government evaluator",
+      "jurisdiction": "Canada; ISED leads with NRC and CIFAR research capability",
+      "status": "Operating",
+      "date": "2026-07-08",
+      "description": "Studies advanced-system and synthetic-content risks through government-directed testing and funded research. Partners include Canadian institutes and international counterparts.",
+      "mechanism": "Joint testing, investigator-led research and government advice",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Seeks evidence through partnerships."
+        },
+        {
+          "value": "none",
+          "detail": "Its published remit establishes no standalone disclosure compulsion."
+        },
+        {
+          "value": "research",
+          "detail": "Conducts research and joint testing."
+        },
+        {
+          "value": "none",
+          "detail": "Provides guidance; other authorities enforce applicable laws."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "Frontier evaluation depends on research/model access."
+        },
+        {
+          "type": "Authority",
+          "detail": "Keep privacy, competition and sectoral enforcement separate from CAISI."
+        }
+      ],
+      "sources": ["gl-canada", "gl-canada-korea"],
+      "featured": false
+    },
+    {
+      "id": "auaisi",
+      "name": "Australian AI Safety Institute",
+      "short": "Australian AISI",
+      "kind": "Actor",
+      "region": "Asia-Pacific",
+      "location": [149.1, -35.3],
+      "layer": "Institutional",
+      "type": "Government evaluator",
+      "jurisdiction": "Australia; Department of Industry, Science and Resources",
+      "status": "Operating",
+      "date": "2026-09-14",
+      "description": "Analyzes frontier models and supports existing regulators with technical evidence. It works with ASD, CSIRO and international partners, including through lab MOUs and joint tests.",
+      "mechanism": "Technical testing and coordinated regulatory support",
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Immediate response",
+        "Long-term capacity"
+      ],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Seeks evidence through cooperation and lab MOUs."
+        },
+        {
+          "value": "none",
+          "detail": "No independent AISI compulsory disclosure power established."
+        },
+        {
+          "value": "research",
+          "detail": "Tests models and supports agency investigations technically."
+        },
+        {
+          "value": "none",
+          "detail": "Existing sector regulators, not AISI itself, apply their remedial powers."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "Evidence must reach the regulator whose law covers the harm."
+        },
+        {
+          "type": "Access",
+          "detail": "MOU-based model access is different from compulsory inspection access."
+        }
+      ],
+      "sources": ["gl-australia"],
+      "featured": false
+    },
+    {
+      "id": "india",
+      "name": "IndiaAI Safety Institute",
+      "short": "IndiaAI AISI",
+      "kind": "Actor",
+      "region": "Asia-Pacific",
+      "location": [77.2, 28.6],
+      "layer": "Institutional",
+      "type": "Government evaluator",
+      "jurisdiction": "India; MeitY / IndiaAI Mission hub-and-spoke network",
+      "status": "Established",
+      "date": "2026-07-27",
+      "description": "Coordinates government, academia, startups and industry on safety research. Oversees Safe & Trusted AI projects within the IndiaAI Mission.",
+      "mechanism": "Hub-and-spoke research, safety tools and project coordination",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can seek evidence and collaboration through the network."
+        },
+        {
+          "value": "none",
+          "detail": "No standalone general developer disclosure power established."
+        },
+        {
+          "value": "research",
+          "detail": "Supports risk assessment, testing and safety research."
+        },
+        {
+          "value": "none",
+          "detail": "Technical guidance and project oversight do not imply general remedial orders."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Separate established AISI functions from governance mechanisms still proposed in guidelines."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Distributed expertise must be integrated through the hub-and-spoke structure."
+        }
+      ],
+      "sources": ["gl-india"],
+      "featured": false
+    },
+    {
+      "id": "undialogue",
+      "name": "UN Global Dialogue on AI Governance",
+      "short": "UN AI Dialogue",
+      "kind": "Actor",
+      "region": "International",
+      "location": [6.1, 46.2],
+      "layer": "Institutional",
+      "type": "International institution",
+      "jurisdiction": "Global; first annual meeting in Geneva",
+      "status": "Operating",
+      "date": "2026-07-07",
+      "description": "Brings governments and stakeholders together to discuss international AI governance. The inaugural annual Dialogue took place 6–7 July 2026.",
+      "mechanism": "Multistakeholder dialogue and policy coordination",
+      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Invites stakeholder contributions."
+        },
+        {
+          "value": "none",
+          "detail": "No direct developer disclosure compulsion."
+        },
+        {
+          "value": "none",
+          "detail": "Exchanges evidence; not a technical incident authority."
+        },
+        {
+          "value": "none",
+          "detail": "Discussion and recommendations do not create binding lab orders."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Domestic and other applicable legal mechanisms are needed to enforce remedies."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Broad participation addresses representation but does not resolve all cross-border authority gaps."
+        }
+      ],
+      "sources": ["gl-undialogue", "gl-undialogue-event"],
+      "featured": false
+    },
+    {
+      "id": "unesco",
+      "name": "UNESCO / AI Ethics and Readiness",
+      "short": "UNESCO",
+      "kind": "Actor",
+      "region": "International",
+      "location": [2.3, 48.9],
+      "layer": "Institutional",
+      "type": "International institution",
+      "jurisdiction": "Global; national readiness assessments",
+      "status": "Operating",
+      "date": "2026-09-14",
+      "description": "Supports countries implementing its AI Ethics Recommendation. Readiness assessments examine legal, scientific, social, economic and technical conditions.",
+      "mechanism": "Recommendation on AI Ethics and Readiness Assessment Methodology",
+      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Collects national information and stakeholder input."
+        },
+        {
+          "value": "none",
+          "detail": "No direct compulsory frontier-developer disclosure mandate."
+        },
+        {
+          "value": "none",
+          "detail": "Assesses national readiness rather than technically investigating incidents."
+        },
+        {
+          "value": "none",
+          "detail": "Recommends changes and supports implementation."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Expertise",
+          "detail": "Readiness work identifies country-specific capability needs."
+        },
+        {
+          "type": "Authority",
+          "detail": "Norms and capacity support require implementation by competent national institutions."
+        }
+      ],
+      "sources": ["gl-unesco", "gl-unesco-ram"],
+      "featured": false
+    },
+    {
+      "id": "qwen",
+      "name": "Alibaba / Qwen",
+      "short": "Alibaba / Qwen",
+      "kind": "Actor",
+      "region": "China",
+      "location": [120.2, 30.2],
+      "layer": "Corporate",
+      "type": "Frontier lab",
+      "jurisdiction": "China-based Alibaba model team; hosted and independently deployed models",
+      "status": "Operating",
+      "date": "2026-09-14",
+      "description": "Alibaba's Qwen team develops language and multimodal models, with hosted chat and local deployment options. Its direct technical control is strongest inside its own model-development and service infrastructure.",
+      "mechanism": "Model development, release decisions and hosted-service operation",
+      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "internal",
+          "detail": "Can obtain information through internal governance."
+        },
+        {
+          "value": "none",
+          "detail": "No general public power to compel outside disclosure."
+        },
+        {
+          "value": "internal",
+          "detail": "Can examine its own models, development and service infrastructure."
+        },
+        {
+          "value": "internal",
+          "detail": "Can change its own releases/services; independent deployments are outside direct operational control."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "Independent scrutiny needs public artifacts, agreement or a valid legal route."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Distributed deployment separates model-developer control from downstream system operation."
+        }
+      ],
+      "sources": ["gl-qwen"],
+      "featured": false
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "short": "Meta",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-122.2, 37.5],
+      "layer": "Corporate",
+      "type": "Frontier lab",
+      "jurisdiction": "US company; applicable California and destination-market laws",
+      "status": "Operational",
+      "date": "2026-04-08",
+      "description": "The Advanced AI Scaling Framework covers frontier deployments through open weights, APIs and closed products.",
+      "mechanism": "Evaluations, release decisions and Safety & Preparedness Reports; loss-of-control risks added in 2026.",
+      "horizons": ["Before release", "Ongoing oversight"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "internal",
+          "detail": "Can obtain information from its own teams and systems."
+        },
+        {
+          "value": "none",
+          "detail": "No sovereign power to compel outside organizations."
+        },
+        {
+          "value": "internal",
+          "detail": "Can investigate its own models, logs and deployment systems."
+        },
+        {
+          "value": "internal",
+          "detail": "Can pause or change its own development and deployment."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Corporate control does not confer public enforcement powers."
+        },
+        {
+          "type": "Access",
+          "detail": "External scrutiny depends on evidence and model access granted to reviewers."
+        },
+        {
+          "type": "Access",
+          "detail": "Centralized recall and control diminish when model weights circulate downstream."
+        }
+      ],
+      "sources": ["us-meta"],
+      "featured": false
+    },
+    {
+      "id": "xai",
+      "name": "xAI / SpaceXAI",
+      "short": "xAI",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-122.2, 37.4],
+      "layer": "Corporate",
+      "type": "Frontier lab",
+      "jurisdiction": "US company; applicable state and destination-market laws",
+      "status": "Operational",
+      "date": "2026-06-30",
+      "description": "The public safety page uses SpaceXAI branding; the current framework identifies xAI LLC.",
+      "mechanism": "June 2026 framework describes annual systemic risk assessment, lifecycle monitoring and release decisions.",
+      "horizons": ["Before release", "Ongoing oversight"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "internal",
+          "detail": "Can obtain information from its own teams and systems."
+        },
+        {
+          "value": "none",
+          "detail": "No sovereign power to compel outside organizations."
+        },
+        {
+          "value": "internal",
+          "detail": "Can investigate its own models, logs and deployment systems."
+        },
+        {
+          "value": "internal",
+          "detail": "Can pause or change its own development and deployment."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Corporate control does not confer public enforcement powers."
+        },
+        {
+          "type": "Access",
+          "detail": "External scrutiny depends on evidence and model access granted to reviewers."
+        }
+      ],
+      "sources": ["us-xai", "us-xai-brand", "us-agreements"],
+      "featured": false
+    },
+    {
+      "id": "sb53",
+      "name": "Transparency in Frontier Artificial Intelligence Act",
+      "short": "SB53",
+      "kind": "Mechanism",
+      "region": "United States",
+      "location": [-121.5, 38.6],
+      "layer": "Legal",
+      "type": "Law & obligation",
+      "jurisdiction": "California, United States",
+      "status": "Operational",
+      "date": "2026-01-01",
+      "description": "California’s 2026 frontier-model transparency and reporting regime.",
+      "mechanism": "Models above 10^26 training operations; large-developer framework duties above $500m revenue. Qualifying reports: 15 days, or 24h for imminent serious injury to appropriate authority.",
+      "horizons": ["Immediate response", "Before release", "Ongoing oversight"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "Defines required transparency and report contents."
+        },
+        {
+          "value": "binding",
+          "detail": "Requires specified reports and framework disclosures; does not require all internal data."
+        },
+        {
+          "value": "conditional",
+          "detail": "Assigns report review and compliance enforcement, not universal direct model testing."
+        },
+        {
+          "value": "conditional",
+          "detail": "Enforceable framework compliance and civil penalties; no general premarket approval."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Narrow incident categories leave many near-misses outside mandatory incident reporting."
+        },
+        {
+          "type": "Access",
+          "detail": "Confidential reports are not public; absence of publication does not establish absence of reporting."
+        }
+      ],
+      "sources": ["us-sb53"],
+      "featured": false
+    },
+    {
+      "id": "nyraise",
+      "name": "New York RAISE Act",
+      "short": "NY RAISE",
+      "kind": "Mechanism",
+      "region": "United States",
+      "location": [-73.8, 42.6],
+      "layer": "Legal",
+      "type": "Law & obligation",
+      "jurisdiction": "New York, United States; covered models operating/developed/deployed partly in state",
+      "status": "Scheduled",
+      "date": "2027-01-01",
+      "description": "Enacted frontier transparency framework with main duties scheduled for 1 January 2027.",
+      "mechanism": "Future DFS reporting office; 72h incident reports and 24h imminent-injury route; AG penalties up to $1m first and $3m subsequent violations.",
+      "horizons": ["Long-term capacity", "Ongoing oversight"],
+      "power": "Scheduled authority",
+      "powers": [
+        {
+          "value": "future",
+          "detail": "Future office can obtain reports within the enacted scheme."
+        },
+        {
+          "value": "future",
+          "detail": "Main reporting and publication duties begin 1 January 2027."
+        },
+        {
+          "value": "future",
+          "detail": "Future report review does not automatically confer unrestricted technical testing."
+        },
+        {
+          "value": "future",
+          "detail": "Future AG civil enforcement; not usable under this Act in the current tutorial."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Main duties are not yet in force at the map cutoff."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Implementation and referral arrangements must support the future regime."
+        }
+      ],
+      "sources": ["us-ny"],
+      "featured": false
+    },
+    {
+      "id": "ftc",
+      "name": "Federal Trade Commission",
+      "short": "FTC",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-77.0, 38.9],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "United States federal",
+      "status": "Operational",
+      "date": "2026-09-14",
+      "description": "Consumer-protection and competition enforcement can reach AI-related conduct.",
+      "mechanism": "Civil investigative demands, administrative proceedings and court injunctions within existing statutory jurisdiction.",
+      "horizons": ["Immediate response", "Ongoing oversight"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can seek voluntary information during inquiries."
+        },
+        {
+          "value": "binding",
+          "detail": "Can issue compulsory investigative demands within an authorized investigation."
+        },
+        {
+          "value": "conditional",
+          "detail": "Can investigate AI-related practices; technical analysis requires relevant evidence."
+        },
+        {
+          "value": "conditional",
+          "detail": "May pursue binding orders or court remedies for violations within FTC jurisdiction."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Not a universal frontier-model licensing or incident regulator."
+        },
+        {
+          "type": "Expertise",
+          "detail": "Legal power to obtain evidence does not by itself supply every required AI specialty."
+        }
+      ],
+      "sources": ["us-ftc-cid", "us-ftc-powers"],
+      "featured": false
+    },
+    {
+      "id": "fbi",
+      "name": "FBI, Department of Justice and courts",
+      "short": "FBI / DOJ",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-77.0, 38.9],
+      "layer": "Legal",
+      "type": "Law enforcement",
+      "jurisdiction": "United States federal",
+      "status": "Operational",
+      "date": "2026-09-14",
+      "description": "Investigates suspected criminal AI-enabled hacking and related offenses.",
+      "mechanism": "Cyber investigations, lawful compulsory process and judicially authorized measures.",
+      "horizons": ["Immediate response", "Ongoing oversight"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Receives incident reports and requests cooperation."
+        },
+        {
+          "value": "conditional",
+          "detail": "Compulsory evidence requires applicable legal process and predicates."
+        },
+        {
+          "value": "conditional",
+          "detail": "Cyber teams investigate suspected crimes, including technical evidence."
+        },
+        {
+          "value": "conditional",
+          "detail": "DOJ and courts can pursue remedies under criminal law; no blanket model-safety veto."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "A concerning model behavior alone does not establish a criminal predicate."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Cross-border evidence and victims require cooperation."
+        }
+      ],
+      "sources": ["us-fbi", "us-eo14409"],
+      "featured": false
+    },
+    {
+      "id": "cisa",
+      "name": "Cybersecurity and Infrastructure Security Agency",
+      "short": "CISA",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-77.0, 38.9],
+      "layer": "Institutional",
+      "type": "Cybersecurity authority",
+      "jurisdiction": "United States federal",
+      "status": "Operational; CIRCIA effective rule unverified",
+      "date": "2026-09-14",
+      "description": "Coordinates cyber defense and response, with particular authority over federal civilian systems.",
+      "mechanism": "Voluntary private-sector incident assistance; federal binding directives; CIRCIA has a separate implementation track.",
+      "horizons": ["Immediate response", "Ongoing oversight"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Requests incident and vulnerability information."
+        },
+        {
+          "value": "conditional",
+          "detail": "Federal-system authority differs from private-lab reporting; an effective CIRCIA final rule was not verified."
+        },
+        {
+          "value": "conditional",
+          "detail": "Can assist technical cyber response where scope and access permit."
+        },
+        {
+          "value": "conditional",
+          "detail": "Binding directives cover federal civilian systems, not every private AI model."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "No general private-lab model-safety enforcement mandate."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Sector and AI incident routes are separate; projected CIRCIA dates do not establish an active duty."
+        }
+      ],
+      "sources": ["us-eo14409", "us-gao-circia", "us-circia-agenda"],
+      "featured": false
+    },
+    {
+      "id": "bis",
+      "name": "Bureau of Industry and Security",
+      "short": "BIS",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-77.0, 38.9],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "US export law, with defined extraterritorial reach",
+      "status": "Operational",
+      "date": "2026-09-14",
+      "description": "Controls covered advanced-compute exports under US export jurisdiction.",
+      "mechanism": "Export licensing and enforcement constrain upstream chip access; rules and destination conditions change.",
+      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "Requests required information for license applications and compliance."
+        },
+        {
+          "value": "conditional",
+          "detail": "Can require export-related records within its statutory jurisdiction."
+        },
+        {
+          "value": "conditional",
+          "detail": "Investigates export compliance, not every model-safety incident."
+        },
+        {
+          "value": "conditional",
+          "detail": "Can restrict covered exports or enforce violations; no universal domestic model-release veto."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Export-control scope differs from model-risk regulation."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Effectiveness depends on diversion verification and international cooperation."
+        }
+      ],
+      "sources": ["us-bis", "us-diffusion"],
+      "featured": false
+    },
+    {
+      "id": "federal",
+      "name": "Federal frontier cyber evaluation framework",
+      "short": "Federal cyber framework",
+      "kind": "Mechanism",
+      "region": "United States",
+      "location": [-77.0, 38.9],
+      "layer": "Voluntary",
+      "type": "Law & obligation",
+      "jurisdiction": "United States federal",
+      "status": "Operational",
+      "date": "2026-06-02",
+      "description": "EO14409 directs agencies to design classified frontier-cyber benchmarking and collaborative access.",
+      "mechanism": "Voluntary access up to 30 days before release to other trusted partners; expressly no mandatory model licensing.",
+      "horizons": ["Before release", "Long-term capacity"],
+      "power": "Access-dependent evaluation",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Invites developer cooperation and access."
+        },
+        {
+          "value": "none",
+          "detail": "This framework creates no compulsory developer disclosure scheme."
+        },
+        {
+          "value": "conditional",
+          "detail": "Agency experts can assess models available under agreed safeguards."
+        },
+        {
+          "value": "none",
+          "detail": "Section 3 creates no mandatory model preclearance or permitting power."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Instructions bind agencies but do not make lab participation mandatory."
+        },
+        {
+          "type": "Access",
+          "detail": "Classified and proprietary evidence require agreed access."
+        },
+        {
+          "type": "Staffing",
+          "detail": "IAPS identifies hiring and clearance bottlenecks for government AI-security surge expertise."
+        }
+      ],
+      "sources": [
+        "us-eo14409",
+        "us-surge",
+        "us-leicht",
+        "us-brundage",
+        "us-ssrn"
+      ],
+      "featured": false
+    },
+    {
+      "id": "goldeagle",
+      "name": "GOLD EAGLE cybersecurity clearinghouse",
+      "short": "GOLD EAGLE",
+      "kind": "Mechanism",
+      "region": "United States",
+      "location": [-77.0, 38.9],
+      "layer": "Institutional",
+      "type": "Coordination network",
+      "jurisdiction": "United States federal",
+      "status": "Operational",
+      "date": "2026-07",
+      "description": "Treasury and security partners coordinate AI-assisted vulnerability discovery and remediation.",
+      "mechanism": "Deconflicts scanning and prioritizes patch information through voluntary industry collaboration.",
+      "horizons": ["Immediate response", "Ongoing oversight"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Participants share vulnerability and response information."
+        },
+        {
+          "value": "none",
+          "detail": "Clearinghouse coordination is not a universal disclosure mandate."
+        },
+        {
+          "value": "conditional",
+          "detail": "Coordinates technical discovery and validation with participating organizations."
+        },
+        {
+          "value": "none",
+          "detail": "Coordinates mitigation with cooperating organisations. The clearinghouse does not itself acquire a general power to order model remedies."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "Success depends on participating labs, maintainers and operators sharing usable information."
+        },
+        {
+          "type": "Authority",
+          "detail": "Coordination does not replace sector regulators or criminal process."
+        }
+      ],
+      "sources": ["us-gold"],
+      "featured": false
+    },
+    {
+      "id": "report",
+      "name": "International AI Safety Report",
+      "short": "AI Safety Report",
+      "kind": "Mechanism",
+      "region": "International",
+      "location": null,
+      "layer": "Institutional",
+      "type": "Scientific adviser",
+      "jurisdiction": "International scientific assessment; location schematic, no regulatory jurisdiction",
+      "status": "Published",
+      "date": "February 2026",
+      "description": "Independent synthesis of evidence about general-purpose AI capabilities, risks and risk management. It does not recommend particular policies.",
+      "mechanism": "Scientific evidence for policymakers",
+      "horizons": ["Long-term capacity", "Ongoing oversight"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "research",
+          "detail": "Draws on research and expert contributions."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory disclosure powers."
+        },
+        {
+          "value": "none",
+          "detail": "Synthesises technical evidence; it is not an incident-investigation authority."
+        },
+        {
+          "value": "none",
+          "detail": "Does not impose remedies."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Expertise",
+          "detail": "The report describes scientific uncertainty and limits of pre-deployment testing."
+        },
+        {
+          "type": "Access",
+          "detail": "Proprietary model evidence limits external scrutiny."
+        }
+      ],
+      "sources": ["report"],
+      "featured": false
+    },
+    {
+      "id": "rmf",
+      "name": "NIST AI Risk Management Framework",
+      "short": "NIST AI RMF",
+      "kind": "Mechanism",
+      "region": "United States",
+      "location": [-77.2, 39.1],
+      "layer": "Voluntary",
+      "type": "Standard & commitment",
+      "jurisdiction": "US-based research; proposals may inform other jurisdictions",
+      "status": "Voluntary; revision underway",
+      "date": "1.0 published January 2023; GenAI profile July 2024",
+      "description": "Provides a common structure for identifying and managing AI risks across an organisation.",
+      "mechanism": "Risk management framework and generative AI profile",
+      "horizons": ["Ongoing oversight", "Before release"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Adopting organisations gather information as part of their risk management."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        },
+        {
+          "value": "none",
+          "detail": "Supports assessment practices; the document does not investigate companies."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Voluntary guidance creates no general disclosure or deployment-control power."
+        },
+        {
+          "type": "Expertise",
+          "detail": "A process framework is not evidence that a particular frontier model is safe."
+        }
+      ],
+      "sources": ["nist-rmf"],
+      "featured": false
+    },
+    {
+      "id": "iaps",
+      "name": "Institute for AI Policy and Strategy",
+      "short": "IAPS",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-77, 38.9],
+      "layer": "Voluntary",
+      "type": "Policy research",
+      "jurisdiction": "US-based research; proposals may inform other jurisdictions",
+      "status": "Research published; proposals distinguished",
+      "date": "2025–2026 research",
+      "description": "Develops policy proposals for internal model-use risk reporting and government AI surge capacity.",
+      "mechanism": "Reporting design and preparedness research",
+      "horizons": ["Long-term capacity", "Before release"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can solicit evidence from government, developers and researchers."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        },
+        {
+          "value": "none",
+          "detail": "Analyses risk and governance; does not acquire an enforcement mandate."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Staffing",
+          "detail": "Its 2025 surge-capacity analysis identifies specialist hiring and mobilisation bottlenecks. This is an attributed diagnosis, not a current headcount audit."
+        },
+        {
+          "type": "Authority",
+          "detail": "Proposed reporting duties need adoption by a competent lawmaker or organisation."
+        }
+      ],
+      "sources": ["us-surge", "eu-iaps-internal"],
+      "featured": false
+    },
+    {
+      "id": "cltr",
+      "name": "Centre for Long-Term Resilience",
+      "short": "CLTR",
+      "kind": "Actor",
+      "region": "United Kingdom",
+      "location": [-0.1, 51.5],
+      "layer": "Voluntary",
+      "type": "Policy research",
+      "jurisdiction": "UK-based policy research; no public enforcement jurisdiction",
+      "status": "Policy recommendations",
+      "date": "December 2025",
+      "description": "Examines UK influence through AISI expertise, developer relationships and international convening.",
+      "mechanism": "Policy advice on UK frontier governance",
+      "horizons": ["Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can seek information and engage policymakers."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        },
+        {
+          "value": "none",
+          "detail": "Policy analysis rather than compulsory technical inspection."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Coordination",
+          "detail": "Influence depends on relationships and information-sharing across institutions."
+        },
+        {
+          "type": "Authority",
+          "detail": "Recommended reforms do not themselves expand UK AISI powers."
+        }
+      ],
+      "sources": ["uk-cltr"],
+      "featured": false
+    },
+    {
+      "id": "internalreport",
+      "name": "Internal-use risk reporting proposal",
+      "short": "Internal-use reports",
+      "kind": "Mechanism",
+      "region": "International",
+      "location": null,
+      "layer": "Voluntary",
+      "type": "Policy proposal",
+      "jurisdiction": "International voluntary standard; no sovereign jurisdiction",
+      "status": "Proposed practice",
+      "date": "April 2026",
+      "description": "IAPS proposes reporting when materially more capable or risky models are used inside a developer. This proposal is separate from existing SB53 summaries.",
+      "mechanism": "Structured assessment of autonomous behaviour and insider risks",
+      "horizons": ["Before release", "Ongoing oversight"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Would collect internal-use evidence if adopted."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        },
+        {
+          "value": "none",
+          "detail": "Helps reviewers reason about internal-use risk; not independent investigatory authority."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "A research proposal alone cannot compel reporting."
+        },
+        {
+          "type": "Access",
+          "detail": "Internal systems and usage can be invisible to external evaluators."
+        }
+      ],
+      "sources": ["eu-iaps-internal"],
+      "featured": false
+    },
+    {
+      "id": "surge",
+      "name": "AI surge-capacity proposals",
+      "short": "AI surge capacity",
+      "kind": "Mechanism",
+      "region": "United States",
+      "location": [-77, 38.9],
+      "layer": "Institutional",
+      "type": "Policy proposal",
+      "jurisdiction": "US-based research; proposals may inform other jurisdictions",
+      "status": "Proposed; not a standing universal corps",
+      "date": "October 2025",
+      "description": "Prearranged expert support could help government respond when specialist AI capacity is urgently needed.",
+      "mechanism": "Proposed surge contracts and reserve expertise",
+      "horizons": ["Immediate response", "Long-term capacity"],
+      "power": "Evidence & influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Proposed arrangements require participating institutions and experts."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        },
+        {
+          "value": "none",
+          "detail": "Additional experts could support investigations under the host authority’s remit."
+        },
+        {
+          "value": "none",
+          "detail": "No compulsory authority is created by this research or voluntary mechanism."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Staffing",
+          "detail": "Extra people must be recruited, cleared and available; a proposal is not operational readiness."
+        },
+        {
+          "type": "Access",
+          "detail": "Experts still need relevant evidence and secure access."
+        },
+        {
+          "type": "Authority",
+          "detail": "A reserve corps would not itself create missing legal powers."
+        }
+      ],
+      "sources": ["us-surge"],
+      "featured": false
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "short": "Mistral",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [2.35, 48.86],
+      "layer": "Corporate",
+      "type": "Frontier lab",
+      "jurisdiction": "France / European Union; applicable destination-market laws",
+      "status": "Operational",
+      "date": "2026-06-11",
+      "description": "French model developer combining hosted products with downloadable model releases.",
+      "mechanism": "Published usage restrictions, reporting and account enforcement for hosted products; moderation and configurable guardrail tools.",
+      "horizons": ["Immediate response", "Before release", "Ongoing oversight"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "internal",
+          "detail": "Can request internal information and receive reports about its products."
+        },
+        {
+          "value": "none",
+          "detail": "No sovereign power to compel disclosure by outside organizations."
+        },
+        {
+          "value": "internal",
+          "detail": "Can review its own models and hosted-product evidence within its access."
+        },
+        {
+          "value": "internal",
+          "detail": "Can change its own services and suspend accounts under applicable terms."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Corporate enforcement is not regulatory authority over other developers."
+        },
+        {
+          "type": "Access",
+          "detail": "Its usage policy expressly excludes open-source models and customer- or partner-hosted deployments; controls depend on deployment arrangements."
+        }
+      ],
+      "sources": [
+        "us-mistral-policy",
+        "us-mistral-guardrails",
+        "us-mistral-hub"
+      ],
+      "featured": false
+    },
+    {
+      "id": "hf",
+      "name": "Hugging Face",
+      "short": "Hugging Face",
+      "kind": "Actor",
+      "region": "United States",
+      "location": [-74.01, 40.71],
+      "layer": "Corporate",
+      "type": "Distribution platform",
+      "jurisdiction": "US company with global platform; applicable local laws and platform terms",
+      "status": "Operational",
+      "date": "2025-04-10",
+      "description": "Repository and distribution platform for models, datasets and applications, including releases from Mistral and Meta.",
+      "mechanism": "Content reports and review, repository gating, removal or disabling, and account suspension under platform policy.",
+      "horizons": ["Immediate response", "Before release", "Ongoing oversight"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can request cooperation or modifications from repository owners."
+        },
+        {
+          "value": "none",
+          "detail": "Platform terms do not confer public subpoena authority."
+        },
+        {
+          "value": "conditional",
+          "detail": "Can review hosted content and available platform evidence; complete model forensics may require further access."
+        },
+        {
+          "value": "internal",
+          "detail": "Can remove or disable content it hosts and suspend accounts under its policy."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "Already-downloaded weights exist on independent systems; repository removal does not recall those copies (architectural inference from download documentation)."
+        },
+        {
+          "type": "Authority",
+          "detail": "Control over a hosted repository does not confer authority over every downstream deployment."
+        }
+      ],
+      "sources": [
+        "us-hf-policy",
+        "us-hf-download",
+        "us-mistral-hub",
+        "us-meta-hub"
+      ],
+      "featured": false
+    },
+    {
+      "id": "anpd",
+      "name": "Brazil National Data Protection Agency",
+      "short": "ANPD",
+      "kind": "Actor",
+      "region": "Latin America",
+      "location": [-47.88, -15.8],
+      "layer": "Legal",
+      "type": "Regulator",
+      "jurisdiction": "Brazil; personal-data processing within LGPD scope",
+      "status": "Operating; existing data-protection powers",
+      "date": "2026-09-14",
+      "description": "ANPD applies personal-data law to AI training and use. Its existing privacy powers include obtaining records, inspecting systems and pursuing compliance or sanctions. This card does not treat Brazil's proposed general AI legislation as enacted.",
+      "mechanism": "LGPD and ANPD inspection/sanctions procedure",
+      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "May request relevant personal-data processing information."
+        },
+        {
+          "value": "binding",
+          "detail": "Regulated parties must supply documents/data and a knowledgeable representative under article 5."
+        },
+        {
+          "value": "binding",
+          "detail": "May access relevant systems, equipment and technical information and conduct or require audits, within privacy jurisdiction."
+        },
+        {
+          "value": "binding",
+          "detail": "Can pursue compliance measures and LGPD sanctions through applicable procedures."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "A privacy violation provides a legal route; dangerous capabilities alone do not establish LGPD jurisdiction."
+        },
+        {
+          "type": "Expertise",
+          "detail": "Statutory system access does not establish sufficient frontier-evaluation expertise; staffing is not assessed."
+        }
+      ],
+      "sources": ["gl-anpd-law", "gl-anpd-oecd"],
+      "featured": true
+    },
+    {
+      "id": "tii",
+      "name": "Technology Innovation Institute / Falcon",
+      "short": "TII / Falcon",
+      "kind": "Actor",
+      "region": "Middle East",
+      "location": [54.61, 24.43],
+      "layer": "Corporate",
+      "type": "Public model developer",
+      "jurisdiction": "United Arab Emirates; TII's own research, releases and systems",
+      "status": "Operating",
+      "date": "2026-09-14",
+      "description": "TII develops Falcon models and supports open-model collaboration through the Falcon Foundation. It is the applied-research pillar of Abu Dhabi's ATRC. The corporate layer here describes developer control, not private ownership.",
+      "mechanism": "Internal research/release governance and open-model ecosystem",
+      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "power": "Operational control",
+      "powers": [
+        {
+          "value": "internal",
+          "detail": "Institutional management can obtain internal development information."
+        },
+        {
+          "value": "none",
+          "detail": "No general power to compel information from external actors."
+        },
+        {
+          "value": "internal",
+          "detail": "Can technically examine its own models and research systems."
+        },
+        {
+          "value": "internal",
+          "detail": "Can change its own releases and systems; distributed copies are outside direct operational control."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Access",
+          "detail": "External investigation requires artifacts, cooperation or an applicable legal route."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Open distribution separates developer control from downstream deployment. The network edge is analytical, not a membership claim."
+        }
+      ],
+      "sources": ["gl-tii"],
+      "featured": true
+    },
+    {
+      "id": "sdaia",
+      "name": "Saudi Data and Artificial Intelligence Authority",
+      "short": "SDAIA",
+      "kind": "Actor",
+      "region": "Middle East",
+      "location": [46.68, 24.71],
+      "layer": "Legal",
+      "type": "Regulator and policy body",
+      "jurisdiction": "Saudi Arabia; binding powers below concern personal-data law, including in-scope overseas processing",
+      "status": "Operating; separate law and ethics roles",
+      "date": "2026-09-14",
+      "description": "SDAIA combines data governance and AI policy. Its AI Ethics Principles guide responsible development; those principles alone do not establish coercive frontier-model powers. Binding powers below concern its personal-data oversight role and the PDPL's competent-authority procedures.",
+      "mechanism": "PDPL oversight plus separate AI Ethics Principles",
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Immediate response",
+        "Long-term capacity"
+      ],
+      "power": "Legal enforcement",
+      "powers": [
+        {
+          "value": "binding",
+          "detail": "PDPL article 30 permits necessary controller documents and information."
+        },
+        {
+          "value": "conditional",
+          "detail": "Controllers must cooperate and make processing records available under articles 30–31; limited to PDPL scope."
+        },
+        {
+          "value": "conditional",
+          "detail": "Designated personnel inspect PDPL violations under article 37; this is not unrestricted frontier-model investigation."
+        },
+        {
+          "value": "conditional",
+          "detail": "PDPL committees can issue warnings/fines; cooperation and compliance obligations apply. The ethics principles alone create no general model-remedy order."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "Personal-data authority and AI ethical expectations have different legal bases; do not generalize one into universal frontier oversight."
+        },
+        {
+          "type": "Coordination",
+          "detail": "Technical inspections, administrative committees and criminal prosecution have different roles."
+        }
+      ],
+      "sources": ["gl-sdaia-pdpl", "gl-sdaia-principles", "gl-sdaia-unesco"],
+      "featured": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "report",
+      "title": "International AI Safety Report 2026 — policymaker summary",
+      "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/ai-safety-report-2026-extended-summary-for-policymakers.pdf",
+      "kind": "Scientific assessment",
+      "note": "Risks, evaluation limits and governance challenges; scientific evidence rather than a policy prescription.",
+      "supplied": true
+    },
+    {
+      "id": "eu-omnibus",
+      "title": "AI Omnibus enters into force",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
+      "kind": "Official update",
+      "note": "Effective 27 July 2026; updates high-risk system deadlines."
+    },
+    {
+      "id": "eu-omnibus-law",
+      "title": "Regulation (EU) 2026/1744",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32026R1744",
+      "kind": "Primary law",
+      "note": "Digital Omnibus on AI; published 24 July 2026."
+    },
+    {
+      "id": "eu-gpai-timeline",
+      "title": "Guidelines for providers of general-purpose AI models",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers",
+      "kind": "Official guidance",
+      "note": "GPAI duties from August 2025; Commission enforcement from August 2026; legacy-model transition."
+    },
+    {
+      "id": "eu-art91",
+      "title": "AI Act Article 91: Documentation and information",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-91",
+      "kind": "Primary law",
+      "note": "Commission information requests and providers' duty to respond."
+    },
+    {
+      "id": "eu-art92",
+      "title": "AI Act Article 92: Evaluations",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-92",
+      "kind": "Primary law",
+      "note": "Technical evaluations, independent experts and compulsory model access."
+    },
+    {
+      "id": "eu-art93",
+      "title": "AI Act Article 93: Measures",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-93",
+      "kind": "Primary law",
+      "note": "Mitigation, market restriction, withdrawal, recall and binding commitments."
+    },
+    {
+      "id": "eu-art101",
+      "title": "AI Act Article 101: GPAI fines",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-101",
+      "kind": "Primary law",
+      "note": "Fines up to EUR15m or 3% worldwide annual turnover, whichever higher."
+    },
+    {
+      "id": "eu-art55",
+      "title": "AI Act Article 55: Systemic-risk GPAI obligations",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-55",
+      "kind": "Primary law",
+      "note": "Evaluation, risk mitigation, serious-incident reporting and cybersecurity."
+    },
+    {
+      "id": "eu-art51",
+      "title": "AI Act Article 51: Systemic-risk classification",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-51",
+      "kind": "Primary law",
+      "note": "High-impact capability assessment and the presumption above 10^25 training FLOP."
+    },
+    {
+      "id": "eu-code",
+      "title": "General-Purpose AI Code of Practice",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+      "kind": "Official guidance",
+      "note": "Voluntary method to demonstrate compliance with binding law; published July 2025."
+    },
+    {
+      "id": "eu-panel",
+      "title": "AI Act enforcement gets independent expert support",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support",
+      "kind": "Official update",
+      "note": "Scientific Panel and Advisory Forum appointed 1 June 2026."
+    },
+    {
+      "id": "eu-governance",
+      "title": "Navigating the AI Act",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act",
+      "kind": "Official guidance",
+      "note": "Explains allocation of Commission, national and advisory responsibilities."
+    },
+    {
+      "id": "eu-national",
+      "title": "EU rules on governance start to apply",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/eu-rules-governance-start-apply",
+      "kind": "Official update",
+      "note": "Member states designate authorities; system-level investigation and enforcement."
+    },
+    {
+      "id": "eu-art79",
+      "title": "AI Act Article 79: Systems presenting a risk",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-79",
+      "kind": "Primary law",
+      "note": "National corrective measures and cross-border notification procedures."
+    },
+    {
+      "id": "eu-internal",
+      "title": "General-purpose AI models: questions and answers",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/general-purpose-ai-models-ai-act-questions-answers",
+      "kind": "Official guidance",
+      "note": "Internal deployment and premarket research require separate scope analysis."
+    },
+    {
+      "id": "eu-capacity",
+      "title": "AI Act: implementation and governance",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "kind": "Official update",
+      "note": "Describes existing powers and a planned expansion of evaluation capacity for 2027."
+    },
+    {
+      "id": "eu-inesia",
+      "title": "France establishes INESIA",
+      "url": "https://www.economie.gouv.fr/actualites/la-france-se-dote-dun-institut-national-pour-levaluation-et-la-securite-de-lintelligence",
+      "kind": "Official update",
+      "note": "Network of ANSSI, Inria, LNE and PEReN; no new legal entity."
+    },
+    {
+      "id": "eu-inesia-roadmap",
+      "title": "INESIA's 2026–2027 roadmap",
+      "url": "https://www.entreprises.gouv.fr/espace-presse/linstitut-national-pour-levaluation-et-la-securite-de-lia-adopte-sa-feuille-de-route",
+      "kind": "Official update",
+      "note": "National advanced-system evaluation capability and research priorities."
+    },
+    {
+      "id": "uk-aisi-status",
+      "title": "Ministerial answer on AISI vulnerabilities",
+      "url": "https://questions-statements.parliament.uk/written-questions/detail/2026-08-28/21384",
+      "kind": "Primary official statement",
+      "note": "Answered 7 September 2026: AISI is a research institute, not a regulator."
+    },
+    {
+      "id": "uk-aisi-remit",
+      "title": "Introducing the AI Safety Institute",
+      "url": "https://www.gov.uk/government/publications/ai-safety-institute-overview/introducing-the-ai-safety-institute",
+      "kind": "Official policy",
+      "note": "Foundational remit and voluntary information sharing; institute now called AI Security Institute."
+    },
+    {
+      "id": "uk-aisi-incident",
+      "title": "AISI incident report: unsanctioned agent behaviour",
+      "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+      "kind": "Primary incident report",
+      "note": "July 2026 testing incident; internet deliberately enabled. METR review was being scoped."
+    },
+    {
+      "id": "uk-september",
+      "title": "Artificial intelligence update, 7 September 2026",
+      "url": "https://questions-statements.parliament.uk/written-statements/detail/2026-09-07/hcws314",
+      "kind": "Primary official statement",
+      "note": "Government incident response, NCSC support and announced agentic-response investment."
+    },
+    {
+      "id": "uk-ncsc",
+      "title": "NCSC incident management",
+      "url": "https://www.ncsc.gov.uk/section/about-ncsc/incident-management",
+      "kind": "Official guidance",
+      "note": "Cyber response support; non-regulatory role and consent-based regulator information sharing."
+    },
+    {
+      "id": "uk-ico",
+      "title": "ICO announces investigation into Grok",
+      "url": "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/02/ico-announces-investigation-into-grok",
+      "kind": "Primary enforcement update",
+      "note": "Data-protection inquiry and available information, assessment and enforcement notices."
+    },
+    {
+      "id": "uk-ico-audit",
+      "title": "ICO guide to AI audits",
+      "url": "https://ico.org.uk/media2/migrated/4022651/a-guide-to-ai-audits.pdf",
+      "kind": "Official guidance",
+      "note": "Assessment notices can require access for data-protection compliance audits."
+    },
+    {
+      "id": "uk-ofcom-powers",
+      "title": "Ofcom online-safety regulatory guidance",
+      "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/online-safety-regulatory-documents",
+      "kind": "Official guidance",
+      "note": "Current information-gathering and enforcement guidance."
+    },
+    {
+      "id": "uk-ofcom-scope",
+      "title": "Ofcom investigation into X and OSA scope",
+      "url": "https://www.ofcom.org.uk/online-safety/illegal-and-harmful-content/investigation-into-x-and-scope-of-the-online-safety-act",
+      "kind": "Primary enforcement update",
+      "note": "Concrete enforcement example and limits of chatbot coverage."
+    },
+    {
+      "id": "uk-chatbot-expansion",
+      "title": "Crime and Policing Act 2026 factsheet",
+      "url": "https://www.gov.uk/government/publications/crime-and-policing-act-2026-factsheets/crime-and-policing-act-overarching-factsheet",
+      "kind": "Official update",
+      "note": "Power to make regulations expanding chatbot coverage; enabling powers are not operative duties."
+    },
+    {
+      "id": "uk-cma",
+      "title": "CMA direct consumer enforcement guidance",
+      "url": "https://www.gov.uk/government/publications/direct-consumer-enforcement-guidance-cma200",
+      "kind": "Official guidance",
+      "note": "Investigations, remedies, undertakings and penalties under the DMCC Act."
+    },
+    {
+      "id": "uk-cma-agents",
+      "title": "Complying with consumer law when using AI agents",
+      "url": "https://www.gov.uk/government/publications/complying-with-consumer-law-when-using-ai-agents/complying-with-consumer-law-when-using-ai-agents",
+      "kind": "Official guidance",
+      "note": "Businesses remain responsible for AI-agent conduct; consumer-law remedies apply."
+    },
+    {
+      "id": "uk-drcf",
+      "title": "DRCF terms of reference",
+      "url": "https://www.gov.uk/government/publications/drcf-terms-of-reference/terms-of-reference",
+      "kind": "Official policy",
+      "note": "Voluntary coordination forum; members retain individual powers and accountability."
+    },
+    {
+      "id": "uk-lawfare",
+      "title": "When Reporting an AI Security Incident Is Not Mandatory",
+      "url": "https://www.lawfaremedia.org/article/when-reporting-an-ai-security-incident-is-not-mandatory",
+      "kind": "Policy analysis",
+      "note": "Argues incident triggers and report detail can leave governments poorly informed; coverage remains fact-dependent.",
+      "supplied": true
+    },
+    {
+      "id": "uk-cltr",
+      "title": "Securing a seat at the table: UK frontier AI governance",
+      "url": "https://www.longtermresilience.org/reports/advancing-the-uks-global-leadership-in-frontier-ai-governance/",
+      "kind": "Policy analysis",
+      "note": "Proposes stronger international coordination and developer information sharing; proposals are not existing powers.",
+      "supplied": true
+    },
+    {
+      "id": "eu-iaps-internal",
+      "title": "Risk Reporting for Developers' Internal AI Model Use",
+      "url": "https://www.iaps.ai/research/risk-reporting-for-developers-internal-ai-model-use",
+      "kind": "Research proposal",
+      "note": "Proposes harmonised internal-use reporting around autonomous misbehaviour, insider threats and safeguards.",
+      "supplied": true
+    },
+    {
+      "id": "gl-cac",
+      "title": "China: Interim Measures for Generative AI Services",
+      "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+      "kind": "Primary law",
+      "note": "Articles 2, 14, 17, 19 and 21: scope, reporting, inspection and remedies."
+    },
+    {
+      "id": "gl-framework",
+      "title": "China: AI Safety Governance Framework 2.0",
+      "url": "https://www.cac.gov.cn/rootimages/uploadimg/1759653474200838/1759653474200838.pdf",
+      "kind": "Official framework",
+      "note": "TC260/CNCERT guidance; distinguish it from binding public-service rules."
+    },
+    {
+      "id": "gl-carnegie",
+      "title": "How China Views AI Risks and What to Do About Them",
+      "url": "https://carnegieendowment.org/research/2025/10/how-china-views-ai-risks-and-what-to-do-about-them",
+      "kind": "Analysis",
+      "note": "Supplied analysis, October 2025; interpretation of China's standards and risk agenda.",
+      "supplied": true
+    },
+    {
+      "id": "gl-jaisi",
+      "title": "Japan AI Safety Institute: functions",
+      "url": "https://aisi.go.jp/index.html",
+      "kind": "Official institution",
+      "note": "Evaluation methods, government support and international cooperation."
+    },
+    {
+      "id": "gl-jguide",
+      "title": "Japan: Guide to Evaluation Perspectives on AI Safety",
+      "url": "https://aisi.go.jp/output/output_framework/guide_to_evaluation_perspective_on_ai_safety/",
+      "kind": "Official guidance",
+      "note": "July 2026 revision expands evaluation perspectives for AI agents."
+    },
+    {
+      "id": "gl-singapore",
+      "title": "Singapore: Trust Tech and AI Safety Institute",
+      "url": "https://www.imda.gov.sg/about-imda/emerging-technologies-and-research/trust-tech",
+      "kind": "Official institution",
+      "note": "DTC at NTU; IMDA/NRF support; AISI research and evaluation remit."
+    },
+    {
+      "id": "gl-singapore-date",
+      "title": "Digital Trust Centre designated Singapore AISI",
+      "url": "https://www.imda.gov.sg/-/media/imda/files/news-and-events/media-room/media-releases/2024/05/imda-factsheet--digital-trust-centre-designated-as-spore-ai-safety-institute-22-may-2024.pdf",
+      "kind": "Official announcement",
+      "note": "Confirms designation on 22 May 2024."
+    },
+    {
+      "id": "gl-kraisi",
+      "title": "Korea AI Safety Institute",
+      "url": "https://www.aisi.re.kr/kor",
+      "kind": "Official institution",
+      "note": "Safety policy, technical research, evaluation and cooperation."
+    },
+    {
+      "id": "gl-korea-law",
+      "title": "Korea AI Basic Act, Article 40",
+      "url": "https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031809539",
+      "kind": "Primary law",
+      "note": "Relevant document demands, on-site inspections and correction orders."
+    },
+    {
+      "id": "gl-korea-transition",
+      "title": "MSIT: AI Basic Act comes into force",
+      "url": "https://www.msit.go.kr/eng/bbs/view.do?bbsSeqNo=42&mId=4&mPid=2&nttSeqNo=1214&sCode=eng",
+      "kind": "Official implementation",
+      "note": "January 2026 commencement; safety-duty criteria and at least one-year enforcement grace with serious-harm exceptions."
+    },
+    {
+      "id": "gl-canada",
+      "title": "Canadian Artificial Intelligence Safety Institute",
+      "url": "https://ised-isde.canada.ca/site/ised/en/canadian-artificial-intelligence-safety-institute",
+      "kind": "Official institution",
+      "note": "ISED/NRC/CIFAR structure and research remit; updated July 2026."
+    },
+    {
+      "id": "gl-canada-korea",
+      "title": "Canada–Korea AI safety cooperation MOU",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/07/canada-and-republic-of-korea-sign-memorandum-of-understanding-to-advance-ai-innovation-and-safety.html",
+      "kind": "Official announcement",
+      "note": "July 2026 cooperation on frontier evaluation and measurement."
+    },
+    {
+      "id": "gl-australia",
+      "title": "Australia's AI Safety Institute",
+      "url": "https://www.industry.gov.au/science-technology-and-innovation/technology/artificial-intelligence/ai-safety-institute",
+      "kind": "Official institution",
+      "note": "Technical institute supports existing regulators; ASD/CSIRO partnerships and lab MOUs."
+    },
+    {
+      "id": "gl-network",
+      "title": "International AI measurement network: renaming and coordination",
+      "url": "https://www.industry.gov.au/news/australia-meets-global-partners-ai-evaluation-and-measurement",
+      "kind": "Official announcement",
+      "note": "December 2025 San Diego meeting: NAAIMES name, UK coordinating role."
+    },
+    {
+      "id": "gl-network-founding",
+      "title": "International Network of AI Safety Institutes: mission",
+      "url": "https://www.nist.gov/system/files/documents/2024/11/20/Mission%20Statement%20-%20International%20Network%20of%20AISIs.pdf",
+      "kind": "Official framework",
+      "note": "Founding 2024 membership and scientific cooperation remit."
+    },
+    {
+      "id": "gl-india",
+      "title": "IndiaAI Safe & Trusted AI: July 2026 update",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2289946&lang=2&reg=48",
+      "kind": "Official announcement",
+      "note": "Parliamentary-response release confirms AISI establishment and hub-and-spoke model."
+    },
+    {
+      "id": "gl-oecd",
+      "title": "Hiroshima AI Process Reporting Framework",
+      "url": "https://oecd.ai/en/transparency/overview",
+      "kind": "Official framework",
+      "note": "Voluntary developer self-reporting against the G7 advanced-AI code."
+    },
+    {
+      "id": "gl-oecd-v2",
+      "title": "OECD launches reporting framework version 2.0",
+      "url": "https://www.oecd.org/en/about/news/press-releases/2026/05/oecd-launches-streamlined-hiroshima-ai-process-reporting-framework-to-help-small-and-medium-sized-enterprises-participate.html",
+      "kind": "Official announcement",
+      "note": "28 May 2026 update remains voluntary."
+    },
+    {
+      "id": "gl-undialogue",
+      "title": "UN Global Dialogue on AI Governance",
+      "url": "https://www.un.org/global-dialogue-ai-governance/en/faq",
+      "kind": "Official institution",
+      "note": "First Dialogue held 6–7 July 2026. Search-index accessible; direct retrieval returned 403."
+    },
+    {
+      "id": "gl-undialogue-event",
+      "title": "UN: First Global Dialogue on AI Governance",
+      "url": "https://ukraine.un.org/en/318996-new-global-dialogue-urges-shape-ai-around-people-rights-and-trust",
+      "kind": "Official announcement",
+      "note": "July 2026 event and inclusive international cooperation."
+    },
+    {
+      "id": "gl-unpanel",
+      "title": "UN Scientific Panel on AI: preliminary report",
+      "url": "https://www.un.org/independent-international-scientific-panel-ai/en/preliminary-report",
+      "kind": "Official institution",
+      "note": "2026 scientific assessment informs the Dialogue. Search-index accessible; direct retrieval returned 403."
+    },
+    {
+      "id": "gl-unpanel-start",
+      "title": "UN Scientific Panel: first meeting",
+      "url": "https://dprk.un.org/en/311097-secretary-general-remarks-first-meeting-independent-international-scientific-panel-ai",
+      "kind": "Official announcement",
+      "note": "March 2026 scientific and advisory remit."
+    },
+    {
+      "id": "gl-au",
+      "title": "African Union Continental AI Strategy",
+      "url": "https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy",
+      "kind": "Official strategy",
+      "note": "Adopted July 2024; national implementation, inclusive development and cooperation."
+    },
+    {
+      "id": "gl-au-full",
+      "title": "Continental AI Strategy: full text",
+      "url": "https://au.int/sites/default/files/documents/44004-doc-EN-_Continental_AI_Strategy_July_2024.pdf",
+      "kind": "Official strategy",
+      "note": "Separates existing-law implementation, regulatory gaps and capability development."
+    },
+    {
+      "id": "gl-unesco",
+      "title": "UNESCO AI Ethics and Governance Observatory",
+      "url": "https://www.unesco.org/ethics-ai/en?hub=248378",
+      "kind": "Official institution",
+      "note": "Recommendation and national readiness-assessment tools."
+    },
+    {
+      "id": "gl-unesco-ram",
+      "title": "UNESCO Readiness Assessment Methodology",
+      "url": "https://www.unesco.org/ethics-ai/en/node/321",
+      "kind": "Official framework",
+      "note": "Assesses legal, social, scientific, economic and technical/infrastructure preparedness."
+    },
+    {
+      "id": "gl-deepseek",
+      "title": "DeepSeek Transparency Center",
+      "url": "https://www.deepseek.com/en/transparency/",
+      "kind": "Developer documentation",
+      "note": "Published model cards and technical reports; hosted services and security reporting."
+    },
+    {
+      "id": "gl-deepseek-model",
+      "title": "DeepSeek: model mechanism and training methods",
+      "url": "https://cdn.deepseek.com/policies/en-US/model-algorithm-disclosure.html",
+      "kind": "Developer documentation",
+      "note": "Identifies Hangzhou DeepSeek and its model development/open-model approach."
+    },
+    {
+      "id": "gl-qwen",
+      "title": "Qwen official documentation",
+      "url": "https://qwen.readthedocs.io/en/latest/",
+      "kind": "Developer documentation",
+      "note": "Identifies Alibaba's Qwen team; models, hosted chat and local deployment."
+    },
+    {
+      "id": "us-caisi",
+      "title": "NIST: Center for AI Standards and Innovation",
+      "url": "https://www.nist.gov/caisi",
+      "kind": "Primary source",
+      "note": "Current mandate: voluntary standards, agreements and national-security evaluations."
+    },
+    {
+      "id": "us-agreements",
+      "title": "CAISI frontier evaluation agreements, 5 May 2026",
+      "url": "https://content.govdelivery.com/accounts/USNIST/bulletins/415cadf",
+      "kind": "Primary source",
+      "note": "NIST announcement: Google DeepMind, Microsoft and xAI join existing OpenAI and Anthropic collaborations."
+    },
+    {
+      "id": "us-joint",
+      "title": "CAISI works with OpenAI and Anthropic",
+      "url": "https://www.nist.gov/news-events/news/2025/09/caisi-works-openai-and-anthropic-promote-secure-ai-innovation",
+      "kind": "Primary source",
+      "note": "September 2025 account of evaluations with UK AISI."
+    },
+    {
+      "id": "us-eo14409",
+      "title": "Executive Order 14409: Advanced AI Innovation and Security",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+      "kind": "Primary law",
+      "note": "2 June 2026. Voluntary frontier-model access; expressly does not create mandatory model licensing."
+    },
+    {
+      "id": "us-gold",
+      "title": "GOLD EAGLE cybersecurity clearinghouse launch",
+      "url": "https://www.whitehouse.gov/releases/2026/07/white-house-launches-gold-eagle-initiative-for-unprecedented-cybersecurity-vulnerability-coordination/",
+      "kind": "Primary source",
+      "note": "July 2026 launch; coordination with industry, not universal reporting authority."
+    },
+    {
+      "id": "us-sb53",
+      "title": "California SB53: chaptered statute",
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53",
+      "kind": "Primary law",
+      "note": "Chapter 138, signed 29 September 2025; Business and Professions Code §§22757.10–16."
+    },
+    {
+      "id": "us-ny",
+      "title": "New York RAISE chapter amendments: S8828",
+      "url": "https://www.nysenate.gov/legislation/bills/2025/S8828",
+      "kind": "Primary law",
+      "note": "Signed 27 March 2026. Main requirements take effect 1 January 2027, not in force at map cutoff."
+    },
+    {
+      "id": "us-ftc-cid",
+      "title": "FTC compulsory process for AI investigations",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2023/11/ftc-authorizes-compulsory-process-ai-related-products-services",
+      "kind": "Primary source",
+      "note": "November 2023 resolution effective ten years; consumer-protection and competition jurisdiction."
+    },
+    {
+      "id": "us-ftc-powers",
+      "title": "FTC investigative and enforcement authority",
+      "url": "https://www.ftc.gov/about-ftc/mission/enforcement-authority",
+      "kind": "Primary source",
+      "note": "Official overview revised July 2025; legal process and remedy limitations."
+    },
+    {
+      "id": "us-fbi",
+      "title": "FBI Cyber: investigations and response",
+      "url": "https://www.fbi.gov/investigate/cyber",
+      "kind": "Primary source",
+      "note": "Cybercrime reporting, technical response and investigative roles."
+    },
+    {
+      "id": "us-gao-circia",
+      "title": "GAO: Cybersecurity reporting requirements",
+      "url": "https://www.gao.gov/assets/gao-26-108606.pdf",
+      "kind": "Primary source",
+      "note": "As of July 2026, CISA planned its CIRCIA final rule for September. An effective final rule was not verified for this map."
+    },
+    {
+      "id": "us-circia-agenda",
+      "title": "CIRCIA regulatory agenda",
+      "url": "https://www.reginfo.gov/public/do/eAgendaViewRule?RIN=1670-AA04&operation=OPERATION_PRINT_RULE&pubId=202510",
+      "kind": "Primary source",
+      "note": "Projected final-rule month is not an effective-date finding."
+    },
+    {
+      "id": "us-openai",
+      "title": "OpenAI Frontier Governance Framework",
+      "url": "https://openai.com/index/openai-frontier-governance-framework/",
+      "kind": "Primary source",
+      "note": "Published 28 May 2026; describes California/EU compliance alongside Preparedness Framework."
+    },
+    {
+      "id": "us-openai-update",
+      "title": "OpenAI: pacing development at cyber-critical capabilities",
+      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+      "kind": "Primary source",
+      "note": "18 August 2026 company account of operational changes and framework review."
+    },
+    {
+      "id": "us-anthropic",
+      "title": "Anthropic Responsible Scaling Policy v3",
+      "url": "https://www.anthropic.com/news/responsible-scaling-policy-v3",
+      "kind": "Primary source",
+      "note": "Effective 24 February 2026; roadmap, risk reports and external review. Supersedes older policy descriptions."
+    },
+    {
+      "id": "us-deepmind",
+      "title": "Google DeepMind frontier safety",
+      "url": "https://deepmind.google/frontier-safety/",
+      "kind": "Primary source",
+      "note": "Current page lists FSF v3.1, 17 April 2026."
+    },
+    {
+      "id": "us-meta",
+      "title": "Meta: Advanced AI Scaling Framework",
+      "url": "https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/",
+      "kind": "Primary source",
+      "note": "8 April 2026; supersedes original Frontier AI Framework; covers open, API and closed deployment."
+    },
+    {
+      "id": "us-xai",
+      "title": "xAI Frontier Artificial Intelligence Framework",
+      "url": "https://media.x.ai/v1/website/xai-frontier-artificial-intelligence-framework-30-june-2026-99c40684.pdf",
+      "kind": "Primary source",
+      "note": "Effective 30 June 2026, publicly linked from x.ai/safety. Policy entity is xAI LLC."
+    },
+    {
+      "id": "us-xai-brand",
+      "title": "Safety at SpaceXAI",
+      "url": "https://x.ai/safety",
+      "kind": "Primary source",
+      "note": "Current public branding; links the xAI framework and model cards."
+    },
+    {
+      "id": "us-metr",
+      "title": "METR: research and partnerships",
+      "url": "https://metr.org/",
+      "kind": "Primary source",
+      "note": "Independent nonprofit; partnerships, technical assistance and model evaluations."
+    },
+    {
+      "id": "us-metr-pilot",
+      "title": "METR Frontier Risk Report, February–March 2026",
+      "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
+      "kind": "Primary source",
+      "note": "Published 19 May 2026; describes privileged access, redaction and silent-exit limits."
+    },
+    {
+      "id": "us-metr-investigations",
+      "title": "METR: investigating AI propensities after incidents",
+      "url": "https://metr.org/blog/2026-07-28-investigating-ai-propensities-after-incidents/",
+      "kind": "Primary source",
+      "note": "Published July 2026, updated 5 September 2026; technical investigation methodology and limitations."
+    },
+    {
+      "id": "us-metr-common",
+      "title": "METR: Common Elements of Frontier AI Safety Policies",
+      "url": "https://metr.org/common-elements",
+      "kind": "Research",
+      "note": "December 2025 comparison. Several lab policies changed in 2026; use current primary policies for present commitments.",
+      "supplied": true
+    },
+    {
+      "id": "us-aws",
+      "title": "AWS Customer Agreement",
+      "url": "https://aws.amazon.com/agreement/",
+      "kind": "Contract",
+      "note": "Section 6 permits suspension for specified security risks. Example only: negotiated terms and other providers can differ."
+    },
+    {
+      "id": "us-bis",
+      "title": "BIS: EAR §748",
+      "url": "https://www.bis.gov/regulations/ear/748",
+      "kind": "Primary law",
+      "note": "Current license-application requirements for covered exports. Export controls are not a universal model-release license."
+    },
+    {
+      "id": "us-diffusion",
+      "title": "Commerce announces AI Diffusion Rule rescission",
+      "url": "https://media.bis.gov/press-release/department-commerce-announces-rescission-biden-era-artificial-intelligence-diffusion-rule-strengthens",
+      "kind": "Primary source",
+      "note": "13 May 2025 nonenforcement/rescission announcement; do not depict old global country tiers as current."
+    },
+    {
+      "id": "us-eo14365",
+      "title": "Executive Order 14365: National AI Policy Framework",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/",
+      "kind": "Primary law",
+      "note": "11 December 2025 directs litigation and federal-policy work; does not itself establish that a particular state law was repealed."
+    },
+    {
+      "id": "us-surge",
+      "title": "IAPS: Building AI Surge Capacity",
+      "url": "https://www.iaps.ai/research/building-ai-surge-capacity",
+      "kind": "Research",
+      "note": "16 October 2025 diagnosis of staffing, expertise, hiring and clearance gaps. AI reserve corps and surge contracts are recommendations.",
+      "supplied": true
+    },
+    {
+      "id": "us-leicht",
+      "title": "Anton Leicht: The Next Three Phases of AI Politics",
+      "url": "https://writing.antonleicht.me/p/the-next-three-phases-of-ai-politics",
+      "kind": "Opinion",
+      "note": "8 January 2026 political forecast: pre-midterm deadlock, a later legislative window, then primary-election pressures. Not a statutory timetable.",
+      "supplied": true
+    },
+    {
+      "id": "us-brundage",
+      "title": "Miles Brundage: We’re in Triage Mode for AI Policy",
+      "url": "https://milesbrundage.substack.com/p/were-in-triage-mode-for-ai-policy",
+      "kind": "Opinion",
+      "note": "22 February 2026 argument for urgent prioritization and auditing capacity. Timelines and triage framing are the author’s judgments.",
+      "supplied": true
+    },
+    {
+      "id": "us-ssrn",
+      "title": "Seán Ó hÉigeartaigh: The Most Dangerous Fiction",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5278644",
+      "kind": "Research",
+      "note": "Abstract only read. Posted 3 June 2025; revised 14 April 2026. Critiques AGI-race narratives and their implications for safety cooperation. Full PDF was not retrieved.",
+      "supplied": true
+    },
+    {
+      "id": "us-azure-partner",
+      "title": "Microsoft–OpenAI partnership update",
+      "url": "https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/",
+      "kind": "Primary source",
+      "note": "27 April 2026: Microsoft remains primary cloud partner; OpenAI can serve products through other clouds."
+    },
+    {
+      "id": "us-aws-partner",
+      "title": "Amazon–Anthropic collaboration update",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai",
+      "kind": "Primary source",
+      "note": "April 2026: AWS remains Anthropic’s primary training and cloud provider for mission-critical workloads."
+    },
+    {
+      "id": "map-geography",
+      "title": "Natural Earth — 1:110m land geometry",
+      "url": "https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/",
+      "kind": "Geographic data",
+      "note": "Public-domain base geometry. Pins are representative anchors, not claims about jurisdiction or boundaries."
+    },
+    {
+      "id": "nist-rmf",
+      "title": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "kind": "Official voluntary framework",
+      "note": "AI RMF 1.0 and generative AI profile; framework revision underway. Voluntary guidance, not a model licence."
+    },
+    {
+      "id": "iso42001",
+      "title": "ISO/IEC 42001:2023 — AI management systems",
+      "url": "https://www.iso.org/standard/42001",
+      "kind": "International standard",
+      "note": "Management-system requirements for organisations. The public overview was reviewed; the paid full standard was not accessed."
+    },
+    {
+      "id": "us-mistral-policy",
+      "title": "Mistral AI Usage Policy",
+      "url": "https://legal.mistral.ai/terms/usage-policy/",
+      "kind": "Contract",
+      "note": "Effective 11 June 2026; accessed 14 September 2026. Covers Mistral-hosted products, with explicit exclusions for customer infrastructure, partner infrastructure and open-source models."
+    },
+    {
+      "id": "us-mistral-guardrails",
+      "title": "Mistral moderation and guardrailing documentation",
+      "url": "https://docs.mistral.ai/studio/safety-moderation",
+      "kind": "Primary source",
+      "note": "Current documentation accessed 14 September 2026. Describes moderation tools and configurable guardrails; not a complete frontier-risk governance framework."
+    },
+    {
+      "id": "us-hf-policy",
+      "title": "Hugging Face Content Policy",
+      "url": "https://huggingface.co/content-policy",
+      "kind": "Contract",
+      "note": "Current policy accessed 14 September 2026; effective 10 April 2025. Specifies repository review, gating, disabling, removal and account sanctions."
+    },
+    {
+      "id": "us-hf-download",
+      "title": "Hugging Face: downloading repository files",
+      "url": "https://huggingface.co/docs/huggingface_hub/guides/download",
+      "kind": "Primary source",
+      "note": "Current documentation verifies local downloads and repository snapshots. Inference: removing hosted content does not delete already-downloaded independent copies."
+    },
+    {
+      "id": "us-mistral-hub",
+      "title": "Mistral AI official Hugging Face organization",
+      "url": "https://huggingface.co/mistralai",
+      "kind": "Primary source",
+      "note": "Verified organization and model repositories inspected 14 September 2026."
+    },
+    {
+      "id": "us-meta-hub",
+      "title": "Meta Llama official Hugging Face organization",
+      "url": "https://huggingface.co/meta-llama",
+      "kind": "Primary source",
+      "note": "Verified Meta organization; models distributed through repositories with license and acceptable-use access conditions."
+    },
+    {
+      "id": "gl-anpd-law",
+      "title": "ANPD inspection and sanctions procedure",
+      "url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no1-2021",
+      "kind": "Primary law",
+      "note": "Resolution 1/2021, especially article 5; official page updated 2 September 2026."
+    },
+    {
+      "id": "gl-anpd-oecd",
+      "title": "ANPD discusses AI incident monitoring using OECD framework",
+      "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-debate-monitoramento-de-incidentes-de-inteligencia-artificial-em-workshop-na-universidade-de-sao-paulo",
+      "kind": "Official announcement",
+      "note": "May 2026 workshop connects OECD incident taxonomy to Brazilian oversight; cites Meta/Grok privacy cases."
+    },
+    {
+      "id": "gl-tii",
+      "title": "TII launches Falcon Foundation and open-model governance initiative",
+      "url": "https://www.tii.ae/news/uaes-technology-innovation-institute-launches-falcon-foundation-champion-open-sourcing",
+      "kind": "Developer announcement",
+      "note": "TII is ATRC's public applied-research pillar; Falcon models, open development and stakeholder governance."
+    },
+    {
+      "id": "gl-sdaia-pdpl",
+      "title": "Saudi Personal Data Protection Law",
+      "url": "https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/details/PDPL/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziPR1dzTwMgw2MDMOcTA3MjH39TE29jY0MQsz1g1Pz9L30o_ArAppiVOTr7JuuH1WQWJKhm5mXlq8fEeAS4KNfkO0eDgDZXeBe/",
+      "kind": "Primary law",
+      "note": "Articles 2, 30, 31, 36 and 37 define scope, records, cooperation, sanctions and inspection."
+    },
+    {
+      "id": "gl-sdaia-principles",
+      "title": "SDAIA AI Ethics Principles",
+      "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/ai-principles.pdf",
+      "kind": "Official framework",
+      "note": "Ethical principles and lifecycle governance; do not infer coercive powers from these principles."
+    },
+    {
+      "id": "gl-sdaia-unesco",
+      "title": "UNESCO Global Forum on the Ethics of AI 2026",
+      "url": "https://www.unesco.org/en/forum-ethics-ai",
+      "kind": "Official announcement",
+      "note": "UNESCO and Saudi Arabia, represented by SDAIA/ICAIRE, co-host 14–17 September 2026 in Riyadh."
+    }
+  ],
+  "edges": [
+    {
+      "from": "gpai",
+      "to": "office",
+      "label": "Commission enforces GPAI obligations",
+      "kind": "legal",
+      "source": "eu-art55"
+    },
+    {
+      "from": "office",
+      "to": "openai",
+      "label": "Can require relevant information from an in-scope GPAI provider under Article 91; this does not assert a particular enforcement action.",
+      "kind": "legal",
+      "source": "eu-art91"
+    },
+    {
+      "from": "office",
+      "to": "anthropic",
+      "label": "Can require measures from an in-scope provider under Article 93; this does not assert a particular enforcement action.",
+      "kind": "legal",
+      "source": "eu-art93"
+    },
+    {
+      "from": "office",
+      "to": "deepmind",
+      "label": "EU market access brings applicable GPAI obligations",
+      "kind": "legal",
+      "source": "eu-gpai-timeline"
+    },
+    {
+      "from": "office",
+      "to": "xai",
+      "label": "EU market access brings applicable GPAI obligations",
+      "kind": "legal",
+      "source": "eu-gpai-timeline"
+    },
+    {
+      "from": "office",
+      "to": "meta",
+      "label": "EU market access brings applicable GPAI obligations",
+      "kind": "legal",
+      "source": "eu-gpai-timeline"
+    },
+    {
+      "from": "gpai",
+      "to": "code",
+      "label": "Code supplies a voluntary compliance route",
+      "kind": "influence",
+      "source": "eu-art55"
+    },
+    {
+      "from": "code",
+      "to": "openai",
+      "label": "Listed Code signatory",
+      "kind": "influence",
+      "source": "eu-code"
+    },
+    {
+      "from": "code",
+      "to": "anthropic",
+      "label": "Listed Code signatory",
+      "kind": "influence",
+      "source": "eu-code"
+    },
+    {
+      "from": "code",
+      "to": "deepmind",
+      "label": "Google listed as Code signatory",
+      "kind": "influence",
+      "source": "eu-code"
+    },
+    {
+      "from": "code",
+      "to": "xai",
+      "label": "Safety and Security chapter signatory only",
+      "kind": "influence",
+      "source": "eu-code"
+    },
+    {
+      "from": "panel",
+      "to": "office",
+      "label": "Qualified risk alerts and technical advice",
+      "kind": "influence",
+      "source": "eu-panel"
+    },
+    {
+      "from": "office",
+      "to": "panel",
+      "label": "Scientific Panel can ask the Commission to obtain necessary provider information under Article 91(3).",
+      "kind": "access",
+      "source": "eu-art91"
+    },
+    {
+      "from": "board",
+      "to": "office",
+      "label": "Consulted on GPAI evaluation",
+      "kind": "influence",
+      "source": "eu-art92"
+    },
+    {
+      "from": "board",
+      "to": "national",
+      "label": "Coordinates coherent national implementation",
+      "kind": "influence",
+      "source": "eu-governance"
+    },
+    {
+      "from": "national",
+      "to": "office",
+      "label": "Coordinates system-level and model-level oversight",
+      "kind": "influence",
+      "source": "eu-governance"
+    },
+    {
+      "from": "inesia",
+      "to": "network",
+      "label": "France participates in international institute cooperation",
+      "kind": "influence",
+      "source": "eu-inesia"
+    },
+    {
+      "from": "aisi",
+      "to": "network",
+      "label": "International evaluation and scientific cooperation",
+      "kind": "influence",
+      "source": "uk-cltr"
+    },
+    {
+      "from": "aisi",
+      "to": "openai",
+      "label": "Technical evaluation through access arrangements",
+      "kind": "access",
+      "source": "uk-aisi-incident"
+    },
+    {
+      "from": "aisi",
+      "to": "anthropic",
+      "label": "Technical evaluation through access arrangements",
+      "kind": "access",
+      "source": "uk-aisi-incident"
+    },
+    {
+      "from": "aisi",
+      "to": "metr",
+      "label": "Independent incident review proposed; scope under discussion",
+      "kind": "influence",
+      "source": "uk-aisi-incident"
+    },
+    {
+      "from": "ncsc",
+      "to": "aisi",
+      "label": "Advises on evaluation security and containment",
+      "kind": "influence",
+      "source": "uk-september"
+    },
+    {
+      "from": "ncsc",
+      "to": "ico",
+      "label": "Identifiable incident sharing requires victim permission",
+      "kind": "influence",
+      "source": "uk-ncsc"
+    },
+    {
+      "from": "ico",
+      "to": "xai",
+      "label": "Data-protection investigation into Grok",
+      "kind": "legal",
+      "source": "uk-ico"
+    },
+    {
+      "from": "ofcom",
+      "to": "xai",
+      "label": "X service investigation; platform remit differs from model remit",
+      "kind": "legal",
+      "source": "uk-ofcom-scope"
+    },
+    {
+      "from": "drcf",
+      "to": "ico",
+      "label": "Voluntary regulatory coordination",
+      "kind": "influence",
+      "source": "uk-drcf"
+    },
+    {
+      "from": "drcf",
+      "to": "ofcom",
+      "label": "Voluntary regulatory coordination",
+      "kind": "influence",
+      "source": "uk-drcf"
+    },
+    {
+      "from": "drcf",
+      "to": "cma",
+      "label": "Voluntary regulatory coordination",
+      "kind": "influence",
+      "source": "uk-drcf"
+    },
+    {
+      "from": "cma",
+      "to": "cloud",
+      "label": "Consumer or competition enforcement where legally in scope",
+      "kind": "legal",
+      "source": "uk-cma"
+    },
+    {
+      "from": "aisi",
+      "to": "caisi",
+      "label": "UK-US scientific cooperation and testing links",
+      "kind": "influence",
+      "source": "uk-cltr"
+    },
+    {
+      "from": "cac",
+      "to": "deepseek",
+      "label": "Disclosure, inspection and remedies for in-scope public services",
+      "kind": "legal",
+      "source": "gl-cac"
+    },
+    {
+      "from": "cac",
+      "to": "qwen",
+      "label": "Disclosure, inspection and remedies for in-scope public services",
+      "kind": "legal",
+      "source": "gl-cac"
+    },
+    {
+      "from": "deepseek",
+      "to": "cac",
+      "label": "In-scope illegal-content/activity reporting duties",
+      "kind": "legal",
+      "source": "gl-cac"
+    },
+    {
+      "from": "qwen",
+      "to": "cac",
+      "label": "In-scope illegal-content/activity reporting duties",
+      "kind": "legal",
+      "source": "gl-cac"
+    },
+    {
+      "from": "tc260",
+      "to": "cac",
+      "label": "Standards and risk-governance input",
+      "kind": "influence",
+      "source": "gl-carnegie"
+    },
+    {
+      "from": "qwen",
+      "to": "tc260",
+      "label": "Alibaba contributed to framework development",
+      "kind": "influence",
+      "source": "gl-carnegie"
+    },
+    {
+      "from": "tc260",
+      "to": "deepseek",
+      "label": "Nonbinding model-risk guidance",
+      "kind": "influence",
+      "source": "gl-framework"
+    },
+    {
+      "from": "tc260",
+      "to": "qwen",
+      "label": "Nonbinding model-risk guidance",
+      "kind": "influence",
+      "source": "gl-framework"
+    },
+    {
+      "from": "network",
+      "to": "aisi",
+      "label": "UK institute coordinates network",
+      "kind": "influence",
+      "source": "gl-network"
+    },
+    {
+      "from": "network",
+      "to": "caisi",
+      "label": "Scientific cooperation",
+      "kind": "influence",
+      "source": "gl-network-founding"
+    },
+    {
+      "from": "network",
+      "to": "office",
+      "label": "Scientific cooperation",
+      "kind": "influence",
+      "source": "gl-network-founding"
+    },
+    {
+      "from": "network",
+      "to": "inesia",
+      "label": "French participation in scientific network",
+      "kind": "influence",
+      "source": "gl-network"
+    },
+    {
+      "from": "network",
+      "to": "jaisi",
+      "label": "Joint methods and evaluation cooperation",
+      "kind": "influence",
+      "source": "gl-network"
+    },
+    {
+      "from": "network",
+      "to": "sgaisi",
+      "label": "Joint methods and evaluation cooperation",
+      "kind": "influence",
+      "source": "gl-network"
+    },
+    {
+      "from": "network",
+      "to": "kraisi",
+      "label": "Joint methods and evaluation cooperation",
+      "kind": "influence",
+      "source": "gl-network"
+    },
+    {
+      "from": "network",
+      "to": "caaisi",
+      "label": "Joint methods and evaluation cooperation",
+      "kind": "influence",
+      "source": "gl-network"
+    },
+    {
+      "from": "network",
+      "to": "auaisi",
+      "label": "Joint methods and evaluation cooperation",
+      "kind": "influence",
+      "source": "gl-network"
+    },
+    {
+      "from": "kraisi",
+      "to": "caaisi",
+      "label": "July 2026 frontier-evaluation cooperation MOU",
+      "kind": "access",
+      "source": "gl-canada-korea"
+    },
+    {
+      "from": "kraisi",
+      "to": "msit",
+      "label": "Technical/policy research supports governance",
+      "kind": "influence",
+      "source": "gl-kraisi"
+    },
+    {
+      "from": "oecd",
+      "to": "openai",
+      "label": "Voluntary advanced-AI reporting framework",
+      "kind": "influence",
+      "source": "gl-oecd"
+    },
+    {
+      "from": "oecd",
+      "to": "anthropic",
+      "label": "Voluntary advanced-AI reporting framework",
+      "kind": "influence",
+      "source": "gl-oecd"
+    },
+    {
+      "from": "oecd",
+      "to": "deepmind",
+      "label": "Voluntary advanced-AI reporting framework",
+      "kind": "influence",
+      "source": "gl-oecd"
+    },
+    {
+      "from": "unpanel",
+      "to": "undialogue",
+      "label": "Scientific assessment informs international discussion",
+      "kind": "influence",
+      "source": "gl-unpanel"
+    },
+    {
+      "to": "caisi",
+      "label": "Technical evaluation partnership; cooperation does not transfer release authority to CAISI.",
+      "kind": "access",
+      "source": "us-joint",
+      "from": "openai"
+    },
+    {
+      "to": "caisi",
+      "label": "Technical evaluation partnership; cooperation does not transfer release authority to CAISI.",
+      "kind": "access",
+      "source": "us-joint",
+      "from": "anthropic"
+    },
+    {
+      "to": "caisi",
+      "label": "Voluntary predeployment evaluation access",
+      "kind": "access",
+      "source": "us-agreements",
+      "from": "deepmind"
+    },
+    {
+      "to": "caisi",
+      "label": "Voluntary predeployment evaluation access",
+      "kind": "access",
+      "source": "us-agreements",
+      "from": "xai"
+    },
+    {
+      "to": "metr",
+      "label": "Model access and risk-assessment collaboration",
+      "kind": "access",
+      "source": "us-metr-pilot",
+      "from": "openai"
+    },
+    {
+      "to": "metr",
+      "label": "Model access and risk-assessment collaboration",
+      "kind": "access",
+      "source": "us-metr-pilot",
+      "from": "anthropic"
+    },
+    {
+      "to": "metr",
+      "label": "Model access and risk-assessment collaboration",
+      "kind": "access",
+      "source": "us-metr-pilot",
+      "from": "deepmind"
+    },
+    {
+      "to": "metr",
+      "label": "Model access and risk-assessment collaboration",
+      "kind": "access",
+      "source": "us-metr-pilot",
+      "from": "meta"
+    },
+    {
+      "to": "aisi",
+      "label": "Joint technical evaluations",
+      "kind": "access",
+      "source": "us-joint",
+      "from": "caisi"
+    },
+    {
+      "to": "office",
+      "label": "Technical assistance",
+      "kind": "influence",
+      "source": "us-metr",
+      "from": "metr"
+    },
+    {
+      "to": "aisi",
+      "label": "Evaluation partnership",
+      "kind": "access",
+      "source": "us-metr",
+      "from": "metr"
+    },
+    {
+      "to": "caloes",
+      "label": "Creates incident intake and review duties",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "sb53"
+    },
+    {
+      "to": "caag",
+      "label": "Assigns civil-penalty enforcement",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "sb53"
+    },
+    {
+      "to": "caloes",
+      "label": "Qualifying reports where SB53 applies",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "openai"
+    },
+    {
+      "to": "openai",
+      "label": "Covered framework compliance and transparency",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "sb53"
+    },
+    {
+      "to": "caloes",
+      "label": "Qualifying reports where SB53 applies",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "anthropic"
+    },
+    {
+      "to": "anthropic",
+      "label": "Covered framework compliance and transparency",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "sb53"
+    },
+    {
+      "to": "caloes",
+      "label": "Qualifying reports where SB53 applies",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "meta"
+    },
+    {
+      "to": "meta",
+      "label": "Covered framework compliance and transparency",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "sb53"
+    },
+    {
+      "to": "caloes",
+      "label": "Qualifying reports where SB53 applies",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "deepmind"
+    },
+    {
+      "to": "deepmind",
+      "label": "Covered framework compliance and transparency",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "sb53"
+    },
+    {
+      "to": "caloes",
+      "label": "Qualifying reports where SB53 applies",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "xai"
+    },
+    {
+      "to": "xai",
+      "label": "Covered framework compliance and transparency",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "sb53"
+    },
+    {
+      "to": "caag",
+      "label": "Protected report referral",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "caloes"
+    },
+    {
+      "to": "openai",
+      "label": "Compliance enforcement when statutory conditions apply",
+      "kind": "legal",
+      "source": "us-sb53",
+      "from": "caag"
+    },
+    {
+      "to": "openai",
+      "label": "Scheduled 2027 duties if in scope",
+      "kind": "legal",
+      "source": "us-ny",
+      "from": "nyraise"
+    },
+    {
+      "to": "openai",
+      "label": "Compulsory evidence within FTC jurisdiction",
+      "kind": "legal",
+      "source": "us-ftc-cid",
+      "from": "ftc"
+    },
+    {
+      "to": "cloud",
+      "label": "Consumer-protection and competition inquiries",
+      "kind": "legal",
+      "source": "us-ftc-powers",
+      "from": "ftc"
+    },
+    {
+      "to": "cloud",
+      "label": "Evidence through lawful process",
+      "kind": "legal",
+      "source": "us-fbi",
+      "from": "fbi"
+    },
+    {
+      "to": "openai",
+      "label": "Azure primary-cloud partnership and compute dependency",
+      "kind": "control",
+      "source": "us-azure-partner",
+      "from": "cloud"
+    },
+    {
+      "to": "anthropic",
+      "label": "AWS primary training and cloud partnership",
+      "kind": "control",
+      "source": "us-aws-partner",
+      "from": "cloud"
+    },
+    {
+      "to": "cloud",
+      "label": "Covered chip-export constraints",
+      "kind": "legal",
+      "source": "us-bis",
+      "from": "bis"
+    },
+    {
+      "to": "caisi",
+      "label": "NIST consultation on frontier cyber evaluation",
+      "kind": "influence",
+      "source": "us-eo14409",
+      "from": "federal"
+    },
+    {
+      "to": "cisa",
+      "label": "Agency coordination and federal cyber defense",
+      "kind": "legal",
+      "source": "us-eo14409",
+      "from": "federal"
+    },
+    {
+      "to": "goldeagle",
+      "label": "Directs creation of cybersecurity clearinghouse",
+      "kind": "legal",
+      "source": "us-eo14409",
+      "from": "federal"
+    },
+    {
+      "to": "goldeagle",
+      "label": "Vulnerability and remediation coordination",
+      "kind": "influence",
+      "source": "us-gold",
+      "from": "cisa"
+    },
+    {
+      "to": "cloud",
+      "label": "Voluntary defensive coordination",
+      "kind": "access",
+      "source": "us-gold",
+      "from": "goldeagle"
+    },
+    {
+      "to": "openai",
+      "label": "Frontier-industry collaboration pathway",
+      "kind": "access",
+      "source": "us-gold",
+      "from": "goldeagle"
+    },
+    {
+      "from": "report",
+      "to": "office",
+      "kind": "influence",
+      "label": "Scientific evidence can inform risk assessment. This is an analytical knowledge-flow link, not delegated authority.",
+      "source": "report"
+    },
+    {
+      "from": "report",
+      "to": "network",
+      "kind": "influence",
+      "label": "Shared risk evidence informs the evaluation ecosystem; no command or enforcement relationship.",
+      "source": "report"
+    },
+    {
+      "to": "caisi",
+      "label": "NIST risk-management guidance supports a shared vocabulary; CAISI evaluation partnerships are a separate mechanism.",
+      "kind": "influence",
+      "source": "nist-rmf",
+      "from": "rmf"
+    },
+    {
+      "to": "iso",
+      "label": "Analytical link: both structure organisational risk management; neither substitutes for model-specific risk evidence.",
+      "kind": "influence",
+      "source": "nist-rmf",
+      "from": "rmf"
+    },
+    {
+      "to": "internalreport",
+      "label": "Proposes a framework for internal-use risk reporting.",
+      "kind": "influence",
+      "source": "eu-iaps-internal",
+      "from": "iaps"
+    },
+    {
+      "to": "surge",
+      "label": "Proposes ways to mobilise scarce specialist expertise.",
+      "kind": "influence",
+      "source": "us-surge",
+      "from": "iaps"
+    },
+    {
+      "to": "gpai",
+      "label": "Analytical comparison: internal-use proposals address a scope question that must separately be resolved under applicable EU law.",
+      "kind": "influence",
+      "source": "eu-iaps-internal",
+      "from": "internalreport"
+    },
+    {
+      "to": "sb53",
+      "label": "Analytical comparison: a research proposal is distinct from California’s existing internal-use-summary requirement.",
+      "kind": "influence",
+      "source": "eu-iaps-internal",
+      "from": "internalreport"
+    },
+    {
+      "to": "federal",
+      "label": "Analytical dependency: effective federal technical work needs mobilisable expertise; this does not show these proposals have been adopted.",
+      "kind": "influence",
+      "source": "us-surge",
+      "from": "surge"
+    },
+    {
+      "to": "aisi",
+      "label": "Recommends building on AISI research and developer relationships to support UK influence.",
+      "kind": "influence",
+      "source": "uk-cltr",
+      "from": "cltr"
+    },
+    {
+      "to": "network",
+      "label": "Recommends international cooperation and stronger information sharing.",
+      "kind": "influence",
+      "source": "uk-cltr",
+      "from": "cltr"
+    },
+    {
+      "from": "mistral",
+      "to": "hf",
+      "label": "Publishes model checkpoints through official repositories",
+      "kind": "access",
+      "source": "us-mistral-hub"
+    },
+    {
+      "from": "meta",
+      "to": "hf",
+      "label": "Distributes Llama models with access conditions",
+      "kind": "access",
+      "source": "us-meta-hub"
+    },
+    {
+      "from": "hf",
+      "to": "mistral",
+      "label": "Hosted repositories subject to platform moderation",
+      "kind": "control",
+      "source": "us-hf-policy"
+    },
+    {
+      "from": "hf",
+      "to": "meta",
+      "label": "Can restrict its own hosting under content policy",
+      "kind": "control",
+      "source": "us-hf-policy"
+    },
+    {
+      "from": "oecd",
+      "to": "anpd",
+      "label": "OECD incident taxonomy informs ANPD's May 2026 workshop",
+      "kind": "influence",
+      "source": "gl-anpd-oecd"
+    },
+    {
+      "from": "anpd",
+      "to": "meta",
+      "label": "Privacy scrutiny of AI-training data practices",
+      "kind": "legal",
+      "source": "gl-anpd-oecd"
+    },
+    {
+      "from": "tii",
+      "to": "network",
+      "label": "Analytical: open releases enable external evaluation; no membership implied",
+      "kind": "access",
+      "source": "gl-tii"
+    },
+    {
+      "from": "sdaia",
+      "to": "unesco",
+      "label": "Co-hosts 14–17 September 2026 ethics forum with ICAIRE",
+      "kind": "influence",
+      "source": "gl-sdaia-unesco"
+    }
+  ]
+}
