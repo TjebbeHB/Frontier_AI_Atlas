@@ -11,7 +11,10 @@
     "locationLabel": "HQ city",
     "locationSource": "https://openai.com/careers/technical-threat-investigator-threat-intel-engineering-san-francisco/",
     "locationVerifiedAt": "2026-10-02",
-    "coordinates": [-122.41942, 37.77493],
+    "coordinates": [
+      -122.41942,
+      37.77493
+    ],
     "coordinateSource": "https://www.geonames.org/5391959/san-francisco.html"
   },
   "anthropic": {
@@ -26,7 +29,10 @@
     "locationLabel": "HQ city",
     "locationSource": "https://job-boards.greenhouse.io/anthropic/jobs/5106199008",
     "locationVerifiedAt": "2026-10-02",
-    "coordinates": [-122.41942, 37.77493],
+    "coordinates": [
+      -122.41942,
+      37.77493
+    ],
     "coordinateSource": "https://www.geonames.org/5391959/san-francisco.html"
   },
   "caisi": {
@@ -41,7 +47,10 @@
     "locationType": "host-base",
     "locationLabel": "NIST host base",
     "locationVerifiedAt": "2026-10-02",
-    "coordinates": [-77.20137, 39.14344],
+    "coordinates": [
+      -77.20137,
+      39.14344
+    ],
     "coordinateSource": "https://www.geonames.org/4355843/gaithersburg.html"
   },
   "metr": {
@@ -56,7 +65,10 @@
     "locationLabel": "Team base",
     "locationSource": "https://metr.org/hiring",
     "locationVerifiedAt": "2026-10-02",
-    "coordinates": [-122.27275, 37.87159],
+    "coordinates": [
+      -122.27275,
+      37.87159
+    ],
     "coordinateSource": "https://www.geonames.org/5327684/berkeley.html"
   },
   "cloud": {
@@ -77,7 +89,10 @@
     "locationLabel": "HQ city · Sacramento area",
     "locationSource": "https://www.caloes.ca.gov/office-of-the-director/policy-administration/international-affairs/",
     "locationVerifiedAt": "2026-10-02",
-    "coordinates": [-121.28315, 38.54883],
+    "coordinates": [
+      -121.28315,
+      38.54883
+    ],
     "coordinateSource": "https://tigerweb.geo.census.gov/tigerwebmain/Files/bas25/tigerweb_bas25_cdp_2020_tab20_ca.html"
   },
   "caag": {
@@ -98,7 +113,10 @@
     "logo": "/logos/deepmind.png",
     "logoSource": "https://storage.googleapis.com/gdm-deepmind-com-prod-public/icons/google_deepmind_2x_96dp.png",
     "websiteVerified": true,
-    "coordinates": [-0.12574, 51.50853],
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
     "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "aisi": {
@@ -113,7 +131,10 @@
     "locationLabel": "Representative office",
     "locationSource": "https://www.aisi.gov.uk/careers",
     "locationVerifiedAt": "2026-10-02",
-    "coordinates": [-0.12574, 51.50853],
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
     "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "ncsc": {
@@ -124,7 +145,10 @@
     "logo": "/logos/ncsc.png",
     "logoSource": "https://www.ncsc.gov.uk/themes/custom/ennerdale/favicons/apple-touch-icon.png",
     "websiteVerified": true,
-    "coordinates": [-0.12574, 51.50853],
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
     "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "office": {
@@ -132,7 +156,10 @@
     "city": "Brussels",
     "locationNote": "EU sources place the AI Office in Brussels. The marker is a city anchor and does not assert an exact office building.",
     "geographic": true,
-    "coordinates": [4.34878, 50.85045],
+    "coordinates": [
+      4.34878,
+      50.85045
+    ],
     "logo": "/logos/office.png",
     "logoSource": "https://digital-strategy.ec.europa.eu/themes/custom/cnt_theme/images/favicons/ec/favicon.png",
     "websiteVerified": true,
@@ -153,7 +180,10 @@
     "city": "Brussels",
     "locationNote": "Brussels represents the AI Office’s contribution to the panel’s shared secretariat. Article 6 of Commission Implementing Regulation (EU) 2025/454 assigns this support jointly to the AI Office and Joint Research Centre. This is a representative support base, not the location of the independent experts, all secretariat staff or every meeting.",
     "geographic": true,
-    "coordinates": [4.34878, 50.85045],
+    "coordinates": [
+      4.34878,
+      50.85045
+    ],
     "logo": "/logos/panel.png",
     "logoSource": "https://digital-strategy.ec.europa.eu/themes/custom/cnt_theme/images/favicons/ec/favicon.png",
     "websiteVerified": true,
@@ -222,11 +252,20 @@
   "oecd": {
     "website": "https://oecd.ai/",
     "city": "Paris",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "OECD identifies its headquarters at La Muette in Paris. This city anchor represents the OECD host institution, not a headquarters for the G7 or the geographic reach of its voluntary framework.",
     "geographic": true,
     "logo": "/logos/oecd.png",
     "logoSource": "https://oecd.ai/en/assets/images/favicon.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "headquarters-city",
+    "locationLabel": "OECD headquarters city",
+    "locationSource": "https://www.oecd.org/en/about/locations.html",
+    "coordinates": [
+      2.3488,
+      48.85341
+    ],
+    "locationVerifiedAt": "2026-10-02",
+    "coordinateSource": "https://www.geonames.org/2988507/paris.html"
   },
   "unpanel": {
     "website": null,
@@ -254,7 +293,10 @@
     "city": "Brussels",
     "locationNote": "The AI Office provides the Board’s secretariat in Brussels; Board members represent Member States and the Commission and are not all based here.",
     "geographic": true,
-    "coordinates": [4.34878, 50.85045],
+    "coordinates": [
+      4.34878,
+      50.85045
+    ],
     "logo": "/logos/board.png",
     "logoSource": "https://digital-strategy.ec.europa.eu/themes/custom/cnt_theme/images/favicons/ec/favicon.png",
     "websiteVerified": true,
@@ -298,7 +340,10 @@
     "logo": "/logos/ofcom.png",
     "logoSource": "https://www.ofcom.org.uk/assets/img/favicon.ico",
     "websiteVerified": true,
-    "coordinates": [-0.12574, 51.50853],
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
     "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "cma": {
@@ -309,7 +354,10 @@
     "logo": "/logos/cma.png",
     "logoSource": "https://www.gov.uk/assets/collections/govuk-icon-180-d45a306f0549414cfa5085f16e4a3816a77558b139e5bc226f23162d1d0decb0.png",
     "websiteVerified": true,
-    "coordinates": [-0.12574, 51.50853],
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
     "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "drcf": {
@@ -390,11 +438,20 @@
   "unesco": {
     "website": "https://www.unesco.org/en",
     "city": "Paris",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "UNESCO identifies its headquarters at 7 place Fontenoy, Paris. The marker represents the city, not that exact building or the extent of its worldwide operations.",
     "geographic": true,
     "logo": "/logos/unesco.png",
     "logoSource": "https://www.unesco.org/themes/custom/bunesco8/apple-touch-icon.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "headquarters-city",
+    "locationLabel": "Headquarters city",
+    "locationSource": "https://www.unesco.org/en/faq",
+    "coordinates": [
+      2.3488,
+      48.85341
+    ],
+    "locationVerifiedAt": "2026-10-02",
+    "coordinateSource": "https://www.geonames.org/2988507/paris.html"
   },
   "qwen": {
     "website": "https://qwen.ai/",
@@ -513,7 +570,10 @@
     "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
     "geographic": true,
     "websiteVerified": false,
-    "coordinates": [-0.12574, 51.50853],
+    "coordinates": [
+      -0.12574,
+      51.50853
+    ],
     "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "internalreport": {
@@ -531,11 +591,20 @@
   "mistral": {
     "website": "https://mistral.ai/",
     "city": "Paris",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "Mistral’s privacy policy identifies its registered office at 15 rue des Halles, Paris. This is a city anchor, not a claim that all research or operations take place at that address.",
     "geographic": true,
     "logo": "/logos/mistral.png",
     "logoSource": "https://mistral.ai/favicon.ico",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "registered-address-city",
+    "locationLabel": "Registered-address city",
+    "locationSource": "https://legal.mistral.ai/terms/privacy-policy/",
+    "coordinates": [
+      2.3488,
+      48.85341
+    ],
+    "locationVerifiedAt": "2026-10-02",
+    "coordinateSource": "https://www.geonames.org/2988507/paris.html"
   },
   "hf": {
     "website": "https://huggingface.co/",
@@ -572,5 +641,73 @@
     "logo": "/logos/sdaia.png",
     "logoSource": "https://sdaia.gov.sa/Assets/images/LogosdaiaIcon.png",
     "websiteVerified": true
+  },
+  "sain": {
+    "website": "https://safeainetherlands.org/",
+    "city": "Groningen",
+    "geographic": true,
+    "coordinates": [
+      6.56667,
+      53.21917
+    ],
+    "locationNote": "SAIN lists Hereplein 4, Groningen as its registered address. The point represents the city, not an event venue or all national activity.",
+    "locationType": "registered-address-city",
+    "locationLabel": "Registered-address city",
+    "locationSource": "https://safeainetherlands.org/contact",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinateSource": "https://www.geonames.org/2755251/groningen.html",
+    "logo": "/brand/sain/logo-navy.png",
+    "logoSource": "https://safeainetherlands.org/landing/logo-navy-182.png"
+  },
+  "sain-groningen": {
+    "website": "https://safeainetherlands.org/chapters/groningen",
+    "city": "Groningen",
+    "geographic": true,
+    "coordinates": [
+      6.56667,
+      53.21917
+    ],
+    "locationNote": "Chapter city from SAIN’s official directory; this is not a specific office or event venue.",
+    "locationType": "host-base",
+    "locationLabel": "Chapter city",
+    "locationSource": "https://safeainetherlands.org/chapters/groningen",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinateSource": "https://www.geonames.org/2755251/groningen.html",
+    "logo": "/brand/sain/logo-navy.png",
+    "logoSource": "https://safeainetherlands.org/landing/logo-navy-182.png"
+  },
+  "sain-utrecht": {
+    "website": "https://safeainetherlands.org/chapters/utrecht",
+    "city": "Utrecht",
+    "geographic": true,
+    "coordinates": [
+      5.12222,
+      52.09083
+    ],
+    "locationNote": "Chapter city from SAIN’s official directory; this is not a specific office or event venue.",
+    "locationType": "host-base",
+    "locationLabel": "Chapter city",
+    "locationSource": "https://safeainetherlands.org/chapters/utrecht",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinateSource": "https://www.geonames.org/2745912/utrecht.html",
+    "logo": "/brand/sain/logo-navy.png",
+    "logoSource": "https://safeainetherlands.org/landing/logo-navy-182.png"
+  },
+  "sain-amsterdam": {
+    "website": "https://safeainetherlands.org/chapters/amsterdam",
+    "city": "Amsterdam",
+    "geographic": true,
+    "coordinates": [
+      4.88969,
+      52.37403
+    ],
+    "locationNote": "Chapter city from SAIN’s official directory; this is not a specific office or event venue.",
+    "locationType": "host-base",
+    "locationLabel": "Chapter city",
+    "locationSource": "https://safeainetherlands.org/chapters/amsterdam",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinateSource": "https://www.geonames.org/2759794/amsterdam.html",
+    "logo": "/brand/sain/logo-navy.png",
+    "logoSource": "https://safeainetherlands.org/landing/logo-navy-182.png"
   }
 }

@@ -104,7 +104,7 @@ function Options<T extends string>({
     </fieldset>
   );
 }
-export default function CareerTransition() {
+export default function CareerTransition({ onJobs }: { onJobs?: () => void }) {
   const [profile, setProfile] = useState<Profile>({ ...emptyProfile });
   const [step, setStep] = useState(0),
     [complete, setComplete] = useState(false);
@@ -189,6 +189,7 @@ export default function CareerTransition() {
           <strong>{checkedOn}</strong>
         </span>
       </div>
+      {onJobs && <section className="career-jobs-banner" aria-label="Netherlands jobs"><div><h2>Ready to look at actual roles?</h2><p>AI safety, governance and research opportunities in the Netherlands, including SAIN.</p></div><button onClick={onJobs}>Explore the Netherlands job board ↗</button></section>}
       {!complete ? (
         <section
           className="career-questionnaire"

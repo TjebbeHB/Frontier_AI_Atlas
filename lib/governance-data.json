@@ -6,7 +6,10 @@
       "short": "OpenAI",
       "kind": "Actor",
       "region": "United States",
-      "location": [-122.4, 37.8],
+      "location": [
+        -122.4,
+        37.8
+      ],
       "layer": "Corporate",
       "type": "Frontier lab",
       "jurisdiction": "US company; applicable California and destination-market laws",
@@ -14,7 +17,10 @@
       "date": "2026-05-28",
       "description": "Developer of frontier models with internal safety and release governance.",
       "mechanism": "Preparedness practices plus the May 2026 Frontier Governance Framework, with August operational updates.",
-      "horizons": ["Before release", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -44,7 +50,10 @@
           "detail": "External scrutiny depends on evidence and model access granted to reviewers."
         }
       ],
-      "sources": ["us-openai", "us-openai-update"],
+      "sources": [
+        "us-openai",
+        "us-openai-update"
+      ],
       "featured": true
     },
     {
@@ -53,7 +62,10 @@
       "short": "Anthropic",
       "kind": "Actor",
       "region": "United States",
-      "location": [-122.4, 37.8],
+      "location": [
+        -122.4,
+        37.8
+      ],
       "layer": "Corporate",
       "type": "Frontier lab",
       "jurisdiction": "US company; applicable California and destination-market laws",
@@ -61,7 +73,10 @@
       "date": "2026-02-24",
       "description": "RSP v3 organizes risk thresholds, safety roadmaps and reports.",
       "mechanism": "Risk Reports every 3–6 months and external review; current commitments differ from earlier RSP versions.",
-      "horizons": ["Before release", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -91,7 +106,9 @@
           "detail": "External scrutiny depends on evidence and model access granted to reviewers."
         }
       ],
-      "sources": ["us-anthropic"],
+      "sources": [
+        "us-anthropic"
+      ],
       "featured": true
     },
     {
@@ -100,7 +117,10 @@
       "short": "CAISI",
       "kind": "Actor",
       "region": "United States",
-      "location": [-77.2, 39.1],
+      "location": [
+        -77.2,
+        39.1
+      ],
       "layer": "Institutional",
       "type": "Government evaluator",
       "jurisdiction": "United States federal",
@@ -108,7 +128,10 @@
       "date": "2025-06",
       "description": "NIST’s current successor to the US AI Safety Institute.",
       "mechanism": "Voluntary standards and unclassified national-security evaluations; developer agreements expanded in May 2026.",
-      "horizons": ["Before release", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Access-dependent evaluation",
       "powers": [
         {
@@ -138,7 +161,11 @@
           "detail": "Nonpublic testing relies on negotiated developer access."
         }
       ],
-      "sources": ["us-caisi", "us-agreements", "us-joint"],
+      "sources": [
+        "us-caisi",
+        "us-agreements",
+        "us-joint"
+      ],
       "featured": true
     },
     {
@@ -147,7 +174,10 @@
       "short": "METR",
       "kind": "Actor",
       "region": "United States",
-      "location": [-122.3, 37.9],
+      "location": [
+        -122.3,
+        37.9
+      ],
       "layer": "Voluntary",
       "type": "Independent evaluator",
       "jurisdiction": "US nonprofit; international voluntary partnerships",
@@ -208,7 +238,10 @@
       "short": "Cloud providers",
       "kind": "Actor",
       "region": "United States",
-      "location": [-122.3, 47.6],
+      "location": [
+        -122.3,
+        47.6
+      ],
       "layer": "Corporate",
       "type": "Infrastructure provider",
       "jurisdiction": "Global contracts and applicable local law; rights vary by provider",
@@ -216,7 +249,11 @@
       "date": "2026-09-14",
       "description": "AWS, Azure and Google Cloud provide infrastructure on which labs and downstream services depend.",
       "mechanism": "Hosting, access controls and contractual suspension; AWS terms are the verified suspension example.",
-      "horizons": ["Immediate response", "Before release", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -246,7 +283,11 @@
           "detail": "Suspension is contractual control, not sovereign model-remedy authority."
         }
       ],
-      "sources": ["us-aws", "us-azure-partner", "us-aws-partner"],
+      "sources": [
+        "us-aws",
+        "us-azure-partner",
+        "us-aws-partner"
+      ],
       "featured": true
     },
     {
@@ -255,7 +296,10 @@
       "short": "Cal OES",
       "kind": "Actor",
       "region": "United States",
-      "location": [-121.5, 38.6],
+      "location": [
+        -121.5,
+        38.6
+      ],
       "layer": "Institutional",
       "type": "Incident intake",
       "jurisdiction": "California, United States",
@@ -263,7 +307,10 @@
       "date": "2026-01-01",
       "description": "Receives and reviews qualifying frontier-model incident reports under SB53.",
       "mechanism": "Mandatory incident intake and confidential internal-use risk-assessment summaries; referral to other authorities.",
-      "horizons": ["Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -293,7 +340,9 @@
           "detail": "Reports may need referral to AG or relevant public-safety authorities."
         }
       ],
-      "sources": ["us-sb53"],
+      "sources": [
+        "us-sb53"
+      ],
       "featured": true
     },
     {
@@ -302,7 +351,10 @@
       "short": "California AG",
       "kind": "Actor",
       "region": "United States",
-      "location": [-121.5, 38.6],
+      "location": [
+        -121.5,
+        38.6
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "California, United States",
@@ -310,7 +362,10 @@
       "date": "2026-01-01",
       "description": "Enforces SB53 compliance through civil actions.",
       "mechanism": "Civil penalties up to $1 million per violation for covered large developers; statutory whistleblower protections also apply.",
-      "horizons": ["Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -340,7 +395,9 @@
           "detail": "Legal investigation and technical root-cause evaluation are distinct functions."
         }
       ],
-      "sources": ["us-sb53"],
+      "sources": [
+        "us-sb53"
+      ],
       "featured": true
     },
     {
@@ -349,7 +406,10 @@
       "short": "DeepMind",
       "kind": "Actor",
       "region": "United Kingdom",
-      "location": [-0.1, 51.5],
+      "location": [
+        -0.1,
+        51.5
+      ],
       "layer": "Corporate",
       "type": "Frontier lab",
       "jurisdiction": "UK-based laboratory within US Google; applicable market laws",
@@ -357,7 +417,10 @@
       "date": "2026-04-17",
       "description": "UK-based lab within Google, using a corporate frontier safety framework.",
       "mechanism": "FSF v3.1 adds tracked capability levels alongside critical thresholds and mitigations.",
-      "horizons": ["Before release", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -387,7 +450,10 @@
           "detail": "External scrutiny depends on evidence and model access granted to reviewers."
         }
       ],
-      "sources": ["us-deepmind", "us-agreements"],
+      "sources": [
+        "us-deepmind",
+        "us-agreements"
+      ],
       "featured": true
     },
     {
@@ -396,7 +462,10 @@
       "short": "UK AISI",
       "kind": "Actor",
       "region": "United Kingdom",
-      "location": [-0.1, 51.5],
+      "location": [
+        -0.1,
+        51.5
+      ],
       "layer": "Institutional",
       "type": "Government evaluator",
       "jurisdiction": "UK government research; developer access agreements and international partnerships",
@@ -443,7 +512,11 @@
           "detail": "The July incident illustrates uncertainty about how test behaviours generalise beyond evaluation settings."
         }
       ],
-      "sources": ["uk-aisi-status", "uk-aisi-remit", "uk-aisi-incident"],
+      "sources": [
+        "uk-aisi-status",
+        "uk-aisi-remit",
+        "uk-aisi-incident"
+      ],
       "featured": true
     },
     {
@@ -452,7 +525,10 @@
       "short": "NCSC",
       "kind": "Actor",
       "region": "United Kingdom",
-      "location": [-0.2, 51.5],
+      "location": [
+        -0.2,
+        51.5
+      ],
       "layer": "Institutional",
       "type": "Cybersecurity authority",
       "jurisdiction": "UK cyber incident support and technical guidance",
@@ -494,7 +570,10 @@
           "detail": "Response effectiveness depends on receiving timely relevant evidence."
         }
       ],
-      "sources": ["uk-ncsc", "uk-september"],
+      "sources": [
+        "uk-ncsc",
+        "uk-september"
+      ],
       "featured": true
     },
     {
@@ -503,7 +582,10 @@
       "short": "EU AI Office",
       "kind": "Actor",
       "region": "European Union",
-      "location": [4.3, 50.9],
+      "location": [
+        4.3,
+        50.9
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "EU market; GPAI providers, including foreign providers within AI Act scope",
@@ -511,7 +593,11 @@
       "date": "2026-08-02",
       "description": "The European Commission, supported by the AI Office, oversees GPAI models and certain AI systems. This entry focuses on its GPAI enforcement powers, distinct from member-state responsibilities.",
       "mechanism": "AI Act Articles 91–93 and 101: information, technical access, evaluation, corrective measures and fines.",
-      "horizons": ["Before release", "Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -558,7 +644,10 @@
       "short": "GPAI duties",
       "kind": "Mechanism",
       "region": "European Union",
-      "location": [5.7, 50.4],
+      "location": [
+        5.7,
+        50.4
+      ],
       "layer": "Legal",
       "type": "Law & obligation",
       "jurisdiction": "Providers of in-scope GPAI models with systemic risk in the EU",
@@ -566,7 +655,11 @@
       "date": "2025-08-02",
       "description": "Binding duties require evaluation, systemic-risk mitigation, incident reporting and cybersecurity for qualifying GPAI models.",
       "mechanism": "Article 55; systemic-risk classification under Article 51. Models on the market before August 2025 have until August 2027.",
-      "horizons": ["Before release", "Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -614,7 +707,10 @@
       "short": "Scientific Panel",
       "kind": "Actor",
       "region": "European Union",
-      "location": [4.2, 51.2],
+      "location": [
+        4.2,
+        51.2
+      ],
       "layer": "Institutional",
       "type": "Scientific adviser",
       "jurisdiction": "EU AI Act advisory and technical support",
@@ -622,7 +718,11 @@
       "date": "2026-06-01",
       "description": "Independent specialists provide systemic-risk alerts, classification advice, evaluation expertise and market-surveillance support.",
       "mechanism": "Qualified alerts can lead to AI Office scrutiny; the Commission may obtain information or appoint experts for evaluation.",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -652,7 +752,11 @@
           "detail": "Technical analysis depends on evidence provided through Commission and research access."
         }
       ],
-      "sources": ["eu-panel", "eu-art91", "eu-art92"],
+      "sources": [
+        "eu-panel",
+        "eu-art91",
+        "eu-art92"
+      ],
       "featured": true
     },
     {
@@ -661,7 +765,10 @@
       "short": "GPAI Code",
       "kind": "Mechanism",
       "region": "European Union",
-      "location": [6.3, 49.8],
+      "location": [
+        6.3,
+        49.8
+      ],
       "layer": "Voluntary",
       "type": "Standard & commitment",
       "jurisdiction": "Voluntary compliance route for EU GPAI obligations",
@@ -669,7 +776,10 @@
       "date": "2025-07-10",
       "description": "A practical route to demonstrate compliance with binding GPAI law. Non-signers must demonstrate other adequate means of compliance.",
       "mechanism": "Transparency, copyright, and safety/security chapters; an AI Office-chaired signatory taskforce supports implementation.",
-      "horizons": ["Before release", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -699,7 +809,10 @@
           "detail": "Do not confuse voluntary signature with voluntary compliance with the AI Act."
         }
       ],
-      "sources": ["eu-code", "eu-art55"],
+      "sources": [
+        "eu-code",
+        "eu-art55"
+      ],
       "featured": true
     },
     {
@@ -708,7 +821,10 @@
       "short": "CAC",
       "kind": "Actor",
       "region": "China",
-      "location": [116.4, 39.9],
+      "location": [
+        116.4,
+        39.9
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "Mainland China; public-facing generative services, including APIs",
@@ -716,7 +832,11 @@
       "date": "2023-08-15",
       "description": "CAC and competent departments enforce public-service duties. Providers must address and report illegal content/activity; qualifying services undergo security assessment and algorithm filing. These are scoped service rules, not blanket oversight of all frontier research.",
       "mechanism": "Interim Measures, arts. 2, 14, 17, 19 and 21",
-      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Immediate response"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -746,7 +866,9 @@
           "detail": "A technical-assistance duty exists; practical effectiveness is not established here."
         }
       ],
-      "sources": ["gl-cac"],
+      "sources": [
+        "gl-cac"
+      ],
       "featured": true
     },
     {
@@ -755,7 +877,10 @@
       "short": "DeepSeek",
       "kind": "Actor",
       "region": "China",
-      "location": [120.2, 30.3],
+      "location": [
+        120.2,
+        30.3
+      ],
       "layer": "Corporate",
       "type": "Frontier lab",
       "jurisdiction": "China-based developer; hosted services and separately distributed model weights",
@@ -763,7 +888,11 @@
       "date": "2026-09-14",
       "description": "Develops models, provides hosted services and publishes technical reports/model cards. Corporate control covers its own development and hosted operations; distributed copies create a separate downstream governance problem.",
       "mechanism": "Internal model development, release decisions and hosted-service operation",
-      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Immediate response"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -793,7 +922,10 @@
           "detail": "Corporate control is bounded by its own systems and applicable contracts/law."
         }
       ],
-      "sources": ["gl-deepseek", "gl-deepseek-model"],
+      "sources": [
+        "gl-deepseek",
+        "gl-deepseek-model"
+      ],
       "featured": true
     },
     {
@@ -802,7 +934,10 @@
       "short": "MSIT",
       "kind": "Actor",
       "region": "Asia-Pacific",
-      "location": [127.3, 36.5],
+      "location": [
+        127.3,
+        36.5
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "Republic of Korea; specified AI Basic Act violations",
@@ -810,7 +945,11 @@
       "date": "2026-01-22",
       "description": "The AI Basic Act gives MSIT inspection and correction powers. Government announced at least one year of deferred routine fact-finding/penalties, with exceptional investigations for serious harm. Safety duties require all decree criteria, including training above 10^26 FLOPs.",
       "mechanism": "AI Basic Act article 40 and January 2026 implementation policy",
-      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Immediate response"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -840,7 +979,10 @@
           "detail": "An announced enforcement transition is not evidence of a staffing shortfall."
         }
       ],
-      "sources": ["gl-korea-law", "gl-korea-transition"],
+      "sources": [
+        "gl-korea-law",
+        "gl-korea-transition"
+      ],
       "featured": true
     },
     {
@@ -849,7 +991,10 @@
       "short": "Singapore AISI",
       "kind": "Actor",
       "region": "Asia-Pacific",
-      "location": [103.7, 1.4],
+      "location": [
+        103.7,
+        1.4
+      ],
       "layer": "Institutional",
       "type": "Government evaluator",
       "jurisdiction": "Singapore; DTC hosted at NTU with IMDA and NRF support",
@@ -857,7 +1002,11 @@
       "date": "2024-05-22",
       "description": "DTC serves as Singapore's AISI, developing evaluation/testing science and contributing to governance. It coordinates the research ecosystem and international scientific work.",
       "mechanism": "AI testing, research and international collaboration",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Access-dependent evaluation",
       "powers": [
         {
@@ -887,7 +1036,10 @@
           "detail": "Research access and technical methods condition investigation depth."
         }
       ],
-      "sources": ["gl-singapore", "gl-singapore-date"],
+      "sources": [
+        "gl-singapore",
+        "gl-singapore-date"
+      ],
       "featured": true
     },
     {
@@ -896,7 +1048,10 @@
       "short": "NAAIMES",
       "kind": "Actor",
       "region": "International",
-      "location": [-0.1, 51.5],
+      "location": [
+        -0.1,
+        51.5
+      ],
       "layer": "Institutional",
       "type": "Coordination network",
       "jurisdiction": "Distributed network; location marks the current UK coordinating institute",
@@ -904,7 +1059,11 @@
       "date": "2025-12-05",
       "description": "Formerly the International Network of AI Safety Institutes. Connects national institutes and government offices through evaluation science and joint testing. UK AISI took the coordinating role after December 2025.",
       "mechanism": "Shared methods, research and joint evaluations",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -934,7 +1093,10 @@
           "detail": "Joint work depends on agreed model access and sharing terms."
         }
       ],
-      "sources": ["gl-network", "gl-network-founding"],
+      "sources": [
+        "gl-network",
+        "gl-network-founding"
+      ],
       "featured": true
     },
     {
@@ -943,7 +1105,10 @@
       "short": "OECD / G7",
       "kind": "Actor",
       "region": "International",
-      "location": [2.3, 48.9],
+      "location": [
+        2.3488,
+        48.85341
+      ],
       "layer": "Voluntary",
       "type": "International institution",
       "jurisdiction": "International; voluntary organizational participation",
@@ -951,7 +1116,10 @@
       "date": "2026-05-28",
       "description": "Provides a standard format for developer self-reporting against the G7 advanced-AI code. Version 2.0 simplifies reporting, including for smaller organizations.",
       "mechanism": "Hiroshima AI Process Reporting Framework",
-      "horizons": ["Before release", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -981,7 +1149,10 @@
           "detail": "The framework does not itself mandate developer remedies."
         }
       ],
-      "sources": ["gl-oecd", "gl-oecd-v2"],
+      "sources": [
+        "gl-oecd",
+        "gl-oecd-v2"
+      ],
       "featured": true
     },
     {
@@ -990,7 +1161,10 @@
       "short": "UN scientific panel",
       "kind": "Actor",
       "region": "International",
-      "location": [6.1, 46.2],
+      "location": [
+        6.1,
+        46.2
+      ],
       "layer": "Institutional",
       "type": "Scientific adviser",
       "jurisdiction": "Global; distributed scientific panel, Geneva dialogue venue shown",
@@ -998,7 +1172,10 @@
       "date": "2026-07-01",
       "description": "Synthesizes evidence on AI for global governance. Its preliminary assessment informed the July 2026 UN Dialogue. This is distinct from the International AI Safety Report process.",
       "mechanism": "Independent scientific assessment",
-      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -1028,7 +1205,10 @@
           "detail": "Evidence still needs translation into action by competent authorities."
         }
       ],
-      "sources": ["gl-unpanel", "gl-unpanel-start"],
+      "sources": [
+        "gl-unpanel",
+        "gl-unpanel-start"
+      ],
       "featured": true
     },
     {
@@ -1037,7 +1217,10 @@
       "short": "ISO / IEC 42001",
       "kind": "Mechanism",
       "region": "International",
-      "location": [6.1, 46.2],
+      "location": [
+        6.1,
+        46.2
+      ],
       "layer": "Voluntary",
       "type": "Standard & commitment",
       "jurisdiction": "International voluntary standard; no sovereign jurisdiction",
@@ -1045,7 +1228,10 @@
       "date": "December 2023",
       "description": "Requirements for an AI management system in organisations developing or using AI.",
       "mechanism": "Management-system standard and assurance",
-      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -1075,7 +1261,9 @@
           "detail": "Management-system conformity does not prove absence of dangerous model capabilities."
         }
       ],
-      "sources": ["iso42001"],
+      "sources": [
+        "iso42001"
+      ],
       "featured": true
     },
     {
@@ -1084,7 +1272,10 @@
       "short": "African Union",
       "kind": "Actor",
       "region": "Africa",
-      "location": [38.8, 9.0],
+      "location": [
+        38.8,
+        9.0
+      ],
       "layer": "Institutional",
       "type": "International institution",
       "jurisdiction": "Africa; implementation through member states",
@@ -1092,7 +1283,10 @@
       "date": "2024-07-19",
       "description": "Promotes Africa-centric, inclusive AI development and coordinated national governance. The strategy separates implementation of existing laws, identification of legal gaps and building institutional capability.",
       "mechanism": "Continental AI Strategy",
-      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -1122,7 +1316,10 @@
           "detail": "Skills, infrastructure and institutional capability are distinct development needs; country deficits differ."
         }
       ],
-      "sources": ["gl-au", "gl-au-full"],
+      "sources": [
+        "gl-au",
+        "gl-au-full"
+      ],
       "featured": true
     },
     {
@@ -1131,7 +1328,10 @@
       "short": "AI Board",
       "kind": "Actor",
       "region": "European Union",
-      "location": [3.8, 50.3],
+      "location": [
+        3.8,
+        50.3
+      ],
       "layer": "Institutional",
       "type": "Coordination network",
       "jurisdiction": "EU member-state cooperation under the AI Act",
@@ -1139,7 +1339,10 @@
       "date": "2025-08-02",
       "description": "Member-state representatives promote coherent implementation and regulatory cooperation.",
       "mechanism": "Coordinates national perspectives; the AI Office consults the Board on GPAI evaluations.",
-      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -1165,7 +1368,10 @@
           "detail": "Common positions and referrals must translate into actions by the competent authorities."
         }
       ],
-      "sources": ["eu-governance", "eu-art92"],
+      "sources": [
+        "eu-governance",
+        "eu-art92"
+      ],
       "featured": false
     },
     {
@@ -1174,7 +1380,10 @@
       "short": "National regulators",
       "kind": "Actor",
       "region": "European Union",
-      "location": [10, 51],
+      "location": [
+        10,
+        51
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "Each EU member state; allocated AI-system and sectoral remits",
@@ -1243,7 +1452,11 @@
       "date": "2026-02-12",
       "description": "Connects ANSSI, Inria, LNE and PEReN under SGDSN/DGE coordination, without creating a new legal entity.",
       "mechanism": "Evaluates reliability and national-security risks and supports regulatory implementation.",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Access-dependent evaluation",
       "powers": [
         {
@@ -1273,7 +1486,10 @@
           "detail": "Evaluation requires relevant model and system access."
         }
       ],
-      "sources": ["eu-inesia", "eu-inesia-roadmap"],
+      "sources": [
+        "eu-inesia",
+        "eu-inesia-roadmap"
+      ],
       "featured": false
     },
     {
@@ -1282,7 +1498,10 @@
       "short": "ICO",
       "kind": "Actor",
       "region": "United Kingdom",
-      "location": [-2.2, 53.3],
+      "location": [
+        -2.2,
+        53.3
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "UK data protection; relevant processing of personal data",
@@ -1290,7 +1509,10 @@
       "date": "2026-02-03",
       "description": "Investigates AI-related personal-data processing, with information, assessment and enforcement notices and financial penalties.",
       "mechanism": "UK GDPR and Data Protection Act oversight. A frontier incident must engage the data-protection remit.",
-      "horizons": ["Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -1320,7 +1542,10 @@
           "detail": "Cyber responders, model evaluators and privacy investigators hold different evidence and powers."
         }
       ],
-      "sources": ["uk-ico", "uk-ico-audit"],
+      "sources": [
+        "uk-ico",
+        "uk-ico-audit"
+      ],
       "featured": false
     },
     {
@@ -1329,7 +1554,10 @@
       "short": "Ofcom",
       "kind": "Actor",
       "region": "United Kingdom",
-      "location": [-0.1, 51.5],
+      "location": [
+        -0.1,
+        51.5
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "UK-linked services and harms within the Online Safety Act",
@@ -1337,7 +1565,10 @@
       "date": "2026-03-20",
       "description": "Enforces online-safety duties for covered services. Existing chatbot coverage and powers to expand it are distinct.",
       "mechanism": "Online Safety Act information gathering and enforcement; additional generative-AI duties require operative regulations.",
-      "horizons": ["Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -1363,7 +1594,11 @@
           "detail": "Do not infer that enabling legislation has already brought every chatbot or model into scope."
         }
       ],
-      "sources": ["uk-ofcom-powers", "uk-ofcom-scope", "uk-chatbot-expansion"],
+      "sources": [
+        "uk-ofcom-powers",
+        "uk-ofcom-scope",
+        "uk-chatbot-expansion"
+      ],
       "featured": false
     },
     {
@@ -1372,7 +1607,10 @@
       "short": "CMA",
       "kind": "Actor",
       "region": "United Kingdom",
-      "location": [-0.1, 51.5],
+      "location": [
+        -0.1,
+        51.5
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "UK competition and consumer-protection law",
@@ -1380,7 +1618,10 @@
       "date": "2025-04-06",
       "description": "Can investigate consumer and competition harms involving AI. Businesses remain responsible for their AI agents' conduct.",
       "mechanism": "Direct enforcement, undertakings, remedies and penalties under applicable consumer and competition law.",
-      "horizons": ["Ongoing oversight", "Immediate response"],
+      "horizons": [
+        "Ongoing oversight",
+        "Immediate response"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -1406,7 +1647,10 @@
           "detail": "Consumer or competition jurisdiction is required; dangerous capability alone does not establish that trigger."
         }
       ],
-      "sources": ["uk-cma", "uk-cma-agents"],
+      "sources": [
+        "uk-cma",
+        "uk-cma-agents"
+      ],
       "featured": false
     },
     {
@@ -1415,7 +1659,10 @@
       "short": "DRCF",
       "kind": "Actor",
       "region": "United Kingdom",
-      "location": [-0.1, 51.5],
+      "location": [
+        -0.1,
+        51.5
+      ],
       "layer": "Institutional",
       "type": "Coordination network",
       "jurisdiction": "UK cooperation among CMA, ICO, Ofcom and FCA",
@@ -1423,7 +1670,10 @@
       "date": "2022-09-05",
       "description": "Coordinates expertise, foresight and approaches across digital regulators, which retain their own powers and accountability.",
       "mechanism": "Voluntary inter-regulator cooperation, shared research and coordinated policy work.",
-      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -1453,7 +1703,10 @@
           "detail": "A coordination forum cannot fill missing statutory jurisdiction by itself."
         }
       ],
-      "sources": ["uk-drcf", "uk-cltr"],
+      "sources": [
+        "uk-drcf",
+        "uk-cltr"
+      ],
       "featured": false
     },
     {
@@ -1462,7 +1715,10 @@
       "short": "TC260 / CNCERT",
       "kind": "Actor",
       "region": "China",
-      "location": [116.4, 40.0],
+      "location": [
+        116.4,
+        40.0
+      ],
       "layer": "Institutional",
       "type": "Standard & commitment",
       "jurisdiction": "China; influence through standards and sector regulators",
@@ -1470,7 +1726,11 @@
       "date": "2025-09-15",
       "description": "Their AI Safety Governance Framework 2.0 addresses open-model risks, CBRN misuse and loss of control. It informs China's technical standards and policy agenda; the framework itself is nonbinding.",
       "mechanism": "AI Safety Governance Framework 2.0",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -1500,7 +1760,10 @@
           "detail": "Carnegie's 2025 analysis describes immature measurement science; no current staffing deficit is quantified."
         }
       ],
-      "sources": ["gl-framework", "gl-carnegie"],
+      "sources": [
+        "gl-framework",
+        "gl-carnegie"
+      ],
       "featured": false
     },
     {
@@ -1509,7 +1772,10 @@
       "short": "J-AISI",
       "kind": "Actor",
       "region": "Asia-Pacific",
-      "location": [139.8, 35.7],
+      "location": [
+        139.8,
+        35.7
+      ],
       "layer": "Institutional",
       "type": "Government evaluator",
       "jurisdiction": "Japan; institute at IPA, separate from ministries' legal powers",
@@ -1517,7 +1783,11 @@
       "date": "2026-07-07",
       "description": "Supports government with safety surveys, evaluation methods and guidelines; connects industry, academia and international institutes. July 2026 guidance expands evaluation perspectives for agents.",
       "mechanism": "Evaluation methods, guidance and scientific cooperation",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Access-dependent evaluation",
       "powers": [
         {
@@ -1547,7 +1817,10 @@
           "detail": "AISI's technical remit does not transfer ministries' enforcement powers."
         }
       ],
-      "sources": ["gl-jaisi", "gl-jguide"],
+      "sources": [
+        "gl-jaisi",
+        "gl-jguide"
+      ],
       "featured": false
     },
     {
@@ -1556,7 +1829,10 @@
       "short": "Korea AISI",
       "kind": "Actor",
       "region": "Asia-Pacific",
-      "location": [127.1, 37.4],
+      "location": [
+        127.1,
+        37.4
+      ],
       "layer": "Institutional",
       "type": "Government evaluator",
       "jurisdiction": "Republic of Korea; technical institute, distinct from MSIT enforcement",
@@ -1564,7 +1840,11 @@
       "date": "2026-07-08",
       "description": "Researches safety policy and technologies, evaluates systems and coordinates internationally. A July 2026 Canada–Korea MOU supports frontier evaluation and measurement.",
       "mechanism": "Technical evaluation, research and international MOUs",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Access-dependent evaluation",
       "powers": [
         {
@@ -1594,7 +1874,10 @@
           "detail": "Technical investigation requires relevant model/data access."
         }
       ],
-      "sources": ["gl-kraisi", "gl-canada-korea"],
+      "sources": [
+        "gl-kraisi",
+        "gl-canada-korea"
+      ],
       "featured": false
     },
     {
@@ -1603,7 +1886,10 @@
       "short": "Canadian AISI",
       "kind": "Actor",
       "region": "Canada",
-      "location": [-75.7, 45.4],
+      "location": [
+        -75.7,
+        45.4
+      ],
       "layer": "Institutional",
       "type": "Government evaluator",
       "jurisdiction": "Canada; ISED leads with NRC and CIFAR research capability",
@@ -1611,7 +1897,11 @@
       "date": "2026-07-08",
       "description": "Studies advanced-system and synthetic-content risks through government-directed testing and funded research. Partners include Canadian institutes and international counterparts.",
       "mechanism": "Joint testing, investigator-led research and government advice",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Access-dependent evaluation",
       "powers": [
         {
@@ -1641,7 +1931,10 @@
           "detail": "Keep privacy, competition and sectoral enforcement separate from CAISI."
         }
       ],
-      "sources": ["gl-canada", "gl-canada-korea"],
+      "sources": [
+        "gl-canada",
+        "gl-canada-korea"
+      ],
       "featured": false
     },
     {
@@ -1650,7 +1943,10 @@
       "short": "Australian AISI",
       "kind": "Actor",
       "region": "Asia-Pacific",
-      "location": [149.1, -35.3],
+      "location": [
+        149.1,
+        -35.3
+      ],
       "layer": "Institutional",
       "type": "Government evaluator",
       "jurisdiction": "Australia; Department of Industry, Science and Resources",
@@ -1693,7 +1989,9 @@
           "detail": "MOU-based model access is different from compulsory inspection access."
         }
       ],
-      "sources": ["gl-australia"],
+      "sources": [
+        "gl-australia"
+      ],
       "featured": false
     },
     {
@@ -1710,7 +2008,11 @@
       "date": "2026-07-27",
       "description": "Coordinates government, academia, startups and industry on safety research. Oversees Safe & Trusted AI projects within the IndiaAI Mission.",
       "mechanism": "Hub-and-spoke research, safety tools and project coordination",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -1740,7 +2042,9 @@
           "detail": "Distributed expertise must be integrated through the hub-and-spoke structure."
         }
       ],
-      "sources": ["gl-india"],
+      "sources": [
+        "gl-india"
+      ],
       "featured": false
     },
     {
@@ -1749,7 +2053,10 @@
       "short": "UN AI Dialogue",
       "kind": "Actor",
       "region": "International",
-      "location": [6.1, 46.2],
+      "location": [
+        6.1,
+        46.2
+      ],
       "layer": "Institutional",
       "type": "International institution",
       "jurisdiction": "Global; first annual meeting in Geneva",
@@ -1757,7 +2064,10 @@
       "date": "2026-07-07",
       "description": "Brings governments and stakeholders together to discuss international AI governance. The inaugural annual Dialogue took place 6–7 July 2026.",
       "mechanism": "Multistakeholder dialogue and policy coordination",
-      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -1787,7 +2097,10 @@
           "detail": "Broad participation addresses representation but does not resolve all cross-border authority gaps."
         }
       ],
-      "sources": ["gl-undialogue", "gl-undialogue-event"],
+      "sources": [
+        "gl-undialogue",
+        "gl-undialogue-event"
+      ],
       "featured": false
     },
     {
@@ -1796,7 +2109,10 @@
       "short": "UNESCO",
       "kind": "Actor",
       "region": "International",
-      "location": [2.3, 48.9],
+      "location": [
+        2.3488,
+        48.85341
+      ],
       "layer": "Institutional",
       "type": "International institution",
       "jurisdiction": "Global; national readiness assessments",
@@ -1804,7 +2120,10 @@
       "date": "2026-09-14",
       "description": "Supports countries implementing its AI Ethics Recommendation. Readiness assessments examine legal, scientific, social, economic and technical conditions.",
       "mechanism": "Recommendation on AI Ethics and Readiness Assessment Methodology",
-      "horizons": ["Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -1834,7 +2153,10 @@
           "detail": "Norms and capacity support require implementation by competent national institutions."
         }
       ],
-      "sources": ["gl-unesco", "gl-unesco-ram"],
+      "sources": [
+        "gl-unesco",
+        "gl-unesco-ram"
+      ],
       "featured": false
     },
     {
@@ -1843,7 +2165,10 @@
       "short": "Alibaba / Qwen",
       "kind": "Actor",
       "region": "China",
-      "location": [120.2, 30.2],
+      "location": [
+        120.2,
+        30.2
+      ],
       "layer": "Corporate",
       "type": "Frontier lab",
       "jurisdiction": "China-based Alibaba model team; hosted and independently deployed models",
@@ -1851,7 +2176,11 @@
       "date": "2026-09-14",
       "description": "Alibaba's Qwen team develops language and multimodal models, with hosted chat and local deployment options. Its direct technical control is strongest inside its own model-development and service infrastructure.",
       "mechanism": "Model development, release decisions and hosted-service operation",
-      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Immediate response"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -1881,7 +2210,9 @@
           "detail": "Distributed deployment separates model-developer control from downstream system operation."
         }
       ],
-      "sources": ["gl-qwen"],
+      "sources": [
+        "gl-qwen"
+      ],
       "featured": false
     },
     {
@@ -1890,7 +2221,10 @@
       "short": "Meta",
       "kind": "Actor",
       "region": "United States",
-      "location": [-122.2, 37.5],
+      "location": [
+        -122.2,
+        37.5
+      ],
       "layer": "Corporate",
       "type": "Frontier lab",
       "jurisdiction": "US company; applicable California and destination-market laws",
@@ -1898,7 +2232,10 @@
       "date": "2026-04-08",
       "description": "The Advanced AI Scaling Framework covers frontier deployments through open weights, APIs and closed products.",
       "mechanism": "Evaluations, release decisions and Safety & Preparedness Reports; loss-of-control risks added in 2026.",
-      "horizons": ["Before release", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -1932,7 +2269,9 @@
           "detail": "Centralized recall and control diminish when model weights circulate downstream."
         }
       ],
-      "sources": ["us-meta"],
+      "sources": [
+        "us-meta"
+      ],
       "featured": false
     },
     {
@@ -1941,7 +2280,10 @@
       "short": "xAI",
       "kind": "Actor",
       "region": "United States",
-      "location": [-122.2, 37.4],
+      "location": [
+        -122.2,
+        37.4
+      ],
       "layer": "Corporate",
       "type": "Frontier lab",
       "jurisdiction": "US company; applicable state and destination-market laws",
@@ -1949,7 +2291,10 @@
       "date": "2026-06-30",
       "description": "The public safety page uses SpaceXAI branding; the current framework identifies xAI LLC.",
       "mechanism": "June 2026 framework describes annual systemic risk assessment, lifecycle monitoring and release decisions.",
-      "horizons": ["Before release", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -1979,7 +2324,11 @@
           "detail": "External scrutiny depends on evidence and model access granted to reviewers."
         }
       ],
-      "sources": ["us-xai", "us-xai-brand", "us-agreements"],
+      "sources": [
+        "us-xai",
+        "us-xai-brand",
+        "us-agreements"
+      ],
       "featured": false
     },
     {
@@ -1988,7 +2337,10 @@
       "short": "SB53",
       "kind": "Mechanism",
       "region": "United States",
-      "location": [-121.5, 38.6],
+      "location": [
+        -121.5,
+        38.6
+      ],
       "layer": "Legal",
       "type": "Law & obligation",
       "jurisdiction": "California, United States",
@@ -1996,7 +2348,11 @@
       "date": "2026-01-01",
       "description": "California’s 2026 frontier-model transparency and reporting regime.",
       "mechanism": "Models above 10^26 training operations; large-developer framework duties above $500m revenue. Qualifying reports: 15 days, or 24h for imminent serious injury to appropriate authority.",
-      "horizons": ["Immediate response", "Before release", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -2026,7 +2382,9 @@
           "detail": "Confidential reports are not public; absence of publication does not establish absence of reporting."
         }
       ],
-      "sources": ["us-sb53"],
+      "sources": [
+        "us-sb53"
+      ],
       "featured": false
     },
     {
@@ -2035,7 +2393,10 @@
       "short": "NY RAISE",
       "kind": "Mechanism",
       "region": "United States",
-      "location": [-73.8, 42.6],
+      "location": [
+        -73.8,
+        42.6
+      ],
       "layer": "Legal",
       "type": "Law & obligation",
       "jurisdiction": "New York, United States; covered models operating/developed/deployed partly in state",
@@ -2043,7 +2404,10 @@
       "date": "2027-01-01",
       "description": "Enacted frontier transparency framework with main duties scheduled for 1 January 2027.",
       "mechanism": "Future DFS reporting office; 72h incident reports and 24h imminent-injury route; AG penalties up to $1m first and $3m subsequent violations.",
-      "horizons": ["Long-term capacity", "Ongoing oversight"],
+      "horizons": [
+        "Long-term capacity",
+        "Ongoing oversight"
+      ],
       "power": "Scheduled authority",
       "powers": [
         {
@@ -2073,7 +2437,9 @@
           "detail": "Implementation and referral arrangements must support the future regime."
         }
       ],
-      "sources": ["us-ny"],
+      "sources": [
+        "us-ny"
+      ],
       "featured": false
     },
     {
@@ -2082,7 +2448,10 @@
       "short": "FTC",
       "kind": "Actor",
       "region": "United States",
-      "location": [-77.0, 38.9],
+      "location": [
+        -77.0,
+        38.9
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "United States federal",
@@ -2090,7 +2459,10 @@
       "date": "2026-09-14",
       "description": "Consumer-protection and competition enforcement can reach AI-related conduct.",
       "mechanism": "Civil investigative demands, administrative proceedings and court injunctions within existing statutory jurisdiction.",
-      "horizons": ["Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -2120,7 +2492,10 @@
           "detail": "Legal power to obtain evidence does not by itself supply every required AI specialty."
         }
       ],
-      "sources": ["us-ftc-cid", "us-ftc-powers"],
+      "sources": [
+        "us-ftc-cid",
+        "us-ftc-powers"
+      ],
       "featured": false
     },
     {
@@ -2129,7 +2504,10 @@
       "short": "FBI / DOJ",
       "kind": "Actor",
       "region": "United States",
-      "location": [-77.0, 38.9],
+      "location": [
+        -77.0,
+        38.9
+      ],
       "layer": "Legal",
       "type": "Law enforcement",
       "jurisdiction": "United States federal",
@@ -2137,7 +2515,10 @@
       "date": "2026-09-14",
       "description": "Investigates suspected criminal AI-enabled hacking and related offenses.",
       "mechanism": "Cyber investigations, lawful compulsory process and judicially authorized measures.",
-      "horizons": ["Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -2167,7 +2548,10 @@
           "detail": "Cross-border evidence and victims require cooperation."
         }
       ],
-      "sources": ["us-fbi", "us-eo14409"],
+      "sources": [
+        "us-fbi",
+        "us-eo14409"
+      ],
       "featured": false
     },
     {
@@ -2176,7 +2560,10 @@
       "short": "CISA",
       "kind": "Actor",
       "region": "United States",
-      "location": [-77.0, 38.9],
+      "location": [
+        -77.0,
+        38.9
+      ],
       "layer": "Institutional",
       "type": "Cybersecurity authority",
       "jurisdiction": "United States federal",
@@ -2184,7 +2571,10 @@
       "date": "2026-09-14",
       "description": "Coordinates cyber defense and response, with particular authority over federal civilian systems.",
       "mechanism": "Voluntary private-sector incident assistance; federal binding directives; CIRCIA has a separate implementation track.",
-      "horizons": ["Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -2214,7 +2604,11 @@
           "detail": "Sector and AI incident routes are separate; projected CIRCIA dates do not establish an active duty."
         }
       ],
-      "sources": ["us-eo14409", "us-gao-circia", "us-circia-agenda"],
+      "sources": [
+        "us-eo14409",
+        "us-gao-circia",
+        "us-circia-agenda"
+      ],
       "featured": false
     },
     {
@@ -2223,7 +2617,10 @@
       "short": "BIS",
       "kind": "Actor",
       "region": "United States",
-      "location": [-77.0, 38.9],
+      "location": [
+        -77.0,
+        38.9
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "US export law, with defined extraterritorial reach",
@@ -2231,7 +2628,11 @@
       "date": "2026-09-14",
       "description": "Controls covered advanced-compute exports under US export jurisdiction.",
       "mechanism": "Export licensing and enforcement constrain upstream chip access; rules and destination conditions change.",
-      "horizons": ["Before release", "Ongoing oversight", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Long-term capacity"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -2261,7 +2662,10 @@
           "detail": "Effectiveness depends on diversion verification and international cooperation."
         }
       ],
-      "sources": ["us-bis", "us-diffusion"],
+      "sources": [
+        "us-bis",
+        "us-diffusion"
+      ],
       "featured": false
     },
     {
@@ -2270,7 +2674,10 @@
       "short": "Federal cyber framework",
       "kind": "Mechanism",
       "region": "United States",
-      "location": [-77.0, 38.9],
+      "location": [
+        -77.0,
+        38.9
+      ],
       "layer": "Voluntary",
       "type": "Law & obligation",
       "jurisdiction": "United States federal",
@@ -2278,7 +2685,10 @@
       "date": "2026-06-02",
       "description": "EO14409 directs agencies to design classified frontier-cyber benchmarking and collaborative access.",
       "mechanism": "Voluntary access up to 30 days before release to other trusted partners; expressly no mandatory model licensing.",
-      "horizons": ["Before release", "Long-term capacity"],
+      "horizons": [
+        "Before release",
+        "Long-term capacity"
+      ],
       "power": "Access-dependent evaluation",
       "powers": [
         {
@@ -2327,7 +2737,10 @@
       "short": "GOLD EAGLE",
       "kind": "Mechanism",
       "region": "United States",
-      "location": [-77.0, 38.9],
+      "location": [
+        -77.0,
+        38.9
+      ],
       "layer": "Institutional",
       "type": "Coordination network",
       "jurisdiction": "United States federal",
@@ -2335,7 +2748,10 @@
       "date": "2026-07",
       "description": "Treasury and security partners coordinate AI-assisted vulnerability discovery and remediation.",
       "mechanism": "Deconflicts scanning and prioritizes patch information through voluntary industry collaboration.",
-      "horizons": ["Immediate response", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Ongoing oversight"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -2365,7 +2781,9 @@
           "detail": "Coordination does not replace sector regulators or criminal process."
         }
       ],
-      "sources": ["us-gold"],
+      "sources": [
+        "us-gold"
+      ],
       "featured": false
     },
     {
@@ -2382,7 +2800,10 @@
       "date": "February 2026",
       "description": "Independent synthesis of evidence about general-purpose AI capabilities, risks and risk management. It does not recommend particular policies.",
       "mechanism": "Scientific evidence for policymakers",
-      "horizons": ["Long-term capacity", "Ongoing oversight"],
+      "horizons": [
+        "Long-term capacity",
+        "Ongoing oversight"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -2412,7 +2833,9 @@
           "detail": "Proprietary model evidence limits external scrutiny."
         }
       ],
-      "sources": ["report"],
+      "sources": [
+        "report"
+      ],
       "featured": false
     },
     {
@@ -2421,7 +2844,10 @@
       "short": "NIST AI RMF",
       "kind": "Mechanism",
       "region": "United States",
-      "location": [-77.2, 39.1],
+      "location": [
+        -77.2,
+        39.1
+      ],
       "layer": "Voluntary",
       "type": "Standard & commitment",
       "jurisdiction": "US-based research; proposals may inform other jurisdictions",
@@ -2429,7 +2855,10 @@
       "date": "1.0 published January 2023; GenAI profile July 2024",
       "description": "Provides a common structure for identifying and managing AI risks across an organisation.",
       "mechanism": "Risk management framework and generative AI profile",
-      "horizons": ["Ongoing oversight", "Before release"],
+      "horizons": [
+        "Ongoing oversight",
+        "Before release"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -2459,7 +2888,9 @@
           "detail": "A process framework is not evidence that a particular frontier model is safe."
         }
       ],
-      "sources": ["nist-rmf"],
+      "sources": [
+        "nist-rmf"
+      ],
       "featured": false
     },
     {
@@ -2468,7 +2899,10 @@
       "short": "IAPS",
       "kind": "Actor",
       "region": "United States",
-      "location": [-77, 38.9],
+      "location": [
+        -77,
+        38.9
+      ],
       "layer": "Voluntary",
       "type": "Policy research",
       "jurisdiction": "US-based research; proposals may inform other jurisdictions",
@@ -2476,7 +2910,10 @@
       "date": "2025–2026 research",
       "description": "Develops policy proposals for internal model-use risk reporting and government AI surge capacity.",
       "mechanism": "Reporting design and preparedness research",
-      "horizons": ["Long-term capacity", "Before release"],
+      "horizons": [
+        "Long-term capacity",
+        "Before release"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -2506,7 +2943,10 @@
           "detail": "Proposed reporting duties need adoption by a competent lawmaker or organisation."
         }
       ],
-      "sources": ["us-surge", "eu-iaps-internal"],
+      "sources": [
+        "us-surge",
+        "eu-iaps-internal"
+      ],
       "featured": false
     },
     {
@@ -2515,7 +2955,10 @@
       "short": "CLTR",
       "kind": "Actor",
       "region": "United Kingdom",
-      "location": [-0.1, 51.5],
+      "location": [
+        -0.1,
+        51.5
+      ],
       "layer": "Voluntary",
       "type": "Policy research",
       "jurisdiction": "UK-based policy research; no public enforcement jurisdiction",
@@ -2523,7 +2966,9 @@
       "date": "December 2025",
       "description": "Examines UK influence through AISI expertise, developer relationships and international convening.",
       "mechanism": "Policy advice on UK frontier governance",
-      "horizons": ["Long-term capacity"],
+      "horizons": [
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -2553,7 +2998,9 @@
           "detail": "Recommended reforms do not themselves expand UK AISI powers."
         }
       ],
-      "sources": ["uk-cltr"],
+      "sources": [
+        "uk-cltr"
+      ],
       "featured": false
     },
     {
@@ -2570,7 +3017,10 @@
       "date": "April 2026",
       "description": "IAPS proposes reporting when materially more capable or risky models are used inside a developer. This proposal is separate from existing SB53 summaries.",
       "mechanism": "Structured assessment of autonomous behaviour and insider risks",
-      "horizons": ["Before release", "Ongoing oversight"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -2600,7 +3050,9 @@
           "detail": "Internal systems and usage can be invisible to external evaluators."
         }
       ],
-      "sources": ["eu-iaps-internal"],
+      "sources": [
+        "eu-iaps-internal"
+      ],
       "featured": false
     },
     {
@@ -2609,7 +3061,10 @@
       "short": "AI surge capacity",
       "kind": "Mechanism",
       "region": "United States",
-      "location": [-77, 38.9],
+      "location": [
+        -77,
+        38.9
+      ],
       "layer": "Institutional",
       "type": "Policy proposal",
       "jurisdiction": "US-based research; proposals may inform other jurisdictions",
@@ -2617,7 +3072,10 @@
       "date": "October 2025",
       "description": "Prearranged expert support could help government respond when specialist AI capacity is urgently needed.",
       "mechanism": "Proposed surge contracts and reserve expertise",
-      "horizons": ["Immediate response", "Long-term capacity"],
+      "horizons": [
+        "Immediate response",
+        "Long-term capacity"
+      ],
       "power": "Evidence & influence",
       "powers": [
         {
@@ -2651,7 +3109,9 @@
           "detail": "A reserve corps would not itself create missing legal powers."
         }
       ],
-      "sources": ["us-surge"],
+      "sources": [
+        "us-surge"
+      ],
       "featured": false
     },
     {
@@ -2660,7 +3120,10 @@
       "short": "Mistral",
       "kind": "Actor",
       "region": "European Union",
-      "location": [2.35, 48.86],
+      "location": [
+        2.3488,
+        48.85341
+      ],
       "layer": "Corporate",
       "type": "Frontier lab",
       "jurisdiction": "France / European Union; applicable destination-market laws",
@@ -2668,7 +3131,11 @@
       "date": "2026-06-11",
       "description": "French model developer combining hosted products with downloadable model releases.",
       "mechanism": "Published usage restrictions, reporting and account enforcement for hosted products; moderation and configurable guardrail tools.",
-      "horizons": ["Immediate response", "Before release", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -2711,7 +3178,10 @@
       "short": "Hugging Face",
       "kind": "Actor",
       "region": "United States",
-      "location": [-74.01, 40.71],
+      "location": [
+        -74.01,
+        40.71
+      ],
       "layer": "Corporate",
       "type": "Distribution platform",
       "jurisdiction": "US company with global platform; applicable local laws and platform terms",
@@ -2719,7 +3189,11 @@
       "date": "2025-04-10",
       "description": "Repository and distribution platform for models, datasets and applications, including releases from Mistral and Meta.",
       "mechanism": "Content reports and review, repository gating, removal or disabling, and account suspension under platform policy.",
-      "horizons": ["Immediate response", "Before release", "Ongoing oversight"],
+      "horizons": [
+        "Immediate response",
+        "Before release",
+        "Ongoing oversight"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -2763,7 +3237,10 @@
       "short": "ANPD",
       "kind": "Actor",
       "region": "Latin America",
-      "location": [-47.88, -15.8],
+      "location": [
+        -47.88,
+        -15.8
+      ],
       "layer": "Legal",
       "type": "Regulator",
       "jurisdiction": "Brazil; personal-data processing within LGPD scope",
@@ -2771,7 +3248,11 @@
       "date": "2026-09-14",
       "description": "ANPD applies personal-data law to AI training and use. Its existing privacy powers include obtaining records, inspecting systems and pursuing compliance or sanctions. This card does not treat Brazil's proposed general AI legislation as enacted.",
       "mechanism": "LGPD and ANPD inspection/sanctions procedure",
-      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Immediate response"
+      ],
       "power": "Legal enforcement",
       "powers": [
         {
@@ -2801,7 +3282,10 @@
           "detail": "Statutory system access does not establish sufficient frontier-evaluation expertise; staffing is not assessed."
         }
       ],
-      "sources": ["gl-anpd-law", "gl-anpd-oecd"],
+      "sources": [
+        "gl-anpd-law",
+        "gl-anpd-oecd"
+      ],
       "featured": true
     },
     {
@@ -2810,7 +3294,10 @@
       "short": "TII / Falcon",
       "kind": "Actor",
       "region": "Middle East",
-      "location": [54.61, 24.43],
+      "location": [
+        54.61,
+        24.43
+      ],
       "layer": "Corporate",
       "type": "Public model developer",
       "jurisdiction": "United Arab Emirates; TII's own research, releases and systems",
@@ -2818,7 +3305,11 @@
       "date": "2026-09-14",
       "description": "TII develops Falcon models and supports open-model collaboration through the Falcon Foundation. It is the applied-research pillar of Abu Dhabi's ATRC. The corporate layer here describes developer control, not private ownership.",
       "mechanism": "Internal research/release governance and open-model ecosystem",
-      "horizons": ["Before release", "Ongoing oversight", "Immediate response"],
+      "horizons": [
+        "Before release",
+        "Ongoing oversight",
+        "Immediate response"
+      ],
       "power": "Operational control",
       "powers": [
         {
@@ -2848,7 +3339,9 @@
           "detail": "Open distribution separates developer control from downstream deployment. The network edge is analytical, not a membership claim."
         }
       ],
-      "sources": ["gl-tii"],
+      "sources": [
+        "gl-tii"
+      ],
       "featured": true
     },
     {
@@ -2857,7 +3350,10 @@
       "short": "SDAIA",
       "kind": "Actor",
       "region": "Middle East",
-      "location": [46.68, 24.71],
+      "location": [
+        46.68,
+        24.71
+      ],
       "layer": "Legal",
       "type": "Regulator and policy body",
       "jurisdiction": "Saudi Arabia; binding powers below concern personal-data law, including in-scope overseas processing",
@@ -2900,8 +3396,233 @@
           "detail": "Technical inspections, administrative committees and criminal prosecution have different roles."
         }
       ],
-      "sources": ["gl-sdaia-pdpl", "gl-sdaia-principles", "gl-sdaia-unesco"],
+      "sources": [
+        "gl-sdaia-pdpl",
+        "gl-sdaia-principles",
+        "gl-sdaia-unesco"
+      ],
       "featured": true
+    },
+    {
+      "id": "sain",
+      "name": "Safe AI Netherlands",
+      "short": "SAIN",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [
+        6.56667,
+        53.21917
+      ],
+      "layer": "Voluntary",
+      "type": "Civil society and education",
+      "jurisdiction": "Netherlands; national foundation and local chapters, without regulatory jurisdiction",
+      "status": "Operating",
+      "date": "2026-10-02",
+      "description": "Dutch foundation supporting AI safety education, research and community-building through chapters in Groningen, Utrecht and Amsterdam.",
+      "mechanism": "National chapter framework, free education and research support",
+      "horizons": [
+        "Long-term capacity"
+      ],
+      "power": "Research and influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can ask participants, researchers and collaborators to share information voluntarily."
+        },
+        {
+          "value": "none",
+          "detail": "No statutory authority to compel external model developers to disclose information."
+        },
+        {
+          "value": "research",
+          "detail": "Research activity depends on people, skills, public artifacts and any agreed access; no compulsory inspection authority."
+        },
+        {
+          "value": "none",
+          "detail": "Cannot order an external developer to change or withdraw a model."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "A civil-society organisation; education and research do not confer regulatory powers."
+        },
+        {
+          "type": "Access",
+          "detail": "Private model artifacts require developer cooperation or another lawful route."
+        }
+      ],
+      "sources": [
+        "sain-about",
+        "sain-community",
+        "sain-contact"
+      ],
+      "featured": true
+    },
+    {
+      "id": "sain-groningen",
+      "name": "Safe AI Netherlands — Groningen",
+      "short": "SAIN Groningen",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [
+        6.56667,
+        53.21917
+      ],
+      "layer": "Voluntary",
+      "type": "Community chapter",
+      "jurisdiction": "Groningen, Netherlands; chapter of the national foundation, not a separate regulator",
+      "status": "Active chapter",
+      "date": "2026-10-02",
+      "description": "Local courses, research and discussion groups; successor to AISIG.",
+      "mechanism": "Local community, courses and research participation under SAIN",
+      "horizons": [
+        "Long-term capacity"
+      ],
+      "power": "Research and influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can ask participants, researchers and collaborators to share information voluntarily."
+        },
+        {
+          "value": "none",
+          "detail": "No statutory authority to compel external model developers to disclose information."
+        },
+        {
+          "value": "research",
+          "detail": "Research activity depends on people, skills, public artifacts and any agreed access; no compulsory inspection authority."
+        },
+        {
+          "value": "none",
+          "detail": "Cannot order an external developer to change or withdraw a model."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "A civil-society organisation; education and research do not confer regulatory powers."
+        },
+        {
+          "type": "Access",
+          "detail": "Private model artifacts require developer cooperation or another lawful route."
+        }
+      ],
+      "sources": [
+        "sain-groningen",
+        "sain-community"
+      ],
+      "featured": false
+    },
+    {
+      "id": "sain-utrecht",
+      "name": "Safe AI Netherlands — Utrecht",
+      "short": "SAIN Utrecht",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [
+        5.12222,
+        52.09083
+      ],
+      "layer": "Voluntary",
+      "type": "Community chapter",
+      "jurisdiction": "Utrecht, Netherlands; chapter of the national foundation, not a separate regulator",
+      "status": "Active chapter",
+      "date": "2026-10-02",
+      "description": "Local AI safety education, discussion groups and research connections.",
+      "mechanism": "Local community, courses and research participation under SAIN",
+      "horizons": [
+        "Long-term capacity"
+      ],
+      "power": "Research and influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can ask participants, researchers and collaborators to share information voluntarily."
+        },
+        {
+          "value": "none",
+          "detail": "No statutory authority to compel external model developers to disclose information."
+        },
+        {
+          "value": "research",
+          "detail": "Research activity depends on people, skills, public artifacts and any agreed access; no compulsory inspection authority."
+        },
+        {
+          "value": "none",
+          "detail": "Cannot order an external developer to change or withdraw a model."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "A civil-society organisation; education and research do not confer regulatory powers."
+        },
+        {
+          "type": "Access",
+          "detail": "Private model artifacts require developer cooperation or another lawful route."
+        }
+      ],
+      "sources": [
+        "sain-utrecht",
+        "sain-community"
+      ],
+      "featured": false
+    },
+    {
+      "id": "sain-amsterdam",
+      "name": "Safe AI Netherlands — Amsterdam",
+      "short": "SAIN Amsterdam",
+      "kind": "Actor",
+      "region": "European Union",
+      "location": [
+        4.88969,
+        52.37403
+      ],
+      "layer": "Voluntary",
+      "type": "Community chapter",
+      "jurisdiction": "Amsterdam, Netherlands; chapter of the national foundation, not a separate regulator",
+      "status": "Active chapter",
+      "date": "2026-10-02",
+      "description": "Technical AI safety and frontier governance courses, research and community events.",
+      "mechanism": "Local community, courses and research participation under SAIN",
+      "horizons": [
+        "Long-term capacity"
+      ],
+      "power": "Research and influence",
+      "powers": [
+        {
+          "value": "voluntary",
+          "detail": "Can ask participants, researchers and collaborators to share information voluntarily."
+        },
+        {
+          "value": "none",
+          "detail": "No statutory authority to compel external model developers to disclose information."
+        },
+        {
+          "value": "research",
+          "detail": "Research activity depends on people, skills, public artifacts and any agreed access; no compulsory inspection authority."
+        },
+        {
+          "value": "none",
+          "detail": "Cannot order an external developer to change or withdraw a model."
+        }
+      ],
+      "gaps": [
+        {
+          "type": "Authority",
+          "detail": "A civil-society organisation; education and research do not confer regulatory powers."
+        },
+        {
+          "type": "Access",
+          "detail": "Private model artifacts require developer cooperation or another lawful route."
+        }
+      ],
+      "sources": [
+        "sain-amsterdam",
+        "sain-community"
+      ],
+      "featured": false
     }
   ],
   "sources": [
@@ -3698,6 +4419,48 @@
       "url": "https://www.unesco.org/en/forum-ethics-ai",
       "kind": "Official announcement",
       "note": "UNESCO and Saudi Arabia, represented by SDAIA/ICAIRE, co-host 14–17 September 2026 in Riyadh."
+    },
+    {
+      "id": "sain-about",
+      "title": "SAIN: organisation and national chapter structure",
+      "url": "https://safeainetherlands.org/about",
+      "kind": "Primary organisation source",
+      "note": "Education, research support and community-building; not a statutory regulator."
+    },
+    {
+      "id": "sain-community",
+      "title": "SAIN: chapter directory",
+      "url": "https://safeainetherlands.org/community",
+      "kind": "Primary organisation source",
+      "note": "Three confirmed chapters and a generic invitation to propose new chapters; no prospective cities named."
+    },
+    {
+      "id": "sain-contact",
+      "title": "SAIN: contact and registered address",
+      "url": "https://safeainetherlands.org/contact",
+      "kind": "Primary organisation source",
+      "note": "Groningen is the registered-address city, not the location of every member."
+    },
+    {
+      "id": "sain-groningen",
+      "title": "SAIN Groningen: chapter",
+      "url": "https://safeainetherlands.org/chapters/groningen",
+      "kind": "Primary organisation source",
+      "note": "Chapter activities and affiliation; city-level placement."
+    },
+    {
+      "id": "sain-utrecht",
+      "title": "SAIN Utrecht: chapter",
+      "url": "https://safeainetherlands.org/chapters/utrecht",
+      "kind": "Primary organisation source",
+      "note": "Chapter activities and affiliation; city-level placement."
+    },
+    {
+      "id": "sain-amsterdam",
+      "title": "SAIN Amsterdam: chapter",
+      "url": "https://safeainetherlands.org/chapters/amsterdam",
+      "kind": "Primary organisation source",
+      "note": "Chapter activities and affiliation; city-level placement."
     }
   ],
   "edges": [
@@ -4470,6 +5233,27 @@
       "label": "Co-hosts 14–17 September 2026 ethics forum with ICAIRE",
       "kind": "influence",
       "source": "gl-sdaia-unesco"
+    },
+    {
+      "from": "sain",
+      "to": "sain-groningen",
+      "label": "National foundation supports and hosts the chapter",
+      "kind": "control",
+      "source": "sain-community"
+    },
+    {
+      "from": "sain",
+      "to": "sain-utrecht",
+      "label": "National foundation supports and hosts the chapter",
+      "kind": "control",
+      "source": "sain-community"
+    },
+    {
+      "from": "sain",
+      "to": "sain-amsterdam",
+      "label": "National foundation supports and hosts the chapter",
+      "kind": "control",
+      "source": "sain-community"
     }
   ]
 }

@@ -1706,7 +1706,7 @@ footer button {
 @font-face{font-family:Atlas Poppins;src:url('./fonts/poppins-medium-latin.woff2') format('woff2');font-style:normal;font-weight:500;font-display:swap}
 @font-face{font-family:Atlas Poppins;src:url('./fonts/poppins-semibold-latin.woff2') format('woff2');font-style:normal;font-weight:600;font-display:swap}
 @font-face{font-family:Atlas Poppins;src:url('./fonts/poppins-bold-latin.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
-:root{--background:#f7f5f2;--foreground:#021c4d;--primary:#021c4d;--accent:#ffede5;--border:#d9dce2;--muted:#f0efec;--muted-foreground:#626b7e;--font-sans:'Atlas Poppins',Arial,sans-serif;--sain-orange:#ff6025;--sain-navy:#021c4d;--sain-cream:#f7f5f2}
+:root{--font-heading:'Atlas Spartan';--background:#f7f5f2;--foreground:#021c4d;--primary:#021c4d;--accent:#ffede5;--border:#d9dce2;--muted:#f0efec;--muted-foreground:#626b7e;--font-sans:'Atlas Poppins',Arial,sans-serif;--sain-orange:#ff6025;--sain-navy:#021c4d;--sain-cream:#f7f5f2}
 body{font-family:'Atlas Poppins',Arial,sans-serif;color:var(--sain-navy);background:var(--sain-cream)}
 h1,h2,h3,h4,.brand-title,.path-number{font-family:'Atlas Spartan',Arial,sans-serif}
 h1,h2,h3,h4{font-weight:600}

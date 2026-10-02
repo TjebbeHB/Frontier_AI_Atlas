@@ -1,14 +1,15 @@
 # Frontier AI Atlas
 
-**[Explore the live atlas](https://ai-governance-map.tjebbe-boersma.com/)** · [Scenario lab](https://ai-governance-map.tjebbe-boersma.com/#scenario) · [Career transitions](https://ai-governance-map.tjebbe-boersma.com/#careers)
+**[Explore the live atlas](https://ai-governance-map.tjebbe-boersma.com/)** · [Scenario lab](https://ai-governance-map.tjebbe-boersma.com/#scenario) · [Career transitions](https://ai-governance-map.tjebbe-boersma.com/#careers) · [Netherlands AI jobs](https://ai-governance-map.tjebbe-boersma.com/#jobs)
 
-Interactive, source-linked research map of frontier AI governance, dated 14 September 2026.
+Interactive, source-linked research map of frontier AI governance. The core governance snapshot is dated 14 September 2026; selected location, SAIN community and Netherlands jobs information was checked on 2 October 2026.
 
 ## Experience
 
 - Network organised by geography, governance layer, actor type, time horizon or power.
 - Interactive globe and flat map with sourced city anchors, regional presets (USA, Europe, Asia), raised logo callouts and traced connections.
 - Hover or tap grouped pins to unfold individual organisations. Selecting an actor fits its connected organisations into view and draws animated directional relationships; dotted spokes retain geographic anchors. Open the connection evidence list for sources and entries without a physical location. Reduced-motion preferences disable the animation.
+- A northwest Europe zoom moves from the globe to a matching regional map spanning London–the Netherlands and Groningen–Paris, with sourced city anchors and finer Natural Earth geometry. SAIN’s national organisation and confirmed Groningen, Utrecht and Amsterdam chapters are included.
 - Authority matrix for requests, compelled disclosure, technical investigation and remedies.
 - Entry profiles explain jurisdiction, dates, evidence and distinct authority/capacity gaps.
 - Nine-step hypothetical cross-border incident walkthrough.
@@ -40,6 +41,8 @@ npm run dev
 ```sh
 node --experimental-strip-types scripts/validate-data.mjs
 node --experimental-strip-types scripts/validate-globe.mjs
+node --experimental-strip-types scripts/validate-regional-map.mjs
+node --experimental-strip-types scripts/validate-jobs.mjs
 npx tsc --noEmit
 npx oxlint app lib scripts
 npm run build
@@ -47,7 +50,7 @@ npm run build
 
 The data check covers source/edge/tutorial integrity, significant date and authority distinctions, and every layout under full, core and regional datasets. Project code lint and TypeScript checks pass. The scaffold-wide `npm run lint` also scans the untouched generated component catalog, which has existing lint findings; those vendored files are preserved.
 
-Browser checks cover regional zoom, grouped actor selection, entry evidence links and map controls. Source research and graph/data integrity are checked independently.
+Browser checks cover regional zoom, grouped actor selection, entry evidence links and map controls. The regional validator checks bounding coordinates, shared city anchors, chapter membership and geometry. The jobs validator checks source/date completeness, filters and deadline expiry. Source research and graph/data integrity are checked independently.
 
 ## Visual references
 
@@ -62,6 +65,12 @@ Open `/#scenario` for the Democratic AI Response Compact exercise. Seven relativ
 The scenario lab offers two explicitly hypothetical intelligence-explosion exercises: a Democratic AI Response Compact stress test and a cooperative Democratic AI Audit Partnership that funds joint safety audits with willing labs and US states. Timeline controls show actor responses and interactions on a network or world map.
 
 The careers section uses a four-step questionnaire covering background, time, funding, location and work permission to help visitors explore 24 resources. Answers remain in browser memory; they are not submitted to organisations.
+
+## Netherlands AI opportunities
+
+Open `/#jobs` for a filterable, locally saved shortlist of Netherlands AI opportunities. The 2 October 2026 snapshot contains 19 employer listings: 12 paid or PhD roles and 7 volunteer opportunities. This includes all ten advertised SAIN roles, of which three are explicitly paid. Search by keywords and filter by city, field, commitment, working arrangement, relevance or paid status. Known expired deadlines are hidden automatically; rolling vacancies still require checking with the employer.
+
+The filter-and-shortlist format is inspired by [80,000 Hours](https://jobs.80000hours.org/), without affiliation or copying its vacancy database. Listings link to primary employer sources, distinguish broader AI work from safety-focused opportunities, and surface important eligibility restrictions. Work location does not imply visa sponsorship. Saved roles stay in the visitor’s browser. Research notes and current structured listings are in `lib/jobs/`. This is a curated snapshot, not a live hiring feed.
 
 ## Static build and local preview
 
@@ -81,8 +90,8 @@ node --experimental-strip-types scripts/validate-careers.mjs
 
 ## Repository guide
 
-- `app/` and `components/`: atlas interface, map, scenarios and careers UI.
-- `lib/`: source-linked governance dataset, geographic geometry, actor profiles, scenario logic and career resources.
+- `app/` and `components/`: atlas interface, globe and regional map, scenarios, careers and jobs UI.
+- `lib/`: source-linked governance dataset, geographic geometry, actor and SAIN chapter profiles, scenario logic, career resources and jobs data.
 - `scripts/`: data validators and static deployment build.
 - `deployment/vimexx/`: static entry point, fonts and hosting configuration.
 - `briefs/`: the shared-safety partnership discussion brief.

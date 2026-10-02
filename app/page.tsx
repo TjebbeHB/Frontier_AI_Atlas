@@ -63,6 +63,7 @@ import WorldMap, {
 import { buildNetworkLayout } from '@/lib/explore';
 import IntelligenceScenario from '@/components/intelligence-scenario';
 import CareerTransition from '@/components/career-transition';
+import NetherlandsJobs from '@/components/netherlands-jobs';
 import GovernanceGlobe from '@/components/governance-globe';
 import AtlasHome from '@/components/atlas-home';
 import { locationCaption } from '@/lib/geography';
@@ -191,7 +192,8 @@ export default function Home() {
         destination === 'atlas' ||
           destination === 'scenario' ||
           destination === 'sources' ||
-          destination === 'careers'
+          destination === 'careers' ||
+          destination === 'jobs'
           ? destination
           : 'home',
       );
@@ -315,6 +317,12 @@ export default function Home() {
             Careers
           </button>
           <button
+            className={page === 'jobs' ? 'nav-active' : ''}
+            onClick={() => navigatePage('jobs')}
+          >
+            NL jobs
+          </button>
+          <button
             className={page === 'scenario' ? 'nav-active' : ''}
             onClick={() => navigatePage('scenario')}
           >
@@ -329,7 +337,9 @@ export default function Home() {
       {page === 'home' ? (
         <AtlasHome onExplore={explore} onIncident={startTour} onNavigate={navigatePage} onProfile={setSelected} />
       ) : page === 'careers' ? (
-        <CareerTransition />
+        <CareerTransition onJobs={() => navigatePage('jobs')} />
+      ) : page === 'jobs' ? (
+        <NetherlandsJobs onCareers={() => navigatePage('careers')} />
       ) : page === 'scenario' ? (
         <IntelligenceScenario onProfile={setSelected} />
       ) : page === 'atlas' ? (
@@ -843,7 +853,7 @@ export default function Home() {
                       </div>
                     </TabsContent>
                     <TabsContent value="globe">
-                      <GovernanceGlobe entries={displayed} onProfile={setSelected} onExpand={() => setCore(false)} />
+                      <GovernanceGlobe onJobs={() => navigatePage('jobs')} entries={displayed} onProfile={setSelected} onExpand={() => setCore(false)} />
                     </TabsContent>
                     <TabsContent value="world">
                       <WorldMap

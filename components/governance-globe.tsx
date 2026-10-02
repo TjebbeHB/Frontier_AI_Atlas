@@ -7,6 +7,7 @@ import {
   ArrowUpRight,
   ChevronDown,
   Globe2,
+  MapPin,
   Minus,
   Move,
   Plus,
@@ -17,6 +18,7 @@ import { edges, nodes, type Edge, type Entry } from '@/lib/governance';
 import profilesData from '@/lib/actor-profiles.json';
 import countries from '@/lib/world-countries.json';
 import { connectionCounts, type ActorProfile } from '@/lib/geography';
+import RegionalMap from '@/components/regional-map';
 import {
   arrangeRaisedPins,
   angularDistance,
@@ -168,6 +170,7 @@ export type GovernanceGlobeProps = {
   onSelectedChange?: (id: string | null) => void;
   onProfile?: (id: string) => void;
   onExpand?: () => void;
+  onJobs?: () => void;
 };
 
 export default function GovernanceGlobe({
@@ -178,6 +181,7 @@ export default function GovernanceGlobe({
   onSelectedChange,
   onProfile,
   onExpand,
+  onJobs,
 }: GovernanceGlobeProps) {
   const hero = variant === 'hero';
   const [camera, setCamera] = useState<GlobeCamera>(globePresets.Global);
@@ -190,6 +194,13 @@ export default function GovernanceGlobe({
   const [anchorMenu, setAnchorMenu] = useState<string[] | null>(null);
   const [failedLogos, setFailedLogos] = useState<Set<string>>(() => new Set());
   const [dragging, setDragging] = useState(false);
+  const [regional, setRegional] = useState(false);
+  const [travelling, setTravelling] = useState(false);
+  const flightFrame = useRef<number | null>(null);
+  const returnCamera = useRef<GlobeCamera>(globePresets.Global);
+  const returnPreset = useRef('Global');
+  const regionButton = useRef<HTMLButtonElement>(null);
+  const restoreRegionFocus = useRef(false);
   const activeId = selectedId === undefined ? localSelected : selectedId;
   const activeEntry = activeId ? entriesById.get(activeId) : undefined;
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -343,6 +354,53 @@ export default function GovernanceGlobe({
     });
     return () => cancelAnimationFrame(frame);
   }, [camera]);
+  useEffect(() => () => {
+    if (flightFrame.current !== null) cancelAnimationFrame(flightFrame.current);
+  }, []);
+  useEffect(() => {
+    if (!regional && restoreRegionFocus.current) {
+      regionButton.current?.focus({ preventScroll: true });
+      restoreRegionFocus.current = false;
+    }
+  }, [regional]);
+  function openRegion() {
+    if (travelling) return;
+    returnCamera.current = camera;
+    returnPreset.current = preset;
+    setHovered(null);
+    setAnchorMenu(null);
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setRegional(true);
+      return;
+    }
+    setTravelling(true);
+    const start = camera;
+    const destination: GlobeCamera = { center: [3.5, 51.15], zoom: 4.4 };
+    const longitudeDelta = wrapLongitude(destination.center[0] - start.center[0]);
+    const started = performance.now();
+    let lastPaint = 0;
+    const frame = (now: number) => {
+      const progress = Math.min(1, (now - started) / 1050);
+      const eased = progress < .5 ? 4 * progress ** 3 : 1 - (-2 * progress + 2) ** 3 / 2;
+      if (now - lastPaint > 35 || progress === 1) {
+        setCamera({ center: [wrapLongitude(start.center[0] + longitudeDelta * eased), start.center[1] + (destination.center[1] - start.center[1]) * eased], zoom: start.zoom + (destination.zoom - start.zoom) * eased });
+        lastPaint = now;
+      }
+      if (progress < 1) flightFrame.current = requestAnimationFrame(frame);
+      else {
+        flightFrame.current = null;
+        setRegional(true);
+        setTravelling(false);
+      }
+    };
+    flightFrame.current = requestAnimationFrame(frame);
+  }
+  function closeRegion() {
+    restoreRegionFocus.current = true;
+    setCamera(returnCamera.current);
+    setPreset(returnPreset.current);
+    setRegional(false);
+  }
   function setSelection(id: string | null) {
     setLocalSelected(id);
     onSelectedChange?.(id);
@@ -399,9 +457,11 @@ export default function GovernanceGlobe({
     }
   }
 
+  if (regional) return <RegionalMap entries={entries} links={links} compact={hero} onBack={closeRegion} onProfile={onProfile} onJobs={onJobs}/>;
+
   return (
     <section
-      className={`governance-globe governance-globe--${variant}`}
+      className={`governance-globe governance-globe--${variant}${travelling ? ' is-travelling' : ''}`}
       aria-label="Interactive governance globe"
     >
       <style>{globeStyles}</style>
@@ -418,6 +478,7 @@ export default function GovernanceGlobe({
               {name}
             </button>
           ))}
+          <button ref={regionButton} type="button" className="globe-local-button" onClick={openRegion} disabled={travelling} aria-label="Zoom to Northwest Europe and SAIN chapters"><MapPin size={12}/> NW Europe · SAIN</button>
         </div>
         {!hero && (
           <span className="globe-count">
@@ -425,6 +486,7 @@ export default function GovernanceGlobe({
           </span>
         )}
       </div>
+      {travelling && <div className="globe-flight-label" role="status">Zooming to Northwest Europe…</div>}
       <div className={`globe-stage${dragging ? ' is-dragging' : ''}`}>
         <div className="globe-aura" aria-hidden="true" />
         <canvas
@@ -997,6 +1059,7 @@ const globeStyles = `
 .globe-hero-key{text-align:center;color:#91a9c1;font-size:9px;line-height:1.6;padding:2px 12px 10px}.globe-anchor-menu{position:absolute;z-index:5;right:18px;top:18px;width:min(270px,78%);max-height:70%;overflow:auto;border:1px solid #7993ad6b;border-radius:12px;padding:11px;background:#09234bec;box-shadow:0 12px 45px #000d2990;backdrop-filter:blur(12px)}.globe-anchor-menu>div{display:flex;align-items:center;justify-content:space-between;gap:10px}.globe-anchor-menu>div strong{font-size:12px;color:#fff3dc}.globe-anchor-menu>div button{border:0;background:transparent;color:#b4c9dc;display:grid;place-items:center;padding:3px}.globe-anchor-menu p{font-size:10px;line-height:1.4;color:#9eb6cc;margin:7px 0}.globe-anchor-menu>button{display:block;width:100%;text-align:left;border:0;border-top:1px solid #6783a034;background:transparent;padding:9px 2px;color:#fff3dc}.globe-anchor-menu>button:hover{color:#ff9b6e}.globe-anchor-menu>button strong{display:block;font-size:11px;font-weight:600}.globe-anchor-menu>button small{display:block;font-size:10px;color:#9fb4c8;line-height:1.5;margin-top:3px}
 .globe-toolbar{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px 0}
 .globe-presets{display:flex;flex-wrap:wrap;align-items:center;gap:4px}.globe-presets button{display:inline-flex;gap:5px;align-items:center;border:1px solid transparent;background:transparent;color:#a8bfd5;padding:7px 10px;border-radius:20px;font-size:11px;line-height:1.2}.globe-presets button[aria-pressed=true]{color:#fff3dc;background:#143c67;border-color:#4b6886}.globe-presets button:hover{color:#fff3dc;background:#153a60}.globe-count{font-size:11px;color:#9eb7cf;white-space:nowrap}
+.globe-presets .globe-local-button{border-color:#ff87575e;color:#ffb28b;background:#ff602510;margin-left:4px}.globe-presets .globe-local-button:hover{background:#ff602528;border-color:#ffab7e}.is-travelling .globe-stage,.is-travelling .globe-toolbar{pointer-events:none}.globe-flight-label{position:absolute;z-index:8;top:64px;left:50%;transform:translateX(-50%);font-size:11px;white-space:nowrap;background:#06254def;color:#ffb690;border:1px solid #b28e724c;padding:10px 14px;border-radius:20px}
 .globe-stage{position:relative;isolation:isolate;aspect-ratio:1000/740;min-width:0;overflow:hidden}.globe-aura{position:absolute;z-index:-1;inset:7% 14% 8%;border-radius:50%;background:radial-gradient(ellipse,#184d802b 5%,#13477c1a 45%,transparent 70%)}.globe-earth,.globe-svg{position:absolute;inset:0;width:100%;height:100%}.globe-earth{pointer-events:none}.globe-svg{overflow:visible;cursor:grab;touch-action:none}.is-dragging .globe-svg{cursor:grabbing}.globe-surface-decoration{pointer-events:none}
 .globe-route-flow{animation:globe-route-flow 11s linear infinite;pointer-events:none}.is-dragging .globe-route-flow{animation-play-state:paused}@keyframes globe-route-flow{to{stroke-dashoffset:-306}}
 .globe-anchor{cursor:pointer;outline:none}.globe-anchor:focus-visible circle{stroke:#fff3dc;stroke-width:2}.globe-pin{cursor:pointer;outline:none}.globe-pin:hover .globe-pin-focus,.globe-pin:focus-visible .globe-pin-focus{stroke-opacity:1}.globe-pin:focus-visible>line{stroke:#fff3dc;stroke-width:2}
