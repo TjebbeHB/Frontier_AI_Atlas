@@ -6,6 +6,7 @@ Run: python3 scripts/build-regional-geography.py
 """
 import json
 import math
+import sys
 from pathlib import Path
 from urllib.request import urlretrieve
 
@@ -13,8 +14,9 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_admin_0_countries_lakes.geojson'
 LAKE_SOURCE = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_lakes.geojson'
 CACHE = ROOT / 'outputs/regional-map-source/countries.geojson'
-BOUNDS = [-1.2, 48.45, 8.0, 53.65]  # west, south, east, north
-WIDTH, HEIGHT, PADDING = 940, 820, 34
+NETHERLANDS = '--netherlands' in sys.argv
+BOUNDS = [3.1, 50.65, 7.35, 53.65] if NETHERLANDS else [-1.2, 48.45, 8.0, 53.65]  # west, south, east, north
+WIDTH, HEIGHT, PADDING = (880, 1020, 34) if NETHERLANDS else (940, 820, 34)
 
 
 def mercator(lon, lat):
@@ -90,6 +92,6 @@ for feature in json.loads(lake_cache.read_text())['features']:
         lakes.append({'name': feature['properties'].get('name') or 'Lake', 'path': path})
 output = {'source': SOURCE, 'lakeSource': LAKE_SOURCE, 'attribution': 'Natural Earth · public domain · 1:10m · v5.1.2',
           'bounds': BOUNDS, 'width': WIDTH, 'height': HEIGHT, 'padding': PADDING, 'countries': countries, 'lakes': lakes}
-path = ROOT / 'lib/regional-countries.json'
+path = ROOT / ('lib/netherlands-countries.json' if NETHERLANDS else 'lib/regional-countries.json')
 path.write_text(json.dumps(output, separators=(',', ':')) + '\n')
 print(f'{len(countries)} clipped country shapes, {len(lakes)} lakes; {path.stat().st_size:,} bytes')

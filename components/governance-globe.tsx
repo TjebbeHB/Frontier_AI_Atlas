@@ -170,7 +170,7 @@ export type GovernanceGlobeProps = {
   onSelectedChange?: (id: string | null) => void;
   onProfile?: (id: string) => void;
   onExpand?: () => void;
-  onJobs?: () => void;
+  onJobs?: (city?: string) => void;
 };
 
 export default function GovernanceGlobe({

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { filterJobs, emptyJobFilters, isExpired, isSainJob } from '../lib/jobs/index.ts';
+import { filterJobs, emptyJobFilters, isExpired, isSainJob, jobCities, unlocatedCityFilter } from '../lib/jobs/index.ts';
 const data = JSON.parse(fs.readFileSync(new URL('../lib/jobs/data.json', import.meta.url)));
 const date = data.checkedAt;
 const ids = new Set();
@@ -25,6 +25,14 @@ assert.equal(run({city:'Amsterdam',query:'SaIn projects'}).length,1,'Case-insens
 assert.equal(run({city:'Nijmegen',query:'SaIn projects'}).length,0,'Incompatible filters return empty');
 assert(run({type:'PhD'}).every(job=>job.type === 'PhD'));
 assert.equal(run({query:'zz-no-such-listing'}).length,0);
+const multi = { ...data.jobs[0], id: 'test-multi-city', city: 'Amsterdam / Utrecht', cities: ['Amsterdam', 'Utrecht', 'Amsterdam'] };
+assert.deepEqual(jobCities(multi), ['Amsterdam', 'Utrecht'], 'Explicit city anchors are deduplicated');
+for (const city of ['Amsterdam', 'Utrecht']) assert.equal(filterJobs([multi], {...emptyJobFilters, city}, [], date).length, 1, 'One advert can match each explicitly stated city');
+const remote = { ...data.jobs[0], id: 'test-no-city', city: 'Netherlands', cities: [] };
+assert.deepEqual(jobCities(remote), [], 'Nationwide work must not acquire a made-up HQ pin');
+assert.equal(filterJobs([remote], {...emptyJobFilters, city: unlocatedCityFilter}, [], date).length, 1);
+assert.equal(filterJobs([remote], {...emptyJobFilters, city: 'Amsterdam'}, [], date).length, 0);
+assert.equal(filterJobs([multi], emptyJobFilters, [], date).length, 1, 'Multi-city ads counted once in the overall board');
 const timed = data.jobs.find(job=>job.deadline);
 assert(timed);
 assert(!isExpired(timed,timed.deadline), 'Role remains visible on closing day');

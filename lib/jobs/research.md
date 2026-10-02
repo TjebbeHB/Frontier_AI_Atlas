@@ -33,3 +33,11 @@ All nine non-SAIN listings were opened through web research. Live public HTML ad
 ## Chapter evidence
 
 [SAIN community](https://safeainetherlands.org/community) confirms Groningen, Utrecht and Amsterdam, and offers a generic invitation to propose a new chapter. It does not name prospective chapter cities. Planned-city pins need additional evidence or a clear user-proposal label.
+
+## Netherlands expansion — 2 October 2026
+
+Merged 49 additional primary-source adverts, giving 68 unique opportunity records (including the 10 SAIN paid/volunteer listings). The academic/public-sector audit is in `research-academic.md`; the industry audit and rejected stale hits are in `research-industry.md`. Individual records retain their employer URL, source-check date, eligibility caveats and deadline when known.
+
+The map matches explicitly advertised cities to GeoNames city centres. Multi-location adverts remain one record and appear once in each named city. City labels use canonical English/common forms (for example, Den Bosch for 's-Hertogenbosch). A role without a supported Dutch work city receives no pin. Lists automatically hide adverts after their known closing day; no-deadline listings are a dated snapshot, not a live feed.
+
+Verified during integration: All Your BI explicitly advertises Rotterdam, Amsterdam, The Hague and Utrecht; TU/e OpenEuroLLM explicitly names Eindhoven and carries a non-EU eligibility warning, which is displayed. No contact details or applications were submitted.

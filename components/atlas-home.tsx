@@ -13,11 +13,12 @@ function Orbit({ variant }: { variant: number }) {
   </svg>;
 }
 
-export default function AtlasHome({ onExplore, onIncident, onNavigate, onProfile }: {
+export default function AtlasHome({ onExplore, onIncident, onNavigate, onProfile, onJobs }: {
   onExplore: (view?: string) => void;
   onIncident: () => void;
   onNavigate: (destination: string) => void;
   onProfile: (id: string) => void;
+  onJobs: (city?: string) => void;
 }) {
   const paths = [
     { number: '01', title: 'Explore the atlas', body: 'Trace authority, evidence and connections.', action: 'Open the map', click: () => onExplore('globe') },
@@ -43,7 +44,7 @@ export default function AtlasHome({ onExplore, onIncident, onNavigate, onProfile
         <div className="home-principle">PEOPLE <span/> EVIDENCE <span/> SAFER AI TOGETHER</div>
       </div>
       <div className="home-globe">
-        <GovernanceGlobe entries={nodes} variant="hero" onProfile={onProfile} onJobs={() => onNavigate('jobs')}/>
+        <GovernanceGlobe entries={nodes} variant="hero" onProfile={onProfile} onJobs={onJobs}/>
         <div className="home-map-alternative"><span>A location is an anchor, not a jurisdiction.</span><button onClick={() => onExplore('world')}><Map size={14}/> Switch to flat map <ArrowUpRight size={13}/></button></div>
       </div>
     </section>

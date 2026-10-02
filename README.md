@@ -10,6 +10,7 @@ Interactive, source-linked research map of frontier AI governance. The core gove
 - Interactive globe and flat map with sourced city anchors, regional presets (USA, Europe, Asia), raised logo callouts and traced connections.
 - Hover or tap grouped pins to unfold individual organisations. Selecting an actor fits its connected organisations into view and draws animated directional relationships; dotted spokes retain geographic anchors. Open the connection evidence list for sources and entries without a physical location. Reduced-motion preferences disable the animation.
 - A northwest Europe zoom moves from the globe to a matching regional map spanning London–the Netherlands and Groningen–Paris, with sourced city anchors and finer Natural Earth geometry. SAIN’s national organisation and confirmed Groningen, Utrecht and Amsterdam chapters are included.
+- Continue zooming from northwest Europe into a Netherlands city map, with precise city-centre pins, SAIN chapter markers and linked job counts. City selection opens the matching job-board filter.
 - Authority matrix for requests, compelled disclosure, technical investigation and remedies.
 - Entry profiles explain jurisdiction, dates, evidence and distinct authority/capacity gaps.
 - Nine-step hypothetical cross-border incident walkthrough.
@@ -42,15 +43,16 @@ npm run dev
 node --experimental-strip-types scripts/validate-data.mjs
 node --experimental-strip-types scripts/validate-globe.mjs
 node --experimental-strip-types scripts/validate-regional-map.mjs
+node --experimental-strip-types scripts/validate-nl-map.mjs
 node --experimental-strip-types scripts/validate-jobs.mjs
 npx tsc --noEmit
-npx oxlint app lib scripts
+npx oxlint app lib components/atlas-home.tsx components/governance-globe.tsx components/regional-map.tsx components/netherlands-map.tsx components/netherlands-jobs.tsx scripts/validate-jobs.mjs scripts/validate-nl-map.mjs
 npm run build
 ```
 
-The data check covers source/edge/tutorial integrity, significant date and authority distinctions, and every layout under full, core and regional datasets. Project code lint and TypeScript checks pass. The scaffold-wide `npm run lint` also scans the untouched generated component catalog, which has existing lint findings; those vendored files are preserved.
+The data check covers source/edge/tutorial integrity, significant date and authority distinctions, and every layout under full, core and regional datasets. TypeScript and the scoped application/map/jobs lint checks above pass. The scaffold-wide `npm run lint` also scans the generated component catalog and older scripts with existing lint findings; those unrelated files are preserved.
 
-Browser checks cover regional zoom, grouped actor selection, entry evidence links and map controls. The regional validator checks bounding coordinates, shared city anchors, chapter membership and geometry. The jobs validator checks source/date completeness, filters and deadline expiry. Source research and graph/data integrity are checked independently.
+Browser checks cover regional and Netherlands zoom, city selection, grouped actor selection, entry evidence links and map controls. Geographic validators check projection consistency, city anchors, chapter membership, coastline/lake geometry and label layout. The jobs validator checks source/date completeness, filters, deduplicated multi-city counts and deadline expiry. Source research and graph/data integrity are checked independently.
 
 ## Visual references
 
@@ -68,7 +70,11 @@ The careers section uses a four-step questionnaire covering background, time, fu
 
 ## Netherlands AI opportunities
 
-Open `/#jobs` for a filterable, locally saved shortlist of Netherlands AI opportunities. The 2 October 2026 snapshot contains 19 employer listings: 12 paid or PhD roles and 7 volunteer opportunities. This includes all ten advertised SAIN roles, of which three are explicitly paid. Search by keywords and filter by city, field, commitment, working arrangement, relevance or paid status. Known expired deadlines are hidden automatically; rolling vacancies still require checking with the employer.
+Open `/#jobs` for an interactive Netherlands map and a filterable, locally saved shortlist of AI opportunities. The 2 October 2026 snapshot contains **68 distinct employer listings**, 49 more than the original board: 59 explicitly paid opportunities, 7 volunteer roles and 2 with compensation not established in the checked source. All ten advertised SAIN roles are included, of which three are explicitly paid.
+
+The listings name **19 Dutch cities**. A multi-location advertisement appears at each advertised city but counts only once in the total. The national map includes other major cities as geographic context without inventing vacancies. Map counts follow the search and non-city filters; choosing a city narrows the list. Switch between **Map & jobs** and **List only**, search by keywords, and filter by city, field, commitment, working arrangement, relevance or paid status. Results load in groups of twelve. Known expired deadlines are hidden automatically using the Amsterdam calendar date; no-deadline listings still require checking with the employer.
+
+The Netherlands coastline and lake layers use pinned Natural Earth 1:10m data. City coordinates are sourced from [GeoNames](https://www.geonames.org/) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); displaced labels retain leader lines to their true anchors. See [Netherlands map documentation](docs/netherlands-map.md) and [regional-map documentation](docs/regional-map.md).
 
 The filter-and-shortlist format is inspired by [80,000 Hours](https://jobs.80000hours.org/), without affiliation or copying its vacancy database. Listings link to primary employer sources, distinguish broader AI work from safety-focused opportunities, and surface important eligibility restrictions. Work location does not imply visa sponsorship. Saved roles stay in the visitor’s browser. Research notes and current structured listings are in `lib/jobs/`. This is a curated snapshot, not a live hiring feed.
 
@@ -90,9 +96,10 @@ node --experimental-strip-types scripts/validate-careers.mjs
 
 ## Repository guide
 
-- `app/` and `components/`: atlas interface, globe and regional map, scenarios, careers and jobs UI.
+- `app/` and `components/`: atlas interface, globe, regional and Netherlands maps, scenarios, careers and jobs UI.
 - `lib/`: source-linked governance dataset, geographic geometry, actor and SAIN chapter profiles, scenario logic, career resources and jobs data.
-- `scripts/`: data validators and static deployment build.
+- `scripts/`: data validators, reproducible geographic-data builder and static deployment build.
+- `docs/`: map behaviour, geographic sources and verification notes.
 - `deployment/vimexx/`: static entry point, fonts and hosting configuration.
 - `briefs/`: the shared-safety partnership discussion brief.
 
