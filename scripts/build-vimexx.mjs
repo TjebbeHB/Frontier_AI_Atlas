@@ -18,6 +18,7 @@ await build({
   build: { outDir: output, emptyOutDir: true, sourcemap: false },
 });
 await cp(path.join(root,'public/logos'), path.join(output,'logos'), {recursive:true});
+await cp(path.join(root,'public/brand'), path.join(output,'brand'), {recursive:true});
 await cp(path.join(root,'public/favicon.svg'), path.join(output,'favicon.svg'));
 await cp(path.join(root,'deployment/vimexx/htaccess'), path.join(output,'.htaccess'));
 

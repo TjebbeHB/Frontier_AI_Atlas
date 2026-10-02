@@ -2,6 +2,9 @@ import { buildNetworkLayout, dimensions } from '../lib/explore.ts';
 import {
   connectionCounts,
   connectionCurve,
+  clusterCities,
+  clusterLabel,
+  locationCaption,
   fanPositions,
   separateBubbles,
   mapClusters,
@@ -12,6 +15,9 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 const data = JSON.parse(
   fs.readFileSync(new URL('../lib/governance-data.json', import.meta.url)),
+);
+const profiles = JSON.parse(
+  fs.readFileSync(new URL('../lib/actor-profiles.json', import.meta.url)),
 );
 const tour = JSON.parse(
   fs.readFileSync(new URL('../lib/tutorial.json', import.meta.url)),
@@ -45,7 +51,12 @@ for (const n of data.nodes) {
     `${n.id}: horizons`,
   );
   if (n.location === null) {
-    assert.equal(n.kind, 'Mechanism', `${n.id}: missing actor location`);
+    assert(
+      n.kind === 'Mechanism' ||
+        (profiles[n.id]?.locationType === 'distributed' &&
+          !profiles[n.id]?.geographic),
+      `${n.id}: actors without coordinates must explicitly be distributed`,
+    );
   } else {
     assert(
       n.location.length === 2 && n.location.every(Number.isFinite),
@@ -153,18 +164,64 @@ console.log(
   'All five layouts cover every entry, core subset and regional filter without missing or overlapping positions.',
 );
 
-const profiles = JSON.parse(
-  fs.readFileSync(new URL('../lib/actor-profiles.json', import.meta.url)),
-);
 const counts = connectionCounts(data.nodes, data.edges);
 for (const n of data.nodes) {
   const p = profiles[n.id];
   assert(p, `${n.id}: actor profile exists`);
-  if (p.geographic)
+  if (p.geographic) {
     assert(
       n.kind !== 'Mechanism' && n.location && p.city,
       `${n.id}: meaningful physical anchor`,
     );
+    const coords = p.coordinates ?? n.location;
+    assert(
+      coords.length === 2 && coords.every(Number.isFinite),
+      `${n.id}: finite map coordinates`,
+    );
+    assert(
+      Math.abs(coords[0]) <= 180 && Math.abs(coords[1]) <= 90,
+      `${n.id}: valid map coordinates`,
+    );
+  }
+  if (p.locationVerifiedAt) {
+    assert(
+      p.locationSource && p.locationType && p.locationLabel,
+      `${n.id}: location checks include primary source and qualification`,
+    );
+    assert(
+      /^\d{4}-\d{2}-\d{2}$/.test(p.locationVerifiedAt),
+      `${n.id}: location check date`,
+    );
+  }
+  for (const field of ['locationSource', 'coordinateSource']) {
+    if (p[field])
+      assert.equal(
+        new URL(p[field]).protocol,
+        'https:',
+        `${n.id}: ${field} provenance`,
+      );
+  }
+  if (p.locationType === 'distributed') {
+    assert.equal(
+      p.geographic,
+      false,
+      `${n.id}: distributed actors are not pinned`,
+    );
+    assert.equal(
+      p.city,
+      null,
+      `${n.id}: no invented city for distributed actor`,
+    );
+    assert.equal(
+      n.location,
+      null,
+      `${n.id}: no legacy coordinates for distributed actor`,
+    );
+    assert(
+      !p.coordinates,
+      `${n.id}: no coordinate override for distributed actor`,
+    );
+  }
   if (p.logo) {
     assert(
       fs.existsSync(new URL(`../public${p.logo}`, import.meta.url)),
@@ -185,6 +242,20 @@ for (const [name, camera] of Object.entries(mapPresets)) {
     `${name}: each actor appears once`,
   );
   for (const c of clusters) {
+    const cities = clusterCities(c, profiles);
+    if (camera.scale >= 2)
+      assert.equal(
+        cities.length,
+        1,
+        `${name}: regional clusters never merge distinct cities`,
+      );
+    assert.equal(
+      clusterLabel(c, profiles),
+      cities.length === 1
+        ? cities[0]
+        : `${c.entries.length} actors · ${cities.length} cities`,
+      `${name}: multi-city clusters use neutral labels`,
+    );
     const actual = screenPoint(
       profiles[c.anchor.id].coordinates ?? c.anchor.location,
       camera,
@@ -196,6 +267,45 @@ for (const [name, camera] of Object.entries(mapPresets)) {
     );
   }
 }
+const korea = mapClusters(data.nodes, profiles, mapPresets.Asia, counts);
+const koreanInstitute = korea.find((c) =>
+  c.entries.some((n) => n.id === 'kraisi'),
+);
+const koreanMinistry = korea.find((c) =>
+  c.entries.some((n) => n.id === 'msit'),
+);
+assert(
+  koreanInstitute && koreanMinistry && koreanInstitute !== koreanMinistry,
+  'Seongnam and Sejong stay distinct in Asia view',
+);
+assert.equal(
+  profiles.caloes.city,
+  'Mather',
+  'Cal OES remains in Mather, not Sacramento city',
+);
+assert.deepEqual(
+  profiles.caloes.coordinates,
+  [-121.28315, 38.54883],
+  'Cal OES uses the sourced Mather city point',
+);
+assert(
+  locationCaption(profiles.xai).includes('Historical'),
+  'Historical anchor qualification remains visible',
+);
+assert(
+  locationCaption(profiles.board).includes('Secretariat'),
+  'Board map callout identifies secretariat base',
+);
+assert.equal(
+  profiles.panel.locationType,
+  'secretariat-base',
+  'Scientific Panel anchor represents administrative support, not all experts',
+);
+assert(
+  locationCaption(profiles.panel).includes('AI Office support base') &&
+    profiles.panel.locationNote.includes('Joint Research Centre'),
+  'Scientific Panel retains the qualification of its shared secretariat',
+);
 for (const [region, id] of [
   ['USA', 'openai'],
   ['Europe', 'office'],

@@ -18,6 +18,9 @@ import countries from '@/lib/world-countries.json';
 import {
   connectionCounts,
   connectionCurve,
+  clusterCities,
+  clusterLabel,
+  locationCaption,
   fanPositions,
   separateBubbles,
   markerRadius,
@@ -215,17 +218,16 @@ export default function WorldMap({
       : [
           {
             entry: c.anchor,
-            x: c.x,
-            y: c.y,
+            // Callouts are independent from the small geographic anchors.
+            x: c.x + 24,
+            y: c.y - c.radius - 28,
             cluster: c,
             open: false,
-            radius: c.radius,
+            radius: c.entries.length > 1 ? 29 : c.radius,
           },
         ];
   });
-  const displayPins = selectedActor
-    ? separateBubbles(initialPins)
-    : initialPins;
+  const displayPins = separateBubbles(initialPins);
   const pinById = new Map(displayPins.map((p) => [p.entry.id, p]));
   const drawableEdges = selectedEdges.filter(
     (e) => pinById.has(e.from) && pinById.has(e.to),
@@ -313,7 +315,7 @@ export default function WorldMap({
           <span>
             <strong>{n.short}</strong>
             <small>
-              {p?.city ?? n.region} · {n.layer}
+              {p ? locationCaption(p) : n.region} · {n.layer}
             </small>
           </span>
           <ArrowUpRight size={16} />
@@ -323,6 +325,11 @@ export default function WorldMap({
           {p?.website && (
             <a href={p.website} target="_blank" rel="noreferrer">
               Website <ArrowUpRight size={12} />
+            </a>
+          )}
+          {p?.locationSource && (
+            <a href={p.locationSource} target="_blank" rel="noreferrer">
+              Location source <ArrowUpRight size={12} />
             </a>
           )}
           {s && (
@@ -566,26 +573,34 @@ export default function WorldMap({
             })}
           </g>
           <g className="fan-spokes" aria-hidden="true">
-            {displayPins
-              .filter((p) => p.open || selectedActor)
-              .map((p) => {
+            {displayPins.flatMap((p) =>
+              (p.open ? [p.entry] : p.cluster.entries).map((entry) => {
                 const anchor = screenPoint(
-                  actorProfiles[p.entry.id].coordinates ?? p.entry.location!,
+                  actorProfiles[entry.id].coordinates ?? entry.location!,
                   camera,
                 );
+                const dx = p.x - anchor.x,
+                  dy = p.y - anchor.y,
+                  distance = Math.hypot(dx, dy),
+                  end =
+                    distance > p.radius ? (distance - p.radius) / distance : 0;
                 return (
-                  <g key={`spoke-${p.entry.id}`}>
-                    <line x1={anchor.x} y1={anchor.y} x2={p.x} y2={p.y} />
-                    <circle cx={anchor.x} cy={anchor.y} r="3" />
-                  </g>
+                  <line
+                    key={`spoke-${entry.id}`}
+                    x1={anchor.x}
+                    y1={anchor.y}
+                    x2={anchor.x + dx * end}
+                    y2={anchor.y + dy * end}
+                  />
                 );
-              })}
+              }),
+            )}
           </g>
           {!selectedActor &&
             clusters
               .filter((c) => c.entries.length > 1 && expanded === c.anchor.id)
               .map((c) => {
-                const positions = fanPositions(c);
+                const positions = displayPins.filter((p) => p.cluster === c);
                 const minX = Math.min(c.x, ...positions.map((p) => p.x)) - 48;
                 const minY = Math.min(c.y, ...positions.map((p) => p.y)) - 48;
                 const maxX = Math.max(c.x, ...positions.map((p) => p.x)) + 48;
@@ -610,6 +625,7 @@ export default function WorldMap({
               const { entry: n, cluster: c, radius: r, x, y, open } = pin;
               const p = actorProfiles[n.id],
                 isGroup = !open && c.entries.length > 1;
+              const color = isGroup ? '#021c4d' : layerColors[n.layer];
               const on = selectedActor === n.id || hovered === n.id;
               return (
                 <g
@@ -619,8 +635,8 @@ export default function WorldMap({
                   tabIndex={0}
                   aria-label={
                     isGroup
-                      ? `Expand ${p.city} group: ${c.entries.length} organisations`
-                      : `Show connections for ${n.short}`
+                      ? `Expand ${clusterLabel(c, actorProfiles)} group: ${c.entries.length} organisations in ${clusterCities(c, actorProfiles).join(', ')}`
+                      : `Show connections for ${n.short}, ${locationCaption(p)}`
                   }
                   aria-pressed={!isGroup && selectedActor === n.id}
                   className={`geo-marker ${open ? 'fan-bubble' : ''} ${on ? 'pin-selected' : ''}`}
@@ -654,7 +670,7 @@ export default function WorldMap({
                     cx={x}
                     cy={y}
                     r={r + 5}
-                    fill={layerColors[n.layer]}
+                    fill={color}
                     opacity={on ? 0.25 : 0.08}
                   />
                   <circle
@@ -662,11 +678,22 @@ export default function WorldMap({
                     cy={y}
                     r={r}
                     fill="white"
-                    stroke={on ? '#172a9a' : layerColors[n.layer]}
+                    stroke={on ? '#ff6025' : color}
                     strokeWidth={on ? 4 : 2.3}
                     filter="url(#pin-shadow)"
                   />
-                  {logos && p.logo ? (
+                  {isGroup ? (
+                    <text
+                      x={x}
+                      y={y + 7}
+                      textAnchor="middle"
+                      fill={color}
+                      fontSize="22"
+                      fontWeight="700"
+                    >
+                      {c.entries.length}
+                    </text>
+                  ) : logos && p.logo ? (
                     <image
                       href={p.logo}
                       x={x - r * 0.65}
@@ -690,57 +717,62 @@ export default function WorldMap({
                         .slice(0, 3)}
                     </text>
                   )}
-                  {isGroup && (
-                    <g>
-                      <circle
-                        cx={x + r * 0.8}
-                        cy={y - r * 0.7}
-                        r="11"
-                        fill="#15273c"
-                        stroke="white"
-                        strokeWidth="2"
-                      />
-                      <text
-                        x={x + r * 0.8}
-                        y={y - r * 0.7 + 4}
-                        textAnchor="middle"
-                        fill="white"
-                        fontSize="12"
-                        fontWeight="700"
-                      >
-                        {c.entries.length}
-                      </text>
-                    </g>
-                  )}
                   <text
                     x={x}
                     y={y + r + 19}
                     textAnchor="middle"
                     className="pin-city-label"
                   >
-                    {open || selectedActor ? n.short : p.city}
-                    {isGroup ? ' +' : ''}
+                    {isGroup ? clusterLabel(c, actorProfiles) : n.short}
                   </text>
+                  {!isGroup && (
+                    <text
+                      x={x}
+                      y={y + r + 34}
+                      textAnchor="middle"
+                      className="pin-location-label"
+                    >
+                      {locationCaption(p)}
+                    </text>
+                  )}
                   <title>
-                    {`${n.short} — ${p.city}${open ? ' · bubble offset for readability; dotted spoke marks location' : ''}`}
+                    {isGroup
+                      ? `${c.entries.length} actors in ${clusterCities(c, actorProfiles).join(', ')}. Dots mark their actual city anchors.`
+                      : `${n.short} — ${locationCaption(p)}. ${p.locationNote} Dotted stem marks the geographic anchor.`}
                   </title>
                 </g>
               );
             })}
+          <g className="map-location-anchors" aria-label="True city anchors">
+            {visible.map((n) => {
+              const p = actorProfiles[n.id];
+              const anchor = screenPoint(p.coordinates ?? n.location!, camera);
+              return (
+                <circle
+                  key={`anchor-${n.id}`}
+                  data-location-anchor={n.id}
+                  cx={anchor.x}
+                  cy={anchor.y}
+                  r="3"
+                  fill="#021c4d"
+                  stroke="white"
+                  strokeWidth="1.2"
+                >
+                  <title>
+                    {n.short}: {locationCaption(p)}. {p.locationNote}
+                  </title>
+                </circle>
+              );
+            })}
+          </g>
         </svg>
         {cHover && (
           <div className="world-hover" aria-live="polite">
-            <strong>
-              {actorProfiles[cHover.anchor.id].city}
-              {new Set(cHover.entries.map((n) => actorProfiles[n.id].city))
-                .size > 1
-                ? ' + nearby'
-                : ''}
-            </strong>
+            <strong>{clusterLabel(cHover, actorProfiles)}</strong>
             <span>
               {cHover.entries.length > 1
-                ? `${cHover.entries.length} actors · click to explore`
-                : cHover.anchor.short}
+                ? `${clusterCities(cHover, actorProfiles).join(' · ')} · click to explore`
+                : `${cHover.anchor.short} · ${locationCaption(actorProfiles[cHover.anchor.id])}`}
             </span>
           </div>
         )}
@@ -802,11 +834,12 @@ export default function WorldMap({
       <details className="world-method">
         <summary>What do location, size and logos mean?</summary>
         <p>
-          Locations are representative city-level bases, not territorial
-          authority. Crowded locations form numbered groups anchored at a
-          member’s real location. Hover or tap a group to unfold its actors;
-          dotted spokes mark their actual city anchors. Select an actor to trace
-          its connections, or open its profile for the evidence. Networks,
+          Small dots mark representative city-level bases, not exact buildings
+          or territorial authority. Logos and numbered callouts move for
+          readability; dotted stems always lead to the stored city anchors.
+          Multi-city groups show actor and city counts. Regional views separate
+          cities. Hover or tap a group to unfold its actors. Select an actor to
+          trace its connections, or open its profile for the evidence. Networks,
           publications and laws appear separately below.
         </p>
         <p>
@@ -814,10 +847,15 @@ export default function WorldMap({
           entry in this curated atlas. This is a transparent proxy for
           influence, not a measured ranking of real-world power, effectiveness
           or budget. Counts use the whole dataset and stay stable as filters
-          change. A group shows the size and logo of its most-connected member,
-          with a badge for its actor count. Rings show governance layer.
-          Official site icons are used where available; initials are the
-          fallback.
+          change. A group uses a neutral count marker, not a member’s logo or
+          influence score. Individual rings show governance layer. Official site
+          icons are used where available; initials are the fallback.
+        </p>
+        <p>
+          Location checks are targeted, not a verification of every actor.
+          Sourced profiles identify headquarters cities, representative offices,
+          host or secretariat bases and historical anchors. IndiaAI and INESIA
+          are distributed institutes and do not receive an invented city pin.
         </p>
       </details>
       {selectedEntry && (

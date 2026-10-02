@@ -7,7 +7,7 @@ Interactive, source-linked research map of frontier AI governance, dated 14 Sept
 ## Experience
 
 - Network organised by geography, governance layer, actor type, time horizon or power.
-- World map with city anchors, regional zoom presets (USA, Europe, Asia), grouped markers and official-site icons.
+- Interactive globe and flat map with sourced city anchors, regional presets (USA, Europe, Asia), raised logo callouts and traced connections.
 - Hover or tap grouped pins to unfold individual organisations. Selecting an actor fits its connected organisations into view and draws animated directional relationships; dotted spokes retain geographic anchors. Open the connection evidence list for sources and entries without a physical location. Reduced-motion preferences disable the animation.
 - Authority matrix for requests, compelled disclosure, technical investigation and remedies.
 - Entry profiles explain jurisdiction, dates, evidence and distinct authority/capacity gaps.
@@ -39,6 +39,7 @@ npm run dev
 
 ```sh
 node --experimental-strip-types scripts/validate-data.mjs
+node --experimental-strip-types scripts/validate-globe.mjs
 npx tsc --noEmit
 npx oxlint app lib scripts
 npm run build
@@ -50,12 +51,11 @@ Browser checks cover regional zoom, grouped actor selection, entry evidence link
 
 ## Visual references
 
-Palette and typography approach inspired by BlueDot; independent project, not affiliated. World country geometry is [Natural Earth public-domain data](https://www.naturalearthdata.com/about/terms-of-use/) projected with the same Mercator transform as the markers. Locations are representative city anchors, not jurisdictional boundaries. Mechanisms and distributed bodies appear separately rather than at placeholder coordinates. Marker size uses distinct mapped connections as a transparent influence proxy; it is not a legal-power score. Groups use the most-connected member's location and size. Profile and icon provenance is recorded in `lib/actor-profiles.json`; local icons fall back to initials when unavailable.
+Palette and typography inspired by [Safe AI Netherlands](https://safeainetherlands.org/): navy, orange, cream, League Spartan and Poppins. Independent educational project; the visual reference and use of the SAIN mark do not imply an institutional endorsement. Locally served font licences are in `app/fonts/`. World country geometry is [Natural Earth public-domain data](https://www.naturalearthdata.com/about/terms-of-use/) projected with the same Mercator transform as the markers. Locations are representative city anchors, not jurisdictional boundaries. Mechanisms and distributed bodies appear separately rather than at placeholder coordinates. Marker size uses distinct mapped connections as a transparent influence proxy; it is not a legal-power score. Multi-city groups use neutral counts. Callouts retain stems to true geographic anchors; they do not relocate the organisation. The globe inverse-projects the same country data and draws great-circle connections, clipped behind the Earth. Raised logos are display callouts rather than precise building locations. The inherited low-resolution basemap omits Antarctica and has limited polar detail. Profile and icon provenance is recorded in `lib/actor-profiles.json`; local icons fall back to initials when unavailable.
 
 ## Hypothetical scenario lab
 
 Open `/#scenario` for the Democratic AI Response Compact exercise. Seven relative-time stages and fourteen actor arcs stress-test an EU-based coalition without US membership. Four design switches compare reporting, escalation, surge capacity and democratic checks; the non-member jurisdiction limit remains even with every safeguard enabled. The compact, memberships, incidents, deadlines and responses are fictional assumptions, separate from the current-governance dataset. Sources and an authority matrix are embedded in the scenario.
-
 
 ## Scenarios and career transitions
 
@@ -91,4 +91,4 @@ The paused game prototype, local deployment records, credentials, generated buil
 
 ## Attribution and reuse
 
-This is an independent educational project, inspired by BlueDot's visual style and not affiliated with BlueDot or the organisations shown. Logos belong to their respective organisations. Natural Earth map data is public domain; bundled Geist fonts are from Vercel's Geist font family. Sources retain their own terms. No blanket open-source licence is asserted for third-party materials.
+This is an independent educational project, with styling inspired by Safe AI Netherlands and no implied affiliation or endorsement. Logos belong to their respective organisations. Natural Earth map data is public domain. Local League Spartan and Poppins fonts include their OFL licences in `app/fonts/`; the inherited Geist fonts are from Vercel's Geist font family. Sources retain their own terms. No blanket open-source licence is asserted for third-party materials.

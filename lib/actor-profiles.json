@@ -2,39 +2,62 @@
   "openai": {
     "website": "https://openai.com/",
     "city": "San Francisco",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "San Francisco headquarters is supported by an official careers page. This is a city anchor, not a building location.",
     "geographic": true,
     "logo": "/logos/openai.png",
     "logoSource": "https://openai.com/apple-icon.png?apple-icon.3o0tf8iy4mx7y.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "headquarters-city",
+    "locationLabel": "HQ city",
+    "locationSource": "https://openai.com/careers/technical-threat-investigator-threat-intel-engineering-san-francisco/",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinates": [-122.41942, 37.77493],
+    "coordinateSource": "https://www.geonames.org/5391959/san-francisco.html"
   },
   "anthropic": {
     "website": "https://www.anthropic.com/",
     "city": "San Francisco",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "The company careers page identifies San Francisco as headquarters. This is a city anchor, not a building location.",
     "geographic": true,
     "logo": "/logos/anthropic.png",
     "logoSource": "https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67d31dd7aa394792257596c5_webclip.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "headquarters-city",
+    "locationLabel": "HQ city",
+    "locationSource": "https://job-boards.greenhouse.io/anthropic/jobs/5106199008",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinates": [-122.41942, 37.77493],
+    "coordinateSource": "https://www.geonames.org/5391959/san-francisco.html"
   },
   "caisi": {
     "website": "https://www.nist.gov/caisi",
     "city": "Gaithersburg",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "Gaithersburg represents NIST headquarters, CAISI’s institutional host. NIST also has a Boulder campus; this does not locate every CAISI team.",
     "geographic": true,
     "locationSource": "https://www.nist.gov/contact",
     "logo": "/logos/caisi.png",
     "logoSource": "https://www.nist.gov/themes/custom/nist_www/favicon.ico",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "host-base",
+    "locationLabel": "NIST host base",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinates": [-77.20137, 39.14344],
+    "coordinateSource": "https://www.geonames.org/4355843/gaithersburg.html"
   },
   "metr": {
     "website": "https://metr.org/",
     "city": "Berkeley",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "METR describes its team as based in Berkeley. The marker represents the city, not a precise office.",
     "geographic": true,
     "logo": "/logos/metr.png",
     "logoSource": "https://metr.org/assets/images/favicon/favicon.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "office-city",
+    "locationLabel": "Team base",
+    "locationSource": "https://metr.org/hiring",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinates": [-122.27275, 37.87159],
+    "coordinateSource": "https://www.geonames.org/5327684/berkeley.html"
   },
   "cloud": {
     "website": null,
@@ -44,12 +67,18 @@
   },
   "caloes": {
     "website": "https://www.caloes.ca.gov/",
-    "city": "Sacramento",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "city": "Mather",
+    "locationNote": "Cal OES identifies its headquarters in Mather, in the Sacramento area. Coordinates use the Census Bureau’s representative point for Mather CDP, not the headquarters building.",
     "geographic": true,
     "logo": "/logos/caloes.png",
     "logoSource": "https://www.caloes.ca.gov/wp-content/themes/CAWeb-1.13.0/src/images/system/apple-touch-icon-precomposed.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "headquarters-city",
+    "locationLabel": "HQ city · Sacramento area",
+    "locationSource": "https://www.caloes.ca.gov/office-of-the-director/policy-administration/international-affairs/",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinates": [-121.28315, 38.54883],
+    "coordinateSource": "https://tigerweb.geo.census.gov/tigerwebmain/Files/bas25/tigerweb_bas25_cdp_2020_tab20_ca.html"
   },
   "caag": {
     "website": "https://oag.ca.gov/",
@@ -68,16 +97,24 @@
     "locationSource": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/platform-37-the-ai-exchange/",
     "logo": "/logos/deepmind.png",
     "logoSource": "https://storage.googleapis.com/gdm-deepmind-com-prod-public/icons/google_deepmind_2x_96dp.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "coordinates": [-0.12574, 51.50853],
+    "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "aisi": {
     "website": "https://www.aisi.gov.uk/",
     "city": "London",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "The careers page identifies a central London office and other UK office options. The marker represents London, not every staff location.",
     "geographic": true,
     "logo": "/logos/aisi.png",
     "logoSource": "https://cdn.prod.website-files.com/663bd486c5e4c81588db7a1d/6851b4acf52818a86a4f9f86_AISI%20icon%20256.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "office-city",
+    "locationLabel": "Representative office",
+    "locationSource": "https://www.aisi.gov.uk/careers",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinates": [-0.12574, 51.50853],
+    "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "ncsc": {
     "website": "https://www.ncsc.gov.uk/",
@@ -86,17 +123,24 @@
     "geographic": true,
     "logo": "/logos/ncsc.png",
     "logoSource": "https://www.ncsc.gov.uk/themes/custom/ennerdale/favicons/apple-touch-icon.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "coordinates": [-0.12574, 51.50853],
+    "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "office": {
     "website": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
     "city": "Brussels",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "EU sources place the AI Office in Brussels. The marker is a city anchor and does not assert an exact office building.",
     "geographic": true,
-    "coordinates": [4.3517, 50.8503],
+    "coordinates": [4.34878, 50.85045],
     "logo": "/logos/office.png",
     "logoSource": "https://digital-strategy.ec.europa.eu/themes/custom/cnt_theme/images/favicons/ec/favicon.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "office-city",
+    "locationLabel": "Office city",
+    "locationSource": "https://www.eeas.europa.eu/delegations/united-states-america/info-session-eu-ai-office-brussels_en",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinateSource": "https://www.geonames.org/2800866/brussels.html"
   },
   "gpai": {
     "website": null,
@@ -107,12 +151,17 @@
   "panel": {
     "website": "https://digital-strategy.ec.europa.eu/en/policies/ai-act-scientific-panel",
     "city": "Brussels",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "Brussels represents the AI Office’s contribution to the panel’s shared secretariat. Article 6 of Commission Implementing Regulation (EU) 2025/454 assigns this support jointly to the AI Office and Joint Research Centre. This is a representative support base, not the location of the independent experts, all secretariat staff or every meeting.",
     "geographic": true,
-    "coordinates": [4.3517, 50.8503],
+    "coordinates": [4.34878, 50.85045],
     "logo": "/logos/panel.png",
     "logoSource": "https://digital-strategy.ec.europa.eu/themes/custom/cnt_theme/images/favicons/ec/favicon.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "coordinateSource": "https://www.geonames.org/2800866/brussels.html",
+    "locationType": "secretariat-base",
+    "locationLabel": "AI Office support base",
+    "locationSource": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX%3A32025R0454",
+    "locationVerifiedAt": "2026-10-02"
   },
   "code": {
     "website": null,
@@ -141,20 +190,28 @@
   "msit": {
     "website": "https://www.msit.go.kr/eng/",
     "city": "Sejong",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "The ministry lists its address at Government Complex-Sejong, Sejong-si. This coarse city anchor is distinct from Korea AISI in Seongnam.",
     "geographic": true,
     "logo": "/logos/msit.png",
     "logoSource": "https://www.msit.go.kr/images/eng/msiticon.ico;jsessionid=hXdwBEiG6t6t-Ygchx4YkwOM1KpkpyprGWmF8vOA.AP_msit_1",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "office-city",
+    "locationLabel": "Government office city",
+    "locationSource": "https://www.msit.go.kr/eng/index.do",
+    "locationVerifiedAt": "2026-10-02"
   },
   "sgaisi": {
     "website": "https://www.ntu.edu.sg/dtc",
     "city": "Singapore",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "Singapore AISI is housed in DTC at NTU; DTC gives 50 Nanyang Drive as its contact address. The existing coarse Singapore point is a city-level representation, not a geocoded campus or building.",
     "geographic": true,
     "logo": "/logos/sgaisi.png",
     "logoSource": "https://www.ntu.edu.sg/ResourcePackages/NTU/assets/images/favicon.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "host-base",
+    "locationLabel": "NTU host · city anchor",
+    "locationSource": "https://www.ntu.edu.sg/dtc/contact-us",
+    "locationVerifiedAt": "2026-10-02"
   },
   "network": {
     "website": null,
@@ -195,12 +252,17 @@
   "board": {
     "website": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
     "city": "Brussels",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "The AI Office provides the Board’s secretariat in Brussels; Board members represent Member States and the Commission and are not all based here.",
     "geographic": true,
-    "coordinates": [4.3517, 50.8503],
+    "coordinates": [4.34878, 50.85045],
     "logo": "/logos/board.png",
     "logoSource": "https://digital-strategy.ec.europa.eu/themes/custom/cnt_theme/images/favicons/ec/favicon.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "secretariat-base",
+    "locationLabel": "Secretariat base",
+    "locationSource": "https://digital-strategy.ec.europa.eu/en/news/artificial-intelligence-board-kicks-work-uptake-ai-eu-and-implementation-ai-act",
+    "locationVerifiedAt": "2026-10-02",
+    "coordinateSource": "https://www.geonames.org/2800866/brussels.html"
   },
   "national": {
     "website": null,
@@ -210,10 +272,14 @@
   },
   "inesia": {
     "website": "https://www.economie.gouv.fr/actualites/la-france-se-dote-dun-institut-national-pour-levaluation-et-la-securite-de-lintelligence",
-    "city": "Paris",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
-    "geographic": true,
-    "websiteVerified": false
+    "city": null,
+    "locationNote": "INESIA federates ANSSI, Inria, LNE and PEReN without a new legal structure. No single Paris office is asserted.",
+    "geographic": false,
+    "websiteVerified": false,
+    "locationType": "distributed",
+    "locationLabel": "French distributed institute",
+    "locationSource": "https://www.sgdsn.gouv.fr/nos-missions/anticiper-et-prevenir/evaluer-et-securiser-lia",
+    "locationVerifiedAt": "2026-10-02"
   },
   "ico": {
     "website": "https://ico.org.uk/",
@@ -231,7 +297,9 @@
     "geographic": true,
     "logo": "/logos/ofcom.png",
     "logoSource": "https://www.ofcom.org.uk/assets/img/favicon.ico",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "coordinates": [-0.12574, 51.50853],
+    "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "cma": {
     "website": "https://www.gov.uk/government/organisations/competition-and-markets-authority",
@@ -240,7 +308,9 @@
     "geographic": true,
     "logo": "/logos/cma.png",
     "logoSource": "https://www.gov.uk/assets/collections/govuk-icon-180-d45a306f0549414cfa5085f16e4a3816a77558b139e5bc226f23162d1d0decb0.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "coordinates": [-0.12574, 51.50853],
+    "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "drcf": {
     "website": "https://www.gov.uk/government/publications/drcf-terms-of-reference/terms-of-reference",
@@ -261,18 +331,26 @@
   "jaisi": {
     "website": "https://aisi.go.jp/",
     "city": "Tokyo",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "Current institute recruitment identifies an Akasaka, Minato-ku, Tokyo workplace. The map retains a coarse Tokyo city anchor, not an old IPA procurement address.",
     "geographic": true,
     "logo": "/logos/jaisi.png",
     "logoSource": "https://aisi.go.jp/apple-touch-icon.png",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "office-city",
+    "locationLabel": "Office city",
+    "locationSource": "https://aisi.go.jp/recruit/tokutei-ai01.html",
+    "locationVerifiedAt": "2026-10-02"
   },
   "kraisi": {
     "website": "https://www.aisi.re.kr/kor",
     "city": "Seongnam",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
+    "locationNote": "The institute lists an address in Bundang-gu, Seongnam. The map uses a coarse city anchor, distinct from MSIT in Sejong.",
     "geographic": true,
-    "websiteVerified": false
+    "websiteVerified": false,
+    "locationType": "office-city",
+    "locationLabel": "Office city",
+    "locationSource": "https://www.aisi.re.kr/kor",
+    "locationVerifiedAt": "2026-10-02"
   },
   "caaisi": {
     "website": "https://ised-isde.canada.ca/site/ised/en/canadian-artificial-intelligence-safety-institute",
@@ -292,12 +370,16 @@
   },
   "india": {
     "website": "https://indiaai.gov.in/",
-    "city": "New Delhi",
-    "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
-    "geographic": true,
+    "city": null,
+    "locationNote": "The government describes a distributed hub-and-spoke institute. The reviewed source does not establish a single New Delhi office, so no city is pinned.",
+    "geographic": false,
     "logo": "/logos/india.png",
     "logoSource": "https://indiaai.gov.in/indiaAi-2021/build/images/favicon.ico",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "distributed",
+    "locationLabel": "Distributed institute",
+    "locationSource": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2289946&lang=2&reg=48",
+    "locationVerifiedAt": "2026-10-02"
   },
   "undialogue": {
     "website": null,
@@ -340,7 +422,9 @@
     "locationSource": "https://www.sec.gov/Archives/edgar/data/2002695/000200269524000003/xslFormDX08/primary_doc.xml",
     "logo": "/logos/xai.png",
     "logoSource": "https://x.ai/apple-icon.png?apple-icon.21lxxn22zx2o2.png?dpl=5556a15bc3f7e791ff7a69cc66d0b9092ad1f78d",
-    "websiteVerified": true
+    "websiteVerified": true,
+    "locationType": "historical",
+    "locationLabel": "Historical · 2024 filing"
   },
   "sb53": {
     "website": null,
@@ -428,7 +512,9 @@
     "city": "London",
     "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
     "geographic": true,
-    "websiteVerified": false
+    "websiteVerified": false,
+    "coordinates": [-0.12574, 51.50853],
+    "coordinateSource": "https://www.geonames.org/2643743/london.html"
   },
   "internalreport": {
     "website": null,
@@ -462,7 +548,7 @@
   },
   "anpd": {
     "website": "https://www.gov.br/anpd/pt-br",
-    "city": "Bras\u00edlia",
+    "city": "Brasília",
     "locationNote": "Representative city-level base, not an exact office or the limit of its jurisdiction.",
     "geographic": true,
     "logo": "/logos/anpd.png",

@@ -7,6 +7,7 @@ import {
   ArrowLeft,
   Search,
   Globe2,
+  Map,
   Network,
   Scale,
   Play,
@@ -62,6 +63,9 @@ import WorldMap, {
 import { buildNetworkLayout } from '@/lib/explore';
 import IntelligenceScenario from '@/components/intelligence-scenario';
 import CareerTransition from '@/components/career-transition';
+import GovernanceGlobe from '@/components/governance-globe';
+import AtlasHome from '@/components/atlas-home';
+import { locationCaption } from '@/lib/geography';
 const colors: Record<Layer, string> = {
   Legal: '#3153c8',
   Institutional: '#167765',
@@ -166,7 +170,7 @@ function wrap(t: string, max = 22) {
   return lines;
 }
 export default function Home() {
-  const [view, setView] = useState('world'),
+  const [view, setView] = useState('globe'),
     [group, setGroup] = useState('Geography'),
     [query, setQuery] = useState(''),
     [geo, setGeo] = useState('All'),
@@ -178,17 +182,18 @@ export default function Home() {
   const [selected, setSelected] = useState<string | null>(null),
     [hovered, setHovered] = useState<string | null>(null),
     [zoom, setZoom] = useState(1),
-    [page, setPage] = useState('atlas'),
+    [page, setPage] = useState('home'),
     [step, setStep] = useState<number | null>(null);
   useEffect(() => {
     const syncPage = () => {
       const destination = window.location.hash.slice(1);
       setPage(
-        destination === 'scenario' ||
+        destination === 'atlas' ||
+          destination === 'scenario' ||
           destination === 'sources' ||
           destination === 'careers'
           ? destination
-          : 'atlas',
+          : 'home',
       );
     };
     syncPage();
@@ -197,13 +202,22 @@ export default function Home() {
   }, []);
   function navigatePage(destination: string) {
     setPage(destination);
+    window.scrollTo({ top: 0 });
     window.history.replaceState(
       null,
       '',
       window.location.pathname +
         window.location.search +
-        (destination === 'atlas' ? '' : '#' + destination),
+        (destination === 'home' ? '' : '#' + destination),
     );
+  }
+  function explore(viewName = 'globe') {
+    setView(viewName);
+    setStep(null);
+    reset();
+    setCore(false);
+    navigatePage('atlas');
+    window.scrollTo({ top: 0 });
   }
   const filtered = useMemo(
     () =>
@@ -268,50 +282,53 @@ export default function Home() {
     height: gh,
   } = buildNetworkLayout(displayed, group);
   return (
-    <div className="app-shell">
+    <div className={`app-shell ${page === 'home' ? 'is-home' : ''}`}>
       <header className="site-header">
         <button
           className="brand"
-          onClick={() => navigatePage('atlas')}
+          onClick={() => navigatePage('home')}
           aria-label="Frontier atlas home"
         >
-          <span className="brand-dot" />
-          <span>
-            frontier<span className="brand-light">atlas</span>
-          </span>
+          {/* Static export serves this small, locally cached brand asset directly. */}
+          {/* oxlint-disable-next-line next/no-img-element */}
+          <img className="sain-brand-logo" src="/brand/sain/logo-navy.png" alt="SAIN" />
+          <span className="brand-divider" />
+          <span className="brand-title">Frontier AI Atlas</span>
         </button>
         <nav aria-label="Main navigation">
           <button
             className={page === 'atlas' ? 'nav-active' : ''}
             onClick={() => navigatePage('atlas')}
           >
-            Explore the map
+            Explore
           </button>
           <button
             className={page === 'sources' ? 'nav-active' : ''}
             onClick={() => navigatePage('sources')}
           >
-            Sources & method
+            Sources
           </button>
           <button
             className={page === 'careers' ? 'nav-active' : ''}
             onClick={() => navigatePage('careers')}
           >
-            Career transitions
+            Careers
           </button>
           <button
             className={page === 'scenario' ? 'nav-active' : ''}
             onClick={() => navigatePage('scenario')}
           >
-            Scenario lab
+            Scenarios
           </button>
         </nav>
         <span className="edition">
           <span />
-          14 September 2026 edition
+          Independent atlas
         </span>
       </header>
-      {page === 'careers' ? (
+      {page === 'home' ? (
+        <AtlasHome onExplore={explore} onIncident={startTour} onNavigate={navigatePage} onProfile={setSelected} />
+      ) : page === 'careers' ? (
         <CareerTransition />
       ) : page === 'scenario' ? (
         <IntelligenceScenario onProfile={setSelected} />
@@ -542,13 +559,17 @@ export default function Home() {
               <Tabs value={view} onValueChange={(v) => setView(String(v))}>
                 <div className="map-toolbar">
                   <TabsList className="view-tabs">
+                    <TabsTrigger value="globe">
+                      <Globe2 />
+                      Globe
+                    </TabsTrigger>
                     <TabsTrigger value="network">
                       <Network />
                       Network
                     </TabsTrigger>
                     <TabsTrigger value="world">
-                      <Globe2 />
-                      World
+                      <Map />
+                      Map
                     </TabsTrigger>
                     <TabsTrigger value="authority">
                       <Scale />
@@ -821,6 +842,9 @@ export default function Home() {
                         </div>
                       </div>
                     </TabsContent>
+                    <TabsContent value="globe">
+                      <GovernanceGlobe entries={displayed} onProfile={setSelected} onExpand={() => setCore(false)} />
+                    </TabsContent>
                     <TabsContent value="world">
                       <WorldMap
                         entries={displayed}
@@ -936,12 +960,21 @@ export default function Home() {
                 governance.
               </p>
               <p>
-                World-map marker size counts distinct connected entries in this
-                curated dataset; it is an influence proxy, not a measured
-                ranking of real-world authority or effectiveness. A numbered
-                group uses its most-connected member’s location, size and icon.
+                Marker size counts distinct connected entries in this curated
+                dataset; it is an influence proxy, not a ranking of real-world
+                authority or effectiveness. Multi-city groups use neutral counts.
+                Raised logo callouts retain stems to the true city anchors.
                 City bases are approximate; distributed bodies and mechanisms
-                stay off the map.
+                appear in the directory rather than at invented locations.
+              </p>
+              <p>
+                The globe and flat map share the same coordinates and Natural
+                Earth country geometry. Globe routes follow great circles and
+                disappear behind the Earth. They show recorded relationships,
+                not live flows. The low-resolution basemap omits Antarctica and
+                has limited polar detail. Location sources and qualifiers were
+                checked for selected institutions on 2 October 2026; this does
+                not update the September legal snapshot.
               </p>
               <p>
                 The four layers overlap. Corporate frameworks can support
@@ -1058,7 +1091,7 @@ export default function Home() {
           frontier atlas
         </span>
         <span>
-          Independent educational project · BlueDot-inspired · Not affiliated
+          Independent educational project · SAIN-inspired design · No institutional endorsement
         </span>
         <button onClick={() => navigatePage('sources')}>
           Sources & methodology
@@ -1095,7 +1128,10 @@ export default function Home() {
                     Official website <ArrowUpRight size={14} />
                   </a>
                 )}
-                <a href="#entry-evidence">Publications & evidence ↓</a>
+                <a href="#entry-evidence" onClick={(event) => {
+                  event.preventDefault();
+                  document.getElementById('entry-evidence')?.scrollIntoView({ block: 'start' });
+                }}>Publications & evidence ↓</a>
               </div>
               <div className="entry-map-context">
                 <strong>
@@ -1103,6 +1139,7 @@ export default function Home() {
                     ? actorProfiles[active.id]?.city
                     : 'No single geographic base'}
                 </strong>
+                {actorProfiles[active.id]?.locationLabel && <p>{locationCaption(actorProfiles[active.id])}</p>}
                 <p>{actorProfiles[active.id]?.locationNote}</p>
                 {actorProfiles[active.id]?.locationSource && (
                   <a
@@ -1111,6 +1148,11 @@ export default function Home() {
                     rel="noreferrer"
                   >
                     Location source <ArrowUpRight size={13} />
+                  </a>
+                )}
+                {actorProfiles[active.id]?.coordinateSource && (
+                  <a href={actorProfiles[active.id].coordinateSource} target="_blank" rel="noreferrer">
+                    Coordinate reference <ArrowUpRight size={13} />
                   </a>
                 )}
                 <span>

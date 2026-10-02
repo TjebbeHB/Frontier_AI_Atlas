@@ -7,6 +7,17 @@ export type ActorProfile = {
   locationNote: string;
   coordinates?: [number, number];
   locationSource?: string;
+  locationType?:
+    | 'headquarters-city'
+    | 'registered-address-city'
+    | 'office-city'
+    | 'host-base'
+    | 'secretariat-base'
+    | 'distributed'
+    | 'historical';
+  locationLabel?: string;
+  locationVerifiedAt?: string;
+  coordinateSource?: string;
   logo?: string;
   logoSource?: string;
 };
@@ -65,6 +76,36 @@ export type MapCluster = {
   anchor: Entry;
 };
 
+export function locationCaption(profile: ActorProfile) {
+  return (
+    [profile.city, profile.locationLabel].filter(Boolean).join(' · ') ||
+    (profile.geographic ? 'Representative city base' : 'No single location')
+  );
+}
+
+export function clusterCities(
+  cluster: MapCluster,
+  profiles: Record<string, ActorProfile>,
+) {
+  return [
+    ...new Set(
+      cluster.entries
+        .map((entry) => profiles[entry.id]?.city)
+        .filter((city): city is string => !!city),
+    ),
+  ].sort();
+}
+
+export function clusterLabel(
+  cluster: MapCluster,
+  profiles: Record<string, ActorProfile>,
+) {
+  const cities = clusterCities(cluster, profiles);
+  return cities.length === 1
+    ? cities[0]
+    : `${cluster.entries.length} actors · ${cities.length} cities`;
+}
+
 // Display-only offsets: spokes retain the real location when a group unfolds.
 export function fanPositions(cluster: MapCluster) {
   const count = cluster.entries.length;
@@ -89,7 +130,11 @@ export function fanPositions(cluster: MapCluster) {
 export function separateBubbles<
   T extends { x: number; y: number; radius: number },
 >(pins: T[]): T[] {
-  const result = pins.map((p) => ({ ...p }));
+  const result = pins.map((p) => ({
+    ...p,
+    x: Math.max(55, Math.min(mapWidth - 55, p.x)),
+    y: Math.max(85, Math.min(mapHeight - 85, p.y)),
+  }));
   for (let pass = 0; pass < 100; pass++) {
     let moved = false;
     for (let i = 0; i < result.length; i++)
@@ -105,9 +150,9 @@ export function separateBubbles<
           uy = distance > 0.01 ? dy / distance : 0;
         const shift = (gap - distance) / 2 + 0.1;
         a.x = Math.max(55, Math.min(mapWidth - 55, a.x - ux * shift));
-        a.y = Math.max(85, Math.min(mapHeight - 70, a.y - uy * shift));
+        a.y = Math.max(85, Math.min(mapHeight - 85, a.y - uy * shift));
         b.x = Math.max(55, Math.min(mapWidth - 55, b.x + ux * shift));
-        b.y = Math.max(85, Math.min(mapHeight - 70, b.y + uy * shift));
+        b.y = Math.max(85, Math.min(mapHeight - 85, b.y + uy * shift));
         moved = true;
       }
     if (!moved) break;
@@ -154,7 +199,11 @@ export function mapClusters(
       continue;
     const radius = markerRadius(counts[n.id], sized);
     const existing = clusters.find(
-      (c) => Math.hypot(c.x - p.x, c.y - p.y) < c.radius + radius + 13,
+      (c) =>
+        // Regional views keep distinct cities distinct; callout collisions
+        // are resolved separately without moving the geographic anchors.
+        (camera.scale < 2 || profiles[c.anchor.id].city === profile.city) &&
+        Math.hypot(c.x - p.x, c.y - p.y) < c.radius + radius + 13,
     );
     if (existing) existing.entries.push(n);
     else clusters.push({ entries: [n], ...p, radius, anchor: n });

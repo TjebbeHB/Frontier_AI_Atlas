@@ -29,19 +29,19 @@
   --radius-xl: 16px;
 }
 :root {
-  --background: #fcfbf9;
-  --foreground: #13132e;
+  --background: #f7f5f2;
+  --foreground: #021c4d;
   --card: #fff;
-  --primary: #1144cc;
+  --primary: #021c4d;
   --primary-foreground: #fff;
   --muted: #f0f2f7;
   --muted-foreground: #656a7d;
-  --accent: #e8edff;
+  --accent: #ffede5;
   --border: #dfe2eb;
   --radius: 0.65rem;
 }
 .dark {
-  --background: #13132e;
+  --background: #021c4d;
   --foreground: #f5f4f7;
   --card: #1b1c39;
   --primary: #6687ff;
@@ -118,7 +118,7 @@ button {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #dedee5;
-  background: #fcfbf9;
+  background: #f7f5f2;
 }
 .brand {
   display: flex;
@@ -135,7 +135,7 @@ button {
   height: 26px;
   border-radius: 50%;
   display: inline-block;
-  background: #1144cc;
+  background: #021c4d;
   flex-shrink: 0;
 }
 .brand-light {
@@ -157,8 +157,8 @@ button {
   color: #66697b;
 }
 .site-header nav .nav-active {
-  color: #1144cc;
-  border-bottom-color: #1144cc;
+  color: #021c4d;
+  border-bottom-color: #021c4d;
 }
 .edition {
   display: flex;
@@ -190,7 +190,7 @@ main {
   font-size: 12px;
   letter-spacing: 0.13em;
   font-weight: 600;
-  color: #3153bc;
+  color: #021c4d;
 }
 .intro h1,
 .sources-page h1 {
@@ -318,7 +318,7 @@ main {
   background: none;
   outline: none;
   font-size: 12px;
-  color: #13132e;
+  color: #021c4d;
 }
 .filter-field {
   margin-bottom: 20px;
@@ -416,7 +416,7 @@ main {
   border-radius: 5px;
 }
 .view-tabs [data-active] {
-  color: #1144cc !important;
+  color: #021c4d !important;
   background: #fff !important;
   box-shadow: 0 1px 4px #16224c15;
 }
@@ -583,9 +583,9 @@ main {
   font-size: 13px;
 }
 .world-regions .active {
-  background: #e8edff;
+  background: #ffede5;
   border-color: #758ddc;
-  color: #1144cc;
+  color: #021c4d;
 }
 .world-regions b {
   font-size: 11px;
@@ -632,7 +632,7 @@ main {
   padding: 0;
   background: none;
   font-size: 14px;
-  color: #3153bc;
+  color: #021c4d;
   font-weight: 500;
 }
 .authority-table small {
@@ -690,7 +690,7 @@ main {
 }
 .empty-state h2 {
   font-size: 22px;
-  color: #13132e;
+  color: #021c4d;
 }
 .reading-guide {
   display: grid;
@@ -759,9 +759,9 @@ footer button {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background: #1144cc;
+  background: #021c4d;
   color: white;
-  border: 1px solid #1144cc;
+  border: 1px solid #021c4d;
   padding: 11px 16px;
   border-radius: 6px;
   font-size: 14px;
@@ -907,7 +907,7 @@ footer button {
   border-radius: 3px;
 }
 .step-dots .active:before {
-  background: #1144cc;
+  background: #021c4d;
 }
 .entry-sheet[data-slot='sheet-content'] {
   width: min(570px, 96vw) !important;
@@ -1118,7 +1118,7 @@ footer button {
   gap: 8px;
 }
 .source-index article a:hover {
-  color: #1144cc;
+  color: #021c4d;
 }
 .source-index article p {
   font-size: 14px;
@@ -1689,7 +1689,7 @@ footer button {
 @media(prefers-reduced-motion:reduce){.scenario-edge{animation:none}}
 
 /* Scenario choice and geographic playback */
-.scenario-picker{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}.scenario-picker button{text-align:left;padding:18px 21px;border:1px solid #d5ddec;border-radius:11px;background:#fff;color:#53617c;cursor:pointer}.scenario-picker button[aria-pressed=true]{border-color:#394fc3;background:#eef1ff;box-shadow:inset 0 0 0 1px #394fc3}.scenario-picker span{font-size:10px;letter-spacing:1.3px;color:#586daf}.scenario-picker strong{display:block;font-size:20px;margin:6px 0;color:#253963}.scenario-picker small{font-size:13px}.scenario-view-toggle{display:flex;gap:4px;float:right;border:1px solid #526480;border-radius:7px;padding:3px;margin:0 0 12px 15px}.scenario-view-toggle button{padding:7px 13px;background:transparent;color:#bac8df;border:0;border-radius:4px;cursor:pointer;font-size:12px}.scenario-view-toggle button[aria-pressed=true]{background:#dce4ff;color:#203263}.scenario-map-wrap{overflow-x:auto;background:#111e39}.scenario-geo-map{width:100%;min-width:960px;display:block}.scenario-map-actor{cursor:pointer;outline:none}.scenario-map-actor rect{fill:#1b2d49;stroke:#536788;stroke-width:1.2}.scenario-map-actor text{fill:#c6d2e6;font-size:12px;font-weight:550}.scenario-map-actor.active rect{fill:#294467;stroke:#92b9d8}.scenario-map-actor.selected rect,.scenario-map-actor:focus rect{fill:#3a508f;stroke:#d0d9ff;stroke-width:2.5}.scenario-map-actor.selected text,.scenario-map-actor.active text{fill:white}.scenario-actor-picker{display:flex;flex-wrap:wrap;gap:5px;padding:14px 20px;border-bottom:1px solid #e1e7f1}.scenario-actor-picker button{border:1px solid #dce3ef;border-radius:20px;padding:6px 10px;font-size:11px;background:white;color:#5a6c8d;cursor:pointer}.scenario-actor-picker button[aria-pressed=true]{background:#e8edff;border-color:#8297d3;color:#223d99}.scenario-stage.with-map{grid-template-columns:1fr}.scenario-stage.with-map .scenario-network-panel{grid-row:1}.scenario-stage.with-map .scenario-narrative{grid-row:2}.scenario-failure summary{font-size:13px;color:#7d6639;cursor:pointer}
+.scenario-picker{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}.scenario-picker button{text-align:left;padding:18px 21px;border:1px solid #d5ddec;border-radius:11px;background:#fff;color:#53617c;cursor:pointer}.scenario-picker button[aria-pressed=true]{border-color:#394fc3;background:#eef1ff;box-shadow:inset 0 0 0 1px #394fc3}.scenario-picker span{font-size:10px;letter-spacing:1.3px;color:#586daf}.scenario-picker strong{display:block;font-size:20px;margin:6px 0;color:#253963}.scenario-picker small{font-size:13px}.scenario-view-toggle{display:flex;gap:4px;float:right;border:1px solid #526480;border-radius:7px;padding:3px;margin:0 0 12px 15px}.scenario-view-toggle button{padding:7px 13px;background:transparent;color:#bac8df;border:0;border-radius:4px;cursor:pointer;font-size:12px}.scenario-view-toggle button[aria-pressed=true]{background:#dce4ff;color:#203263}.scenario-map-wrap{overflow-x:auto;background:#111e39}.scenario-geo-map{width:100%;min-width:960px;display:block}.scenario-map-actor{cursor:pointer;outline:none}.scenario-map-actor rect{fill:#1b2d49;stroke:#536788;stroke-width:1.2}.scenario-map-actor text{fill:#c6d2e6;font-size:12px;font-weight:550}.scenario-map-actor.active rect{fill:#294467;stroke:#92b9d8}.scenario-map-actor.selected rect,.scenario-map-actor:focus rect{fill:#3a508f;stroke:#d0d9ff;stroke-width:2.5}.scenario-map-actor.selected text,.scenario-map-actor.active text{fill:white}.scenario-actor-picker{display:flex;flex-wrap:wrap;gap:5px;padding:14px 20px;border-bottom:1px solid #e1e7f1}.scenario-actor-picker button{border:1px solid #dce3ef;border-radius:20px;padding:6px 10px;font-size:11px;background:white;color:#5a6c8d;cursor:pointer}.scenario-actor-picker button[aria-pressed=true]{background:#ffede5;border-color:#8297d3;color:#223d99}.scenario-stage.with-map{grid-template-columns:1fr}.scenario-stage.with-map .scenario-network-panel{grid-row:1}.scenario-stage.with-map .scenario-narrative{grid-row:2}.scenario-failure summary{font-size:13px;color:#7d6639;cursor:pointer}
 @media(max-width:1100px){.scenario-stage.with-map{grid-template-columns:1fr}.scenario-stage.with-map .scenario-network-panel{grid-row:1}.scenario-stage.with-map .scenario-narrative{grid-row:2}}
 @media(max-width:700px){.scenario-picker{grid-template-columns:1fr}.scenario-picker strong{font-size:18px}.scenario-timeline-controls{flex-wrap:wrap}.scenario-timeline-controls label{min-width:80px}.scenario-view-toggle{float:none;width:fit-content;margin:0 0 12px}.scenario-map-wrap:after{content:'Swipe to explore the map →';display:block;font-size:12px;color:#b7c5df;padding:12px 18px}}
 
@@ -1698,3 +1698,91 @@ footer button {
 @media(max-width:1100px){.career-question-content{gap:25px;padding:25px;grid-template-columns:1fr 2fr}.career-progress li{padding:16px 12px;font-size:13px}.career-directory-heading{align-items:flex-start;flex-direction:column}.career-search{width:100%}.career-profile-summary{flex-wrap:wrap}}
 @media(max-width:760px){.career-page{padding:24px 16px 45px}.career-heading{align-items:flex-start}.career-review-date{display:none}.career-progress{grid-template-columns:1fr 1fr}.career-question-content{grid-template-columns:1fr;gap:12px;padding:22px 18px}.career-question-intro p{margin-bottom:12px}.career-question-intro h2{margin:7px 0 10px}.career-question-footer{padding:20px 18px;align-items:stretch;flex-direction:column;gap:15px}.career-question-footer>div{justify-content:space-between}.career-profile-summary{padding:21px}.career-next-steps,.career-rights-grid,.career-card-grid{grid-template-columns:1fr}.career-next-steps{gap:20px}.career-card{padding:20px}.career-search{min-width:0}.career-heading h1{letter-spacing:-1px}.career-rights{padding:17px}.career-directory-heading h2{font-size:26px}.career-multi-grid,.career-options{grid-template-columns:1fr}.career-profile-summary h2{font-size:24px}}
 .career-card .career-deadline{font-size:14px;font-weight:600;color:#36684f;background:#edf6ef;border-radius:6px;padding:10px 13px;margin:0 0 15px}.career-key-check{margin:0 0 17px;font-size:13px;color:#778397}.career-key-check strong{font-size:13px;color:#65768f}.career-key-check p{font-size:14px;line-height:1.7;margin:5px 0 0}
+
+/* SAIN-inspired presentation. Fonts are self-hosted; institutional colours remain
+   categorical in the atlas. Branding does not imply institutional endorsement. */
+@font-face{font-family:Atlas Spartan;src:url('./fonts/league-spartan-latin.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:Atlas Poppins;src:url('./fonts/poppins-regular-latin.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Atlas Poppins;src:url('./fonts/poppins-medium-latin.woff2') format('woff2');font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:Atlas Poppins;src:url('./fonts/poppins-semibold-latin.woff2') format('woff2');font-style:normal;font-weight:600;font-display:swap}
+@font-face{font-family:Atlas Poppins;src:url('./fonts/poppins-bold-latin.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+:root{--background:#f7f5f2;--foreground:#021c4d;--primary:#021c4d;--accent:#ffede5;--border:#d9dce2;--muted:#f0efec;--muted-foreground:#626b7e;--font-sans:'Atlas Poppins',Arial,sans-serif;--sain-orange:#ff6025;--sain-navy:#021c4d;--sain-cream:#f7f5f2}
+body{font-family:'Atlas Poppins',Arial,sans-serif;color:var(--sain-navy);background:var(--sain-cream)}
+h1,h2,h3,h4,.brand-title,.path-number{font-family:'Atlas Spartan',Arial,sans-serif}
+h1,h2,h3,h4{font-weight:600}
+button:focus-visible,a:focus-visible,input:focus-visible,.graph-node:focus-visible,.map-pin:focus-visible{outline:3px solid #ff6025}
+.site-header{height:78px;background:#f7f5f2;padding:0 4%;gap:25px;border-bottom:1px solid #dededc}
+.brand{gap:20px;min-width:0;letter-spacing:0;color:#021c4d}
+.sain-brand-logo{width:125px;height:auto;display:block}
+.brand-divider{height:29px;width:1px;background:#929bab;flex-shrink:0}
+.brand-title{font-size:24px;line-height:1.1;letter-spacing:-.5px;font-weight:500;white-space:nowrap}
+.site-header nav{gap:27px;margin-left:auto}
+.site-header nav button{color:#021c4d;font-size:13px;font-weight:400}
+.site-header nav button:hover,.site-header nav .nav-active{color:#c13f10;border-bottom-color:#ff6025}
+.edition{font-size:11px;white-space:nowrap;border-left:1px solid #c2c6cf;padding-left:24px;color:#697385}
+.edition>span{background:#ff6025}
+.brand-dot{background:#ff6025;width:18px;height:18px}
+.eyebrow{color:#c13f10}
+.intro h1,.sources-page h1{font-family:'Atlas Spartan',Arial,sans-serif;font-weight:600;letter-spacing:-1.5px}
+.tour-launch{background:#fff1e9;border:1px solid #eed4c4;border-radius:4px;box-shadow:none}
+.tour-launch:hover{background:#ffe4d4}
+.tour-launch small{color:#785640}
+.play-circle{border-color:#dc9a70;color:#c13f10}
+.primary-button{background:#ff6025;color:#021c4d;border-color:#ff6025;border-radius:3px}
+.primary-button:hover{background:#e65620;color:white}
+.view-tabs{gap:2px}
+.view-tabs button[data-state=active]{background:#021c4d;color:#fff}
+.pin-location-label{font:10px 'Atlas Poppins',Arial,sans-serif;fill:#435573;paint-order:stroke;stroke:#f7f5f2;stroke-width:3px;stroke-linejoin:round}
+.pin-city-label{font-family:'Atlas Poppins',Arial,sans-serif}
+footer{background:#f7f5f2;gap:22px;font-size:10px;color:#677184}
+.footer-brand{color:#021c4d;white-space:nowrap}
+/* Homepage: the globe is a live geographic component, not a hero illustration. */
+.atlas-home{max-width:none;padding:0;margin:0}
+.home-hero{position:relative;background:#021c4d;color:#f7f5f2;display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);align-items:center;min-height:690px;overflow:hidden;padding:28px 3% 28px 4%;isolation:isolate}
+.hero-orbits{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse at 74% 46%,#0f3561 0,transparent 65%)}
+.hero-orbits i{position:absolute;right:-5%;top:-21%;width:77%;height:137%;border:1px solid #d8e8ff13;border-radius:50%;transform:rotate(-28deg)}
+.hero-orbits i:nth-child(2){right:-10%;top:-35%;width:86%;height:165%}
+.hero-orbits i:nth-child(3){right:-17%;top:-48%;width:98%;height:192%}
+.home-copy{position:relative;z-index:2;padding:32px 0;align-self:stretch;display:flex;flex-direction:column;justify-content:center;pointer-events:none}
+.home-copy .eyebrow{font-size:12px;letter-spacing:.12em;color:#ff773f;font-weight:600;margin-bottom:24px}
+.home-copy h1{font-size:clamp(48px,5.25vw,84px);letter-spacing:-.038em;font-weight:600;line-height:.99;color:#f7f5f2;max-width:750px}
+.home-lede{font-size:clamp(15px,1.35vw,20px);line-height:1.7;color:#d3ddec;max-width:490px;margin-top:25px;font-weight:400}
+.home-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;pointer-events:auto}
+.home-primary,.home-secondary{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:15px 20px;border-radius:3px;font-size:14px;font-weight:500;min-height:53px}
+.home-primary{background:#ff6025;color:#fff;border:1px solid #ff6025}
+.home-primary:hover{background:#e65620;border-color:#e65620}
+.home-secondary{border:1px solid #8599b6;background:#021c4d44;color:#f7f5f2}
+.home-secondary:hover{border-color:#fff;background:#ffffff0c}
+.home-facts{display:flex;flex-wrap:wrap;gap:12px 22px;color:#aebfd6;font-size:10px;line-height:1.8;margin-top:33px}
+.home-facts b{color:#f7f5f2;font-weight:500;font-size:13px;margin-right:3px}
+.home-principle{font-size:9px;letter-spacing:.21em;color:#8fa7c8;display:flex;align-items:center;gap:15px;margin-top:57px}
+.home-principle span{height:10px;width:1px;background:#7487a5}
+.home-globe{min-width:0;align-self:center;position:relative;z-index:1;margin-left:-10px}
+.home-globe .governance-globe{background:transparent;border:0;box-shadow:none}
+.home-map-alternative{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:8px 15px 0;font-size:9px;color:#93abc8}
+.home-map-alternative button{display:flex;align-items:center;gap:6px;color:#d6e1f0;background:none;border:0;font-size:10px;padding:6px 0;white-space:nowrap}
+.home-map-alternative button:hover{color:#ff8d61}
+.home-paths{padding:31px 4% 37px;background:#f7f5f2;border-bottom:1px solid #dededc}
+.paths-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:23px}
+.paths-heading h2{font-size:27px;letter-spacing:-.65px;line-height:1.05}
+.paths-heading>span{font-size:11px;color:#727a89}
+.path-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.path-card{display:block;position:relative;background:transparent;border:0;border-right:1px solid #cbd0d8;padding:0 40px;min-height:135px;color:#021c4d;text-align:left}
+.path-card:first-child{padding-left:0}
+.path-card:last-child{border:0;padding-right:0}
+.path-top{height:27px;display:flex;align-items:start;justify-content:space-between}
+.path-number{font-weight:600;font-size:28px;color:#ff6025;line-height:1}
+.path-orbit{position:absolute;right:25px;top:-10px;width:68px;height:68px;stroke:#315075;stroke-width:.8;transition:transform .3s ease}
+.path-orbit .orbit-accent{fill:#ff6025;stroke:none}
+.path-card:last-child .path-orbit{right:0}
+.path-card h3{font-size:23px;line-height:1.05;margin-top:12px;letter-spacing:-.4px}
+.path-card p{font-size:11px;color:#637087;margin-top:7px;line-height:1.7;padding-right:30px}
+.path-link{display:inline-flex;align-items:center;gap:15px;margin-top:17px;font-size:11px;font-weight:500;border-bottom:1px solid #ff6025;padding-bottom:3px}
+.path-card:hover .path-link{color:#c13f10}
+.path-card:hover .path-orbit{transform:rotate(12deg)}
+.is-home footer{margin-top:0;padding-top:22px;padding-bottom:22px}
+@media(min-width:1600px){.home-hero{min-height:790px;padding-left:max(4%,calc((100vw - 1550px)/2));padding-right:max(3%,calc((100vw - 1630px)/2))}.wide-break{display:none}.home-copy h1{max-width:720px}.home-globe{margin-left:-40px}}
+@media(max-width:1200px){.edition{display:none}.site-header nav{gap:23px}.home-hero{min-height:620px}.home-copy h1{font-size:clamp(43px,5.4vw,65px)}.home-actions{gap:10px}.home-primary,.home-secondary{font-size:12px;padding:12px 14px;gap:10px}.home-principle{margin-top:40px}.home-facts{max-width:320px;gap:8px 19px}.path-card{padding-left:28px;padding-right:28px}.path-orbit{width:55px;height:55px;right:20px}.home-map-alternative{flex-wrap:wrap;gap:0}}
+@media(max-width:900px){.site-header{height:auto;min-height:76px;flex-wrap:wrap;gap:13px;padding-top:16px;padding-bottom:0}.sain-brand-logo{width:108px}.brand-title{font-size:22px}.brand{gap:15px}.site-header nav{width:100%;justify-content:space-between;margin:0;gap:16px;height:38px}.site-header nav button{font-size:12px}.home-hero{grid-template-columns:1fr;padding:36px 5% 28px}.home-copy{padding:0}.home-copy h1{font-size:clamp(46px,7.4vw,70px);max-width:750px}.wide-break{display:none}.home-copy .eyebrow{margin-bottom:18px}.home-lede{max-width:570px;margin-top:20px;font-size:16px}.home-facts{max-width:none;margin-top:23px}.home-principle{display:none}.home-globe{margin:20px 0 0;max-width:760px;width:100%;justify-self:center}.home-map-alternative{justify-content:space-between;margin:8px 0}.home-paths{padding:28px 5% 30px}.paths-heading>span{display:none}.path-card{padding-left:22px;padding-right:16px}.path-card h3{font-size:21px;max-width:150px}.path-card p{padding-right:0}.path-orbit{width:42px;height:42px;right:10px}.path-number{font-size:25px}}
+@media(max-width:570px){.brand-title{font-size:20px}.sain-brand-logo{width:94px}.brand{gap:13px}.site-header nav{gap:8px}.site-header nav button{font-size:11px}.home-hero{padding:31px 5% 20px}.home-copy h1{font-size:46px;letter-spacing:-1.6px}.home-copy .eyebrow{font-size:10px}.home-lede{font-size:14px;max-width:330px}.home-actions{margin-top:23px}.home-primary,.home-secondary{font-size:11px;gap:7px;padding:12px 11px;min-height:45px}.home-facts{font-size:9px;gap:7px 13px}.home-facts b{font-size:11px}.home-globe{margin-top:27px}.home-map-alternative{font-size:8px}.home-map-alternative button{font-size:9px}.paths-heading h2{font-size:26px}.path-grid{grid-template-columns:1fr}.path-card,.path-card:first-child,.path-card:last-child{padding:22px 0;border:0;border-bottom:1px solid #ccd1d9;min-height:0}.path-card:last-child{border:0;padding-bottom:0}.path-top{height:25px}.path-card h3{max-width:none;font-size:25px;margin-top:9px}.path-card p{font-size:12px}.path-orbit,.path-card:last-child .path-orbit{width:67px;height:67px;right:5px;top:23px}.paths-heading{margin-bottom:0}.path-card p{max-width:280px}.path-link{font-size:12px;margin-top:12px}footer{flex-wrap:wrap;justify-content:start;gap:14px}.view-tabs{width:100%;min-width:0;flex-wrap:nowrap}.view-tabs button{font-size:11px;padding:8px 7px}.view-tabs button svg{width:14px}}
+@media(prefers-reduced-motion:reduce){.path-orbit{transition:none}.path-card:hover .path-orbit{transform:none}}
